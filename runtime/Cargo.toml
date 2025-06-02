@@ -27,6 +27,8 @@ polkadot-sdk = { workspace = true, features = ["cumulus-pallet-aura-ext", "cumul
 scale-info = { features = ["derive"], workspace = true }
 serde_json = { workspace = true, default-features = false, features = ["alloc"] }
 smallvec = { workspace = true, default-features = true }
+pallet-utility = { version = "39.0.0", default-features = false }
+custom-pallet = { path = "../pallets/custom-pallet", default-features = false }
 
 [features]
 default = ["std"]
@@ -39,6 +41,8 @@ std = [
 	"scale-info/std",
 	"serde_json/std",
 	"substrate-wasm-builder",
+	"pallet-utility/std",
+ 	 "custom-pallet/std",
 ]
 
 runtime-benchmarks = [
@@ -66,3 +70,5 @@ metadata-hash = ["substrate-wasm-builder/metadata-hash"]
 # A convenience feature for enabling things when doing a build
 # for an on-chain release.
 on-chain-release-build = ["metadata-hash"]
+
+

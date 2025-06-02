@@ -313,6 +313,14 @@ mod runtime {
 	// Template
 	#[runtime::pallet_index(50)]
 	pub type TemplatePallet = pallet_parachain_template;
+
+	// Utility pallet, imported as part of the tutorial: https://docs.polkadot.com/tutorials/polkadot-sdk/parachains/zero-to-hero/add-pallets-to-runtime/#update-the-runtime-configuration
+	#[runtime::pallet_index(51)]
+    pub type Utility = pallet_utility;
+
+	// Custom pallet, added as part of the tutorial: https://docs.polkadot.com/tutorials/polkadot-sdk/parachains/zero-to-hero/add-pallets-to-runtime/#update-the-runtime-configuration
+    #[runtime::pallet_index(52)]
+    pub type CustomPallet = custom_pallet;
 }
 
 #[docify::export(register_validate_block)]
