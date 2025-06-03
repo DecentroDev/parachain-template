@@ -50,6 +50,7 @@ runtime-benchmarks = [
 	"hex-literal",
 	"pallet-parachain-template/runtime-benchmarks",
 	"polkadot-sdk/runtime-benchmarks",
+	"custom-pallet/runtime-benchmarks",
 ]
 
 try-runtime = [
