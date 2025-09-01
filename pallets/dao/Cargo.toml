@@ -1,0 +1,64 @@
+[package]
+name = "pallet-dao"
+version = "0.1.0"
+license.workspace = true
+author.workspace = true
+homepage.workspace = true
+repository.workspace = true
+edition.workspace = true
+description = "Pallet DAO for defining custom runtime logic."
+publish = false
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[dependencies]
+codec = { workspace = true }
+scale-info = { workspace = true }
+num-traits = { version = "0.2.15", default-features = false }
+log = { workspace = true }
+lite-json = { version = "0.2.0", default-features = false }
+serde_json = { workspace = true, features = ["alloc", "arbitrary_precision"] }
+
+# Use polkadot-sdk workspace dependency
+polkadot-sdk = { workspace = true, features = [
+	"pallet-assets",
+	"pallet-collective",
+	"frame-benchmarking",
+	"frame-support",
+	"frame-system",
+	"sp-application-crypto",
+	"sp-core",
+	"sp-io",
+	"sp-runtime",
+	"sp-std",
+] }
+
+pallet-insurances = { default-features = false, path = "../insurances" }
+
+offchain-utils = { default-features = false, path = "../../offchain-utils" }
+
+[dev-dependencies]
+codec = { workspace = true }
+polkadot-sdk = { workspace = true, features = [
+	"pallet-assets",
+	"pallet-balances",
+	"sp-core",
+] }
+num-traits = { version = "0.2.15", default-features = false }
+
+[features]
+default = ["std"]
+std = [
+	"codec/std",
+	"scale-info/std",
+	"polkadot-sdk/std",
+	"num-traits/std",
+	"lite-json/std",
+	"pallet-insurances/std",
+	"log/std",
+	"serde_json/std",
+]
+
+runtime-benchmarks = ["polkadot-sdk/runtime-benchmarks"]
+try-runtime = ["polkadot-sdk/try-runtime"]

@@ -1,0 +1,18 @@
+[package]
+name = "pallet-dao-rpc"
+version = "4.0.0-dev"
+authors = ["4irelabs developers <info@4irelabs.com>"]
+edition = "2021"
+license = "Unlicense"
+description = "RPC module for dao."
+
+[dependencies]
+codec = { package = "parity-scale-codec", version = "3.0.0" }
+jsonrpsee = { version = "0.16.2", features = ["server", "macros"] }
+
+frame-system = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.42" }
+sp-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.42" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.42" }
+sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.42" }
+
+pallet-dao-rpc-runtime-api = { path = "runtime-api"}

@@ -1,0 +1,1008 @@
+Starting PRMX Omni Node...
+Starting Omni Node in dev mode on port 9944 (RPC/WebSocket)...
+2025-09-01 09:33:25 polkadot-omni-node    
+2025-09-01 09:33:25 ✌️  version 1.19.0-unknown    
+2025-09-01 09:33:25 ❤️  by Parity Technologies <admin@parity.io>, 2017-2025    
+2025-09-01 09:33:25 📋 Chain specification: Custom    
+2025-09-01 09:33:25 🏷  Node name: prmx-omni-collator    
+2025-09-01 09:33:25 👤 Role: AUTHORITY    
+2025-09-01 09:33:25 💾 Database: RocksDb at ./data/chains/custom/db/full    
+2025-09-01 09:33:27 assembling new collators for new session 0 at #0    
+2025-09-01 09:33:27 assembling new collators for new session 1 at #0    
+2025-09-01 09:33:31 [Parachain] assembling new collators for new session 0 at #0    
+2025-09-01 09:33:31 [Parachain] assembling new collators for new session 1 at #0    
+2025-09-01 09:33:31 [Parachain] Creating transaction pool txpool_type=SingleState ready=Limit { count: 8192, total_bytes: 20971520 } future=Limit { count: 819, total_bytes: 2097152 }
+2025-09-01 09:33:31 [Parachain] Using default protocol ID "sup" because none is configured in the chain specs    
+2025-09-01 09:33:31 [Parachain] Local node identity is: 12D3KooWQ3HJukTb1dKD1RuE52c97rn8m4idzp8JVkwNuKy2SpBT    
+2025-09-01 09:33:31 [Parachain] Running litep2p network backend    
+2025-09-01 09:33:33 [Parachain] 💻 Operating system: linux    
+2025-09-01 09:33:33 [Parachain] 💻 CPU architecture: x86_64    
+2025-09-01 09:33:33 [Parachain] 💻 Target environment: gnu    
+2025-09-01 09:33:33 [Parachain] 💻 CPU: AMD EPYC 7B12    
+2025-09-01 09:33:33 [Parachain] 💻 CPU cores: 2    
+2025-09-01 09:33:33 [Parachain] 💻 Memory: 15990MB    
+2025-09-01 09:33:33 [Parachain] 💻 Kernel: 6.14.0-1014-gcp    
+2025-09-01 09:33:33 [Parachain] 💻 Linux distribution: Ubuntu 24.04.2 LTS    
+2025-09-01 09:33:33 [Parachain] 💻 Virtual machine: yes    
+2025-09-01 09:33:33 [Parachain] 📦 Highest known block at #4    
+2025-09-01 09:33:33 [Parachain] 〽️ Prometheus exporter started at 127.0.0.1:9615    
+2025-09-01 09:33:33 [Parachain] Running JSON-RPC server: addr=0.0.0.0:9944,[::]:38257    
+2025-09-01 09:33:34 [Parachain] 🙌 Starting consensus session on top of parent 0xdee49c373c99d28f4adcd7cec840c1a3cea17e21801012407fb804982c482738 (#4)    
+2025-09-01 09:33:34 [Parachain] 🎁 Prepared block for proposing at 5 (1 ms) hash: 0xb18dc7541471fe38dc546f743998ef259d635dee365fae77c058d7a6f648d7e2; parent_hash: 0xdee4…2738; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:33:34 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xb18dc7541471fe38dc546f743998ef259d635dee365fae77c058d7a6f648d7e2, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:33:34 [Parachain] 🏆 Imported #5 (0xdee4…2738 → 0xb18d…d7e2)    
+2025-09-01 09:33:37 [Parachain] 🙌 Starting consensus session on top of parent 0xb18dc7541471fe38dc546f743998ef259d635dee365fae77c058d7a6f648d7e2 (#5)    
+2025-09-01 09:33:37 [Parachain] 🎁 Prepared block for proposing at 6 (1 ms) hash: 0x5295a5a707394a3c0fd004d91fcb4cb38a2dea6716b762561027381d471fd8dc; parent_hash: 0xb18d…d7e2; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:33:37 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x5295a5a707394a3c0fd004d91fcb4cb38a2dea6716b762561027381d471fd8dc, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:33:37 [Parachain] 🏆 Imported #6 (0xb18d…d7e2 → 0x5295…d8dc)    
+2025-09-01 09:33:38 [Parachain] 💤 Idle (0 peers), best: #6 (0x5295…d8dc), finalized #6 (0x5295…d8dc), ⬇ 0 ⬆ 0    
+2025-09-01 09:33:40 [Parachain] 🙌 Starting consensus session on top of parent 0x5295a5a707394a3c0fd004d91fcb4cb38a2dea6716b762561027381d471fd8dc (#6)    
+2025-09-01 09:33:40 [Parachain] 🎁 Prepared block for proposing at 7 (1 ms) hash: 0x097dbac53093dc476e0a0da659650918b4b1f508bf9de1b64b654b3cf9cb56c8; parent_hash: 0x5295…d8dc; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:33:40 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x097dbac53093dc476e0a0da659650918b4b1f508bf9de1b64b654b3cf9cb56c8, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:33:40 [Parachain] 🏆 Imported #7 (0x5295…d8dc → 0x097d…56c8)    
+2025-09-01 09:33:43 [Parachain] 💤 Idle (0 peers), best: #7 (0x097d…56c8), finalized #7 (0x097d…56c8), ⬇ 0 ⬆ 0    
+2025-09-01 09:33:43 [Parachain] 🙌 Starting consensus session on top of parent 0x097dbac53093dc476e0a0da659650918b4b1f508bf9de1b64b654b3cf9cb56c8 (#7)    
+2025-09-01 09:33:43 [Parachain] 🎁 Prepared block for proposing at 8 (1 ms) hash: 0x498d123e78cc8e173a48b9ef818196aeffcb4f9f5677fa713ecb25a423a52d3b; parent_hash: 0x097d…56c8; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:33:43 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x498d123e78cc8e173a48b9ef818196aeffcb4f9f5677fa713ecb25a423a52d3b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:33:43 [Parachain] 🏆 Imported #8 (0x097d…56c8 → 0x498d…2d3b)    
+2025-09-01 09:33:46 [Parachain] 🙌 Starting consensus session on top of parent 0x498d123e78cc8e173a48b9ef818196aeffcb4f9f5677fa713ecb25a423a52d3b (#8)    
+2025-09-01 09:33:46 [Parachain] 🎁 Prepared block for proposing at 9 (1 ms) hash: 0x3a88fffe92cc7fa8f7ffcf07bca0c56e7d7051c6ef16556b638b65ad2072d5d7; parent_hash: 0x498d…2d3b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:33:46 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x3a88fffe92cc7fa8f7ffcf07bca0c56e7d7051c6ef16556b638b65ad2072d5d7, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:33:46 [Parachain] 🏆 Imported #9 (0x498d…2d3b → 0x3a88…d5d7)    
+2025-09-01 09:33:48 [Parachain] 💤 Idle (0 peers), best: #9 (0x3a88…d5d7), finalized #9 (0x3a88…d5d7), ⬇ 0 ⬆ 0    
+2025-09-01 09:33:49 [Parachain] 🙌 Starting consensus session on top of parent 0x3a88fffe92cc7fa8f7ffcf07bca0c56e7d7051c6ef16556b638b65ad2072d5d7 (#9)    
+2025-09-01 09:33:49 [Parachain] 🎁 Prepared block for proposing at 10 (1 ms) hash: 0xcc5c3489ff6c213d02e7d4ae3d4f34db7784eecc423a3d0f029e58affeeb14e9; parent_hash: 0x3a88…d5d7; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:33:49 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xcc5c3489ff6c213d02e7d4ae3d4f34db7784eecc423a3d0f029e58affeeb14e9, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:33:49 [Parachain] 🏆 Imported #10 (0x3a88…d5d7 → 0xcc5c…14e9)    
+2025-09-01 09:33:52 [Parachain] 🙌 Starting consensus session on top of parent 0xcc5c3489ff6c213d02e7d4ae3d4f34db7784eecc423a3d0f029e58affeeb14e9 (#10)    
+2025-09-01 09:33:52 [Parachain] 🎁 Prepared block for proposing at 11 (1 ms) hash: 0xc793890e283d5b33c250c51c9e717c22070571f9550a61af0e3a4819ba581c85; parent_hash: 0xcc5c…14e9; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:33:52 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xc793890e283d5b33c250c51c9e717c22070571f9550a61af0e3a4819ba581c85, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:33:52 [Parachain] 🏆 Imported #11 (0xcc5c…14e9 → 0xc793…1c85)    
+2025-09-01 09:33:53 [Parachain] 💤 Idle (0 peers), best: #11 (0xc793…1c85), finalized #11 (0xc793…1c85), ⬇ 0 ⬆ 0    
+2025-09-01 09:33:55 [Parachain] 🙌 Starting consensus session on top of parent 0xc793890e283d5b33c250c51c9e717c22070571f9550a61af0e3a4819ba581c85 (#11)    
+2025-09-01 09:33:55 [Parachain] 🎁 Prepared block for proposing at 12 (1 ms) hash: 0xd1e6687262813406fe7a1b35284f4e054b758e6e0f655452fa803ae1aee92ef1; parent_hash: 0xc793…1c85; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:33:55 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xd1e6687262813406fe7a1b35284f4e054b758e6e0f655452fa803ae1aee92ef1, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:33:55 [Parachain] 🏆 Imported #12 (0xc793…1c85 → 0xd1e6…2ef1)    
+2025-09-01 09:33:58 [Parachain] 💤 Idle (0 peers), best: #12 (0xd1e6…2ef1), finalized #12 (0xd1e6…2ef1), ⬇ 0 ⬆ 0    
+2025-09-01 09:33:58 [Parachain] 🙌 Starting consensus session on top of parent 0xd1e6687262813406fe7a1b35284f4e054b758e6e0f655452fa803ae1aee92ef1 (#12)    
+2025-09-01 09:33:58 [Parachain] 🎁 Prepared block for proposing at 13 (2 ms) hash: 0x7ade15f92f5c4901db90c9e4d0177a194c59822276449d40962d494c87f437fd; parent_hash: 0xd1e6…2ef1; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:33:58 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x7ade15f92f5c4901db90c9e4d0177a194c59822276449d40962d494c87f437fd, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:33:58 [Parachain] 🏆 Imported #13 (0xd1e6…2ef1 → 0x7ade…37fd)    
+2025-09-01 09:34:01 [Parachain] 🙌 Starting consensus session on top of parent 0x7ade15f92f5c4901db90c9e4d0177a194c59822276449d40962d494c87f437fd (#13)    
+2025-09-01 09:34:01 [Parachain] 🎁 Prepared block for proposing at 14 (1 ms) hash: 0x67c469e2bc3088588e9593d965c119187f497b1ee889fbee11ec9fee6ec59a7f; parent_hash: 0x7ade…37fd; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:01 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x67c469e2bc3088588e9593d965c119187f497b1ee889fbee11ec9fee6ec59a7f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:01 [Parachain] 🏆 Imported #14 (0x7ade…37fd → 0x67c4…9a7f)    
+2025-09-01 09:34:03 [Parachain] 💤 Idle (0 peers), best: #14 (0x67c4…9a7f), finalized #14 (0x67c4…9a7f), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:04 [Parachain] 🙌 Starting consensus session on top of parent 0x67c469e2bc3088588e9593d965c119187f497b1ee889fbee11ec9fee6ec59a7f (#14)    
+2025-09-01 09:34:04 [Parachain] 🎁 Prepared block for proposing at 15 (1 ms) hash: 0x6f97a261e453884ff70f6956b763a1fd9cbfb2a80f70b9fb617f11d31fe02090; parent_hash: 0x67c4…9a7f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:04 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x6f97a261e453884ff70f6956b763a1fd9cbfb2a80f70b9fb617f11d31fe02090, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:04 [Parachain] 🏆 Imported #15 (0x67c4…9a7f → 0x6f97…2090)    
+2025-09-01 09:34:07 [Parachain] 🙌 Starting consensus session on top of parent 0x6f97a261e453884ff70f6956b763a1fd9cbfb2a80f70b9fb617f11d31fe02090 (#15)    
+2025-09-01 09:34:07 [Parachain] 🎁 Prepared block for proposing at 16 (2 ms) hash: 0x3688331507d7a86cffc9588f6753b09db14555bde22cb2c3f1bd5b4d27568cfe; parent_hash: 0x6f97…2090; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:07 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x3688331507d7a86cffc9588f6753b09db14555bde22cb2c3f1bd5b4d27568cfe, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:07 [Parachain] 🏆 Imported #16 (0x6f97…2090 → 0x3688…8cfe)    
+2025-09-01 09:34:08 [Parachain] 💤 Idle (0 peers), best: #16 (0x3688…8cfe), finalized #16 (0x3688…8cfe), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:10 [Parachain] 🙌 Starting consensus session on top of parent 0x3688331507d7a86cffc9588f6753b09db14555bde22cb2c3f1bd5b4d27568cfe (#16)    
+2025-09-01 09:34:10 [Parachain] 🎁 Prepared block for proposing at 17 (1 ms) hash: 0x249185360c8d18fe435fd238a64f2aae4991004a257157abb4ed680106b871eb; parent_hash: 0x3688…8cfe; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:10 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x249185360c8d18fe435fd238a64f2aae4991004a257157abb4ed680106b871eb, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:10 [Parachain] 🏆 Imported #17 (0x3688…8cfe → 0x2491…71eb)    
+2025-09-01 09:34:13 [Parachain] 💤 Idle (0 peers), best: #17 (0x2491…71eb), finalized #17 (0x2491…71eb), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:13 [Parachain] 🙌 Starting consensus session on top of parent 0x249185360c8d18fe435fd238a64f2aae4991004a257157abb4ed680106b871eb (#17)    
+2025-09-01 09:34:13 [Parachain] 🎁 Prepared block for proposing at 18 (1 ms) hash: 0xb109219d3db2e5cb22e2ae265d3b3fad51bc7905914aa5adb8afae7e62abcf71; parent_hash: 0x2491…71eb; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:13 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xb109219d3db2e5cb22e2ae265d3b3fad51bc7905914aa5adb8afae7e62abcf71, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:13 [Parachain] 🏆 Imported #18 (0x2491…71eb → 0xb109…cf71)    
+2025-09-01 09:34:16 [Parachain] 🙌 Starting consensus session on top of parent 0xb109219d3db2e5cb22e2ae265d3b3fad51bc7905914aa5adb8afae7e62abcf71 (#18)    
+2025-09-01 09:34:16 [Parachain] 🎁 Prepared block for proposing at 19 (1 ms) hash: 0x8605b56253fff4dc1e10404994bc416c91888a631e0a2ed3553e0975cb3a2d21; parent_hash: 0xb109…cf71; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:16 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x8605b56253fff4dc1e10404994bc416c91888a631e0a2ed3553e0975cb3a2d21, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:16 [Parachain] 🏆 Imported #19 (0xb109…cf71 → 0x8605…2d21)    
+2025-09-01 09:34:18 [Parachain] 💤 Idle (0 peers), best: #19 (0x8605…2d21), finalized #19 (0x8605…2d21), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:19 [Parachain] 🙌 Starting consensus session on top of parent 0x8605b56253fff4dc1e10404994bc416c91888a631e0a2ed3553e0975cb3a2d21 (#19)    
+2025-09-01 09:34:19 [Parachain] 🎁 Prepared block for proposing at 20 (2 ms) hash: 0xf52e120bd528b75fac04d4988c4ec9c8cc5b0829acea11ffec29f0a42acd0c96; parent_hash: 0x8605…2d21; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:19 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xf52e120bd528b75fac04d4988c4ec9c8cc5b0829acea11ffec29f0a42acd0c96, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:19 [Parachain] 🏆 Imported #20 (0x8605…2d21 → 0xf52e…0c96)    
+2025-09-01 09:34:22 [Parachain] 🙌 Starting consensus session on top of parent 0xf52e120bd528b75fac04d4988c4ec9c8cc5b0829acea11ffec29f0a42acd0c96 (#20)    
+2025-09-01 09:34:22 [Parachain] 🎁 Prepared block for proposing at 21 (1 ms) hash: 0xabf7e459b4776aa90ba4b243254f98b3d5f2b8c96be94c0e8d118b73dab6ded6; parent_hash: 0xf52e…0c96; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:22 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xabf7e459b4776aa90ba4b243254f98b3d5f2b8c96be94c0e8d118b73dab6ded6, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:22 [Parachain] 🏆 Imported #21 (0xf52e…0c96 → 0xabf7…ded6)    
+2025-09-01 09:34:23 [Parachain] 💤 Idle (0 peers), best: #21 (0xabf7…ded6), finalized #21 (0xabf7…ded6), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:25 [Parachain] 🙌 Starting consensus session on top of parent 0xabf7e459b4776aa90ba4b243254f98b3d5f2b8c96be94c0e8d118b73dab6ded6 (#21)    
+2025-09-01 09:34:25 [Parachain] 🎁 Prepared block for proposing at 22 (1 ms) hash: 0x84084503a7ca4d88a8e0cdfce0cb593eced92a270b17af50423d9c53c9e41b42; parent_hash: 0xabf7…ded6; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:25 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x84084503a7ca4d88a8e0cdfce0cb593eced92a270b17af50423d9c53c9e41b42, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:25 [Parachain] 🏆 Imported #22 (0xabf7…ded6 → 0x8408…1b42)    
+2025-09-01 09:34:28 [Parachain] 💤 Idle (0 peers), best: #22 (0x8408…1b42), finalized #22 (0x8408…1b42), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:28 [Parachain] 🙌 Starting consensus session on top of parent 0x84084503a7ca4d88a8e0cdfce0cb593eced92a270b17af50423d9c53c9e41b42 (#22)    
+2025-09-01 09:34:28 [Parachain] 🎁 Prepared block for proposing at 23 (1 ms) hash: 0xa628fdb325b536a696ec5d38aa48365b5fac21864977d13564c493980b15befb; parent_hash: 0x8408…1b42; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:28 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xa628fdb325b536a696ec5d38aa48365b5fac21864977d13564c493980b15befb, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:28 [Parachain] 🏆 Imported #23 (0x8408…1b42 → 0xa628…befb)    
+2025-09-01 09:34:31 [Parachain] 🙌 Starting consensus session on top of parent 0xa628fdb325b536a696ec5d38aa48365b5fac21864977d13564c493980b15befb (#23)    
+2025-09-01 09:34:31 [Parachain] 🎁 Prepared block for proposing at 24 (1 ms) hash: 0x4ec3358fd90bb9984926ff2ccbc24658d04c44a6e86111c2c2b3c34d0da2948a; parent_hash: 0xa628…befb; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:31 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x4ec3358fd90bb9984926ff2ccbc24658d04c44a6e86111c2c2b3c34d0da2948a, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:31 [Parachain] 🏆 Imported #24 (0xa628…befb → 0x4ec3…948a)    
+2025-09-01 09:34:33 [Parachain] 💤 Idle (0 peers), best: #24 (0x4ec3…948a), finalized #24 (0x4ec3…948a), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:34 [Parachain] 🙌 Starting consensus session on top of parent 0x4ec3358fd90bb9984926ff2ccbc24658d04c44a6e86111c2c2b3c34d0da2948a (#24)    
+2025-09-01 09:34:34 [Parachain] 🎁 Prepared block for proposing at 25 (1 ms) hash: 0x9eb12739fec15db455565ab823e4fc6afd385cb376c87f421f1f0a544ee945ef; parent_hash: 0x4ec3…948a; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:34 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x9eb12739fec15db455565ab823e4fc6afd385cb376c87f421f1f0a544ee945ef, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:34 [Parachain] 🏆 Imported #25 (0x4ec3…948a → 0x9eb1…45ef)    
+2025-09-01 09:34:37 [Parachain] 🙌 Starting consensus session on top of parent 0x9eb12739fec15db455565ab823e4fc6afd385cb376c87f421f1f0a544ee945ef (#25)    
+2025-09-01 09:34:37 [Parachain] 🎁 Prepared block for proposing at 26 (1 ms) hash: 0x7805893b77e23124db38eb05692c23f9c1de29dffb283d9a7d0ee9f01f6cc831; parent_hash: 0x9eb1…45ef; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:37 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x7805893b77e23124db38eb05692c23f9c1de29dffb283d9a7d0ee9f01f6cc831, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:37 [Parachain] 🏆 Imported #26 (0x9eb1…45ef → 0x7805…c831)    
+2025-09-01 09:34:38 [Parachain] 💤 Idle (0 peers), best: #26 (0x7805…c831), finalized #26 (0x7805…c831), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:40 [Parachain] 🙌 Starting consensus session on top of parent 0x7805893b77e23124db38eb05692c23f9c1de29dffb283d9a7d0ee9f01f6cc831 (#26)    
+2025-09-01 09:34:40 [Parachain] 🎁 Prepared block for proposing at 27 (1 ms) hash: 0xa39bb5d457abb9f8acfa1342b59d3170a787e706da1d73c841c5d6ac403fd0d4; parent_hash: 0x7805…c831; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:40 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xa39bb5d457abb9f8acfa1342b59d3170a787e706da1d73c841c5d6ac403fd0d4, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:40 [Parachain] 🏆 Imported #27 (0x7805…c831 → 0xa39b…d0d4)    
+2025-09-01 09:34:43 [Parachain] 💤 Idle (0 peers), best: #27 (0xa39b…d0d4), finalized #27 (0xa39b…d0d4), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:43 [Parachain] 🙌 Starting consensus session on top of parent 0xa39bb5d457abb9f8acfa1342b59d3170a787e706da1d73c841c5d6ac403fd0d4 (#27)    
+2025-09-01 09:34:43 [Parachain] 🎁 Prepared block for proposing at 28 (1 ms) hash: 0x926d5656f0d1b7ff8ebccc9af5b3ec84b7c9d2795b4a9115bb96fc49d5a483d7; parent_hash: 0xa39b…d0d4; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:43 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x926d5656f0d1b7ff8ebccc9af5b3ec84b7c9d2795b4a9115bb96fc49d5a483d7, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:43 [Parachain] 🏆 Imported #28 (0xa39b…d0d4 → 0x926d…83d7)    
+2025-09-01 09:34:46 [Parachain] 🙌 Starting consensus session on top of parent 0x926d5656f0d1b7ff8ebccc9af5b3ec84b7c9d2795b4a9115bb96fc49d5a483d7 (#28)    
+2025-09-01 09:34:46 [Parachain] 🎁 Prepared block for proposing at 29 (1 ms) hash: 0xda348b8ce274bed8c5ea774c41e3d4249af7010f8919a87bb619c2e9a9ada8bb; parent_hash: 0x926d…83d7; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:46 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xda348b8ce274bed8c5ea774c41e3d4249af7010f8919a87bb619c2e9a9ada8bb, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:46 [Parachain] 🏆 Imported #29 (0x926d…83d7 → 0xda34…a8bb)    
+2025-09-01 09:34:48 [Parachain] 💤 Idle (0 peers), best: #29 (0xda34…a8bb), finalized #29 (0xda34…a8bb), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:49 [Parachain] 🙌 Starting consensus session on top of parent 0xda348b8ce274bed8c5ea774c41e3d4249af7010f8919a87bb619c2e9a9ada8bb (#29)    
+2025-09-01 09:34:49 [Parachain] 🎁 Prepared block for proposing at 30 (1 ms) hash: 0x507b3b1a61a4b2fc908aa2a81f117215cd4784cbb30c924d39f0d6ce72e00211; parent_hash: 0xda34…a8bb; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:49 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x507b3b1a61a4b2fc908aa2a81f117215cd4784cbb30c924d39f0d6ce72e00211, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:49 [Parachain] 🏆 Imported #30 (0xda34…a8bb → 0x507b…0211)    
+2025-09-01 09:34:52 [Parachain] 🙌 Starting consensus session on top of parent 0x507b3b1a61a4b2fc908aa2a81f117215cd4784cbb30c924d39f0d6ce72e00211 (#30)    
+2025-09-01 09:34:52 [Parachain] 🎁 Prepared block for proposing at 31 (1 ms) hash: 0x09ce7b5cc44eafefe5aad59039ce241d48ba365b4e1a9a40d1635fc582e1b5aa; parent_hash: 0x507b…0211; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:52 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x09ce7b5cc44eafefe5aad59039ce241d48ba365b4e1a9a40d1635fc582e1b5aa, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:52 [Parachain] 🏆 Imported #31 (0x507b…0211 → 0x09ce…b5aa)    
+2025-09-01 09:34:53 [Parachain] 💤 Idle (0 peers), best: #31 (0x09ce…b5aa), finalized #31 (0x09ce…b5aa), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:55 [Parachain] 🙌 Starting consensus session on top of parent 0x09ce7b5cc44eafefe5aad59039ce241d48ba365b4e1a9a40d1635fc582e1b5aa (#31)    
+2025-09-01 09:34:55 [Parachain] 🎁 Prepared block for proposing at 32 (1 ms) hash: 0x0da4e35b1e0b6344b7867bf8819e5960612a75731e52a3474559629c8fa2fe62; parent_hash: 0x09ce…b5aa; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:55 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x0da4e35b1e0b6344b7867bf8819e5960612a75731e52a3474559629c8fa2fe62, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:55 [Parachain] 🏆 Imported #32 (0x09ce…b5aa → 0x0da4…fe62)    
+2025-09-01 09:34:58 [Parachain] 💤 Idle (0 peers), best: #32 (0x0da4…fe62), finalized #32 (0x0da4…fe62), ⬇ 0 ⬆ 0    
+2025-09-01 09:34:58 [Parachain] 🙌 Starting consensus session on top of parent 0x0da4e35b1e0b6344b7867bf8819e5960612a75731e52a3474559629c8fa2fe62 (#32)    
+2025-09-01 09:34:58 [Parachain] 🎁 Prepared block for proposing at 33 (1 ms) hash: 0x4da232b30457aa7bf9ca081eb3174b2bd3bb58dc7b76d0492661e4d5b43d01db; parent_hash: 0x0da4…fe62; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:34:58 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x4da232b30457aa7bf9ca081eb3174b2bd3bb58dc7b76d0492661e4d5b43d01db, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:34:58 [Parachain] 🏆 Imported #33 (0x0da4…fe62 → 0x4da2…01db)    
+2025-09-01 09:35:01 [Parachain] 🙌 Starting consensus session on top of parent 0x4da232b30457aa7bf9ca081eb3174b2bd3bb58dc7b76d0492661e4d5b43d01db (#33)    
+2025-09-01 09:35:01 [Parachain] 🎁 Prepared block for proposing at 34 (2 ms) hash: 0x66965ec084c81a96be5f2597db4f16c12c0824f632dd0bc7344893951b837eb0; parent_hash: 0x4da2…01db; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:01 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x66965ec084c81a96be5f2597db4f16c12c0824f632dd0bc7344893951b837eb0, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:01 [Parachain] 🏆 Imported #34 (0x4da2…01db → 0x6696…7eb0)    
+2025-09-01 09:35:03 [Parachain] 💤 Idle (0 peers), best: #34 (0x6696…7eb0), finalized #34 (0x6696…7eb0), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:04 [Parachain] 🙌 Starting consensus session on top of parent 0x66965ec084c81a96be5f2597db4f16c12c0824f632dd0bc7344893951b837eb0 (#34)    
+2025-09-01 09:35:04 [Parachain] 🎁 Prepared block for proposing at 35 (1 ms) hash: 0x89ef9462aa1375261dda388606a9c8c1e194135330e09016cd4d99198b41b7b8; parent_hash: 0x6696…7eb0; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:04 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x89ef9462aa1375261dda388606a9c8c1e194135330e09016cd4d99198b41b7b8, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:04 [Parachain] 🏆 Imported #35 (0x6696…7eb0 → 0x89ef…b7b8)    
+2025-09-01 09:35:07 [Parachain] 🙌 Starting consensus session on top of parent 0x89ef9462aa1375261dda388606a9c8c1e194135330e09016cd4d99198b41b7b8 (#35)    
+2025-09-01 09:35:07 [Parachain] 🎁 Prepared block for proposing at 36 (1 ms) hash: 0x2cc32042d698e6b942c468259338a8f0979f5b22b9a6eb726bb1bca65f6196f2; parent_hash: 0x89ef…b7b8; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:07 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x2cc32042d698e6b942c468259338a8f0979f5b22b9a6eb726bb1bca65f6196f2, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:07 [Parachain] 🏆 Imported #36 (0x89ef…b7b8 → 0x2cc3…96f2)    
+2025-09-01 09:35:08 [Parachain] 💤 Idle (0 peers), best: #36 (0x2cc3…96f2), finalized #36 (0x2cc3…96f2), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:10 [Parachain] 🙌 Starting consensus session on top of parent 0x2cc32042d698e6b942c468259338a8f0979f5b22b9a6eb726bb1bca65f6196f2 (#36)    
+2025-09-01 09:35:10 [Parachain] 🎁 Prepared block for proposing at 37 (1 ms) hash: 0x4b939838e16547b6949169043b42d3892716a47dd9aac0f0d5882efba28d128b; parent_hash: 0x2cc3…96f2; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:10 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x4b939838e16547b6949169043b42d3892716a47dd9aac0f0d5882efba28d128b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:10 [Parachain] 🏆 Imported #37 (0x2cc3…96f2 → 0x4b93…128b)    
+2025-09-01 09:35:13 [Parachain] 💤 Idle (0 peers), best: #37 (0x4b93…128b), finalized #37 (0x4b93…128b), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:13 [Parachain] 🙌 Starting consensus session on top of parent 0x4b939838e16547b6949169043b42d3892716a47dd9aac0f0d5882efba28d128b (#37)    
+2025-09-01 09:35:13 [Parachain] 🎁 Prepared block for proposing at 38 (1 ms) hash: 0x9165ec943b2b313ecf81ac953da88d5e394b52a4ad9f16ca99652ec52f7af3ad; parent_hash: 0x4b93…128b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:13 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x9165ec943b2b313ecf81ac953da88d5e394b52a4ad9f16ca99652ec52f7af3ad, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:13 [Parachain] 🏆 Imported #38 (0x4b93…128b → 0x9165…f3ad)    
+2025-09-01 09:35:16 [Parachain] 🙌 Starting consensus session on top of parent 0x9165ec943b2b313ecf81ac953da88d5e394b52a4ad9f16ca99652ec52f7af3ad (#38)    
+2025-09-01 09:35:16 [Parachain] 🎁 Prepared block for proposing at 39 (1 ms) hash: 0xad3ad9c1d378d16d0f0d58d0b5baacca3bf503ff56a77360253b6bdd4a4d61e7; parent_hash: 0x9165…f3ad; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:16 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xad3ad9c1d378d16d0f0d58d0b5baacca3bf503ff56a77360253b6bdd4a4d61e7, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:16 [Parachain] 🏆 Imported #39 (0x9165…f3ad → 0xad3a…61e7)    
+2025-09-01 09:35:18 [Parachain] 💤 Idle (0 peers), best: #39 (0xad3a…61e7), finalized #39 (0xad3a…61e7), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:19 [Parachain] 🙌 Starting consensus session on top of parent 0xad3ad9c1d378d16d0f0d58d0b5baacca3bf503ff56a77360253b6bdd4a4d61e7 (#39)    
+2025-09-01 09:35:19 [Parachain] 🎁 Prepared block for proposing at 40 (2 ms) hash: 0xf337e10f7d53e95e9455386e4cc57a64a6ef2e8f1ee2ad106ffcbd81e37ebac0; parent_hash: 0xad3a…61e7; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:19 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xf337e10f7d53e95e9455386e4cc57a64a6ef2e8f1ee2ad106ffcbd81e37ebac0, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:19 [Parachain] 🏆 Imported #40 (0xad3a…61e7 → 0xf337…bac0)    
+2025-09-01 09:35:22 [Parachain] 🙌 Starting consensus session on top of parent 0xf337e10f7d53e95e9455386e4cc57a64a6ef2e8f1ee2ad106ffcbd81e37ebac0 (#40)    
+2025-09-01 09:35:22 [Parachain] 🎁 Prepared block for proposing at 41 (1 ms) hash: 0x293c68449d1ca86a5d14ab52363f87d801a7a9939432958550fb1643ce8ae63b; parent_hash: 0xf337…bac0; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:22 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x293c68449d1ca86a5d14ab52363f87d801a7a9939432958550fb1643ce8ae63b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:22 [Parachain] 🏆 Imported #41 (0xf337…bac0 → 0x293c…e63b)    
+2025-09-01 09:35:23 [Parachain] 💤 Idle (0 peers), best: #41 (0x293c…e63b), finalized #41 (0x293c…e63b), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:25 [Parachain] 🙌 Starting consensus session on top of parent 0x293c68449d1ca86a5d14ab52363f87d801a7a9939432958550fb1643ce8ae63b (#41)    
+2025-09-01 09:35:25 [Parachain] 🎁 Prepared block for proposing at 42 (1 ms) hash: 0x3b059275e72a112b33efcd7eecbf9b86d5469b5c5546d212897c5c4f61919340; parent_hash: 0x293c…e63b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:25 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x3b059275e72a112b33efcd7eecbf9b86d5469b5c5546d212897c5c4f61919340, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:25 [Parachain] 🏆 Imported #42 (0x293c…e63b → 0x3b05…9340)    
+2025-09-01 09:35:28 [Parachain] 💤 Idle (0 peers), best: #42 (0x3b05…9340), finalized #42 (0x3b05…9340), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:28 [Parachain] 🙌 Starting consensus session on top of parent 0x3b059275e72a112b33efcd7eecbf9b86d5469b5c5546d212897c5c4f61919340 (#42)    
+2025-09-01 09:35:28 [Parachain] 🎁 Prepared block for proposing at 43 (1 ms) hash: 0x6c77c1b9a83135265d228b446c9514b6876dabe8b9e7e593def5cad90ea29a13; parent_hash: 0x3b05…9340; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:28 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x6c77c1b9a83135265d228b446c9514b6876dabe8b9e7e593def5cad90ea29a13, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:28 [Parachain] 🏆 Imported #43 (0x3b05…9340 → 0x6c77…9a13)    
+2025-09-01 09:35:31 [Parachain] 🙌 Starting consensus session on top of parent 0x6c77c1b9a83135265d228b446c9514b6876dabe8b9e7e593def5cad90ea29a13 (#43)    
+2025-09-01 09:35:31 [Parachain] 🎁 Prepared block for proposing at 44 (1 ms) hash: 0xa563236017fe405416e67dc9a3a71f37530c932b87a3a7c54a10d3c00b406127; parent_hash: 0x6c77…9a13; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:31 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xa563236017fe405416e67dc9a3a71f37530c932b87a3a7c54a10d3c00b406127, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:31 [Parachain] 🏆 Imported #44 (0x6c77…9a13 → 0xa563…6127)    
+2025-09-01 09:35:33 [Parachain] 💤 Idle (0 peers), best: #44 (0xa563…6127), finalized #44 (0xa563…6127), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:34 [Parachain] 🙌 Starting consensus session on top of parent 0xa563236017fe405416e67dc9a3a71f37530c932b87a3a7c54a10d3c00b406127 (#44)    
+2025-09-01 09:35:34 [Parachain] 🎁 Prepared block for proposing at 45 (1 ms) hash: 0x2c07449357894415bb29e5db9f68bc133efed76fb1449a597485f70fad28a749; parent_hash: 0xa563…6127; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:34 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x2c07449357894415bb29e5db9f68bc133efed76fb1449a597485f70fad28a749, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:34 [Parachain] 🏆 Imported #45 (0xa563…6127 → 0x2c07…a749)    
+2025-09-01 09:35:37 [Parachain] 🙌 Starting consensus session on top of parent 0x2c07449357894415bb29e5db9f68bc133efed76fb1449a597485f70fad28a749 (#45)    
+2025-09-01 09:35:37 [Parachain] 🎁 Prepared block for proposing at 46 (1 ms) hash: 0xd3d9652644b9a387916dc7e790ed34b20a8c15e8d6e5cffc687dc0572f2cb9b5; parent_hash: 0x2c07…a749; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:37 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xd3d9652644b9a387916dc7e790ed34b20a8c15e8d6e5cffc687dc0572f2cb9b5, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:37 [Parachain] 🏆 Imported #46 (0x2c07…a749 → 0xd3d9…b9b5)    
+2025-09-01 09:35:38 [Parachain] 💤 Idle (0 peers), best: #46 (0xd3d9…b9b5), finalized #46 (0xd3d9…b9b5), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:40 [Parachain] 🙌 Starting consensus session on top of parent 0xd3d9652644b9a387916dc7e790ed34b20a8c15e8d6e5cffc687dc0572f2cb9b5 (#46)    
+2025-09-01 09:35:40 [Parachain] 🎁 Prepared block for proposing at 47 (1 ms) hash: 0xd7b06418d30b5cc10ec1deb737a822f20a4ad47102120c9068602462a6793271; parent_hash: 0xd3d9…b9b5; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:40 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xd7b06418d30b5cc10ec1deb737a822f20a4ad47102120c9068602462a6793271, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:40 [Parachain] 🏆 Imported #47 (0xd3d9…b9b5 → 0xd7b0…3271)    
+2025-09-01 09:35:43 [Parachain] 💤 Idle (0 peers), best: #47 (0xd7b0…3271), finalized #47 (0xd7b0…3271), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:43 [Parachain] 🙌 Starting consensus session on top of parent 0xd7b06418d30b5cc10ec1deb737a822f20a4ad47102120c9068602462a6793271 (#47)    
+2025-09-01 09:35:43 [Parachain] 🎁 Prepared block for proposing at 48 (1 ms) hash: 0x0dc798a76f472342fe4c49fb1a08104dad6fe2c13eb8f72023f29ec96e208ad1; parent_hash: 0xd7b0…3271; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:43 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x0dc798a76f472342fe4c49fb1a08104dad6fe2c13eb8f72023f29ec96e208ad1, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:43 [Parachain] 🏆 Imported #48 (0xd7b0…3271 → 0x0dc7…8ad1)    
+2025-09-01 09:35:46 [Parachain] 🙌 Starting consensus session on top of parent 0x0dc798a76f472342fe4c49fb1a08104dad6fe2c13eb8f72023f29ec96e208ad1 (#48)    
+2025-09-01 09:35:46 [Parachain] 🎁 Prepared block for proposing at 49 (1 ms) hash: 0x981ed6415591113f6f49903ca7d49b7be04b26c359d068c7f1ca9e28e8fc1d04; parent_hash: 0x0dc7…8ad1; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:46 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x981ed6415591113f6f49903ca7d49b7be04b26c359d068c7f1ca9e28e8fc1d04, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:46 [Parachain] 🏆 Imported #49 (0x0dc7…8ad1 → 0x981e…1d04)    
+2025-09-01 09:35:48 [Parachain] 💤 Idle (0 peers), best: #49 (0x981e…1d04), finalized #49 (0x981e…1d04), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:49 [Parachain] 🙌 Starting consensus session on top of parent 0x981ed6415591113f6f49903ca7d49b7be04b26c359d068c7f1ca9e28e8fc1d04 (#49)    
+2025-09-01 09:35:49 [Parachain] 🎁 Prepared block for proposing at 50 (2 ms) hash: 0xc2cc62a9e111c8cd28214544e0742d203b38101774c4e572d2c456420ff4b74f; parent_hash: 0x981e…1d04; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:49 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xc2cc62a9e111c8cd28214544e0742d203b38101774c4e572d2c456420ff4b74f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:49 [Parachain] 🏆 Imported #50 (0x981e…1d04 → 0xc2cc…b74f)    
+2025-09-01 09:35:52 [Parachain] 🙌 Starting consensus session on top of parent 0xc2cc62a9e111c8cd28214544e0742d203b38101774c4e572d2c456420ff4b74f (#50)    
+2025-09-01 09:35:52 [Parachain] 🎁 Prepared block for proposing at 51 (1 ms) hash: 0x2b7092793595805eea40766df0b370d412f45be66b39bd2c627a5b7168ca11a0; parent_hash: 0xc2cc…b74f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:52 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x2b7092793595805eea40766df0b370d412f45be66b39bd2c627a5b7168ca11a0, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:52 [Parachain] 🏆 Imported #51 (0xc2cc…b74f → 0x2b70…11a0)    
+2025-09-01 09:35:53 [Parachain] 💤 Idle (0 peers), best: #51 (0x2b70…11a0), finalized #51 (0x2b70…11a0), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:55 [Parachain] 🙌 Starting consensus session on top of parent 0x2b7092793595805eea40766df0b370d412f45be66b39bd2c627a5b7168ca11a0 (#51)    
+2025-09-01 09:35:55 [Parachain] 🎁 Prepared block for proposing at 52 (1 ms) hash: 0x63b8f46022f910fcb150bd83d0ec5ae0f4040a23976287175fe672b08bf20319; parent_hash: 0x2b70…11a0; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:55 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x63b8f46022f910fcb150bd83d0ec5ae0f4040a23976287175fe672b08bf20319, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:55 [Parachain] 🏆 Imported #52 (0x2b70…11a0 → 0x63b8…0319)    
+2025-09-01 09:35:58 [Parachain] 💤 Idle (0 peers), best: #52 (0x63b8…0319), finalized #52 (0x63b8…0319), ⬇ 0 ⬆ 0    
+2025-09-01 09:35:58 [Parachain] 🙌 Starting consensus session on top of parent 0x63b8f46022f910fcb150bd83d0ec5ae0f4040a23976287175fe672b08bf20319 (#52)    
+2025-09-01 09:35:58 [Parachain] 🎁 Prepared block for proposing at 53 (1 ms) hash: 0x6109569a67afc09fe0a83af91d1d6c4e53ac46b3d62988ebe247eb475ae62cd2; parent_hash: 0x63b8…0319; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:35:58 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x6109569a67afc09fe0a83af91d1d6c4e53ac46b3d62988ebe247eb475ae62cd2, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:35:58 [Parachain] 🏆 Imported #53 (0x63b8…0319 → 0x6109…2cd2)    
+2025-09-01 09:36:01 [Parachain] 🙌 Starting consensus session on top of parent 0x6109569a67afc09fe0a83af91d1d6c4e53ac46b3d62988ebe247eb475ae62cd2 (#53)    
+2025-09-01 09:36:01 [Parachain] 🎁 Prepared block for proposing at 54 (1 ms) hash: 0x1dc228523471f3552ed716116beb06162e96d2f09205d68b912ef60018f38ecf; parent_hash: 0x6109…2cd2; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:01 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x1dc228523471f3552ed716116beb06162e96d2f09205d68b912ef60018f38ecf, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:01 [Parachain] 🏆 Imported #54 (0x6109…2cd2 → 0x1dc2…8ecf)    
+2025-09-01 09:36:03 [Parachain] 💤 Idle (0 peers), best: #54 (0x1dc2…8ecf), finalized #54 (0x1dc2…8ecf), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:04 [Parachain] 🙌 Starting consensus session on top of parent 0x1dc228523471f3552ed716116beb06162e96d2f09205d68b912ef60018f38ecf (#54)    
+2025-09-01 09:36:04 [Parachain] 🎁 Prepared block for proposing at 55 (1 ms) hash: 0x1d1f02db5f7a5ad84fbea21e8515adec1267b2cdcbad4888c65d4bb7ffdd744f; parent_hash: 0x1dc2…8ecf; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:04 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x1d1f02db5f7a5ad84fbea21e8515adec1267b2cdcbad4888c65d4bb7ffdd744f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:04 [Parachain] 🏆 Imported #55 (0x1dc2…8ecf → 0x1d1f…744f)    
+2025-09-01 09:36:07 [Parachain] 🙌 Starting consensus session on top of parent 0x1d1f02db5f7a5ad84fbea21e8515adec1267b2cdcbad4888c65d4bb7ffdd744f (#55)    
+2025-09-01 09:36:07 [Parachain] 🎁 Prepared block for proposing at 56 (1 ms) hash: 0xf81480e26d8d1627cd18e4b0c6e181c7edc7930800a8e35db6fad61df14f76d7; parent_hash: 0x1d1f…744f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:07 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xf81480e26d8d1627cd18e4b0c6e181c7edc7930800a8e35db6fad61df14f76d7, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:07 [Parachain] 🏆 Imported #56 (0x1d1f…744f → 0xf814…76d7)    
+2025-09-01 09:36:08 [Parachain] 💤 Idle (0 peers), best: #56 (0xf814…76d7), finalized #56 (0xf814…76d7), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:10 [Parachain] 🙌 Starting consensus session on top of parent 0xf81480e26d8d1627cd18e4b0c6e181c7edc7930800a8e35db6fad61df14f76d7 (#56)    
+2025-09-01 09:36:10 [Parachain] 🎁 Prepared block for proposing at 57 (1 ms) hash: 0xb45475bb90c219c1c750a27a8dd6c215054d1683694d5dee625603e29802678d; parent_hash: 0xf814…76d7; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:10 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xb45475bb90c219c1c750a27a8dd6c215054d1683694d5dee625603e29802678d, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:10 [Parachain] 🏆 Imported #57 (0xf814…76d7 → 0xb454…678d)    
+2025-09-01 09:36:13 [Parachain] 💤 Idle (0 peers), best: #57 (0xb454…678d), finalized #57 (0xb454…678d), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:13 [Parachain] 🙌 Starting consensus session on top of parent 0xb45475bb90c219c1c750a27a8dd6c215054d1683694d5dee625603e29802678d (#57)    
+2025-09-01 09:36:13 [Parachain] 🎁 Prepared block for proposing at 58 (1 ms) hash: 0xfd9ce8a84dc5755acb4547af654f88c1a32286d8256123ee5e69e0bbb0ae82db; parent_hash: 0xb454…678d; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:13 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xfd9ce8a84dc5755acb4547af654f88c1a32286d8256123ee5e69e0bbb0ae82db, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:13 [Parachain] 🏆 Imported #58 (0xb454…678d → 0xfd9c…82db)    
+2025-09-01 09:36:16 [Parachain] 🙌 Starting consensus session on top of parent 0xfd9ce8a84dc5755acb4547af654f88c1a32286d8256123ee5e69e0bbb0ae82db (#58)    
+2025-09-01 09:36:16 [Parachain] 🎁 Prepared block for proposing at 59 (1 ms) hash: 0xcf6f5105ce02adadf2c19d323945182b59097e5d9a474c152639bf5770c43ae6; parent_hash: 0xfd9c…82db; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:16 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xcf6f5105ce02adadf2c19d323945182b59097e5d9a474c152639bf5770c43ae6, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:16 [Parachain] 🏆 Imported #59 (0xfd9c…82db → 0xcf6f…3ae6)    
+2025-09-01 09:36:18 [Parachain] 💤 Idle (0 peers), best: #59 (0xcf6f…3ae6), finalized #59 (0xcf6f…3ae6), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:19 [Parachain] 🙌 Starting consensus session on top of parent 0xcf6f5105ce02adadf2c19d323945182b59097e5d9a474c152639bf5770c43ae6 (#59)    
+2025-09-01 09:36:19 [Parachain] 🎁 Prepared block for proposing at 60 (1 ms) hash: 0x732958141c1669e4ab764ce6a40cbfedfb766a6630132ba68a4d6fb1f3b0a07f; parent_hash: 0xcf6f…3ae6; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:19 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x732958141c1669e4ab764ce6a40cbfedfb766a6630132ba68a4d6fb1f3b0a07f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:19 [Parachain] 🏆 Imported #60 (0xcf6f…3ae6 → 0x7329…a07f)    
+2025-09-01 09:36:22 [Parachain] 🙌 Starting consensus session on top of parent 0x732958141c1669e4ab764ce6a40cbfedfb766a6630132ba68a4d6fb1f3b0a07f (#60)    
+2025-09-01 09:36:22 [Parachain] 🎁 Prepared block for proposing at 61 (1 ms) hash: 0x032ee99e6a17e137c4cbe831b3fe3cc9d2c9387e06bd2b81f2a3a4c5417084cd; parent_hash: 0x7329…a07f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:22 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x032ee99e6a17e137c4cbe831b3fe3cc9d2c9387e06bd2b81f2a3a4c5417084cd, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:22 [Parachain] 🏆 Imported #61 (0x7329…a07f → 0x032e…84cd)    
+2025-09-01 09:36:23 [Parachain] 💤 Idle (0 peers), best: #61 (0x032e…84cd), finalized #61 (0x032e…84cd), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:25 [Parachain] 🙌 Starting consensus session on top of parent 0x032ee99e6a17e137c4cbe831b3fe3cc9d2c9387e06bd2b81f2a3a4c5417084cd (#61)    
+2025-09-01 09:36:25 [Parachain] 🎁 Prepared block for proposing at 62 (1 ms) hash: 0xc589df3f605069c9a92eada3ac833609a0bdb45a909f70f5a5c7790705fe4522; parent_hash: 0x032e…84cd; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:25 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xc589df3f605069c9a92eada3ac833609a0bdb45a909f70f5a5c7790705fe4522, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:25 [Parachain] 🏆 Imported #62 (0x032e…84cd → 0xc589…4522)    
+2025-09-01 09:36:28 [Parachain] 💤 Idle (0 peers), best: #62 (0xc589…4522), finalized #62 (0xc589…4522), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:28 [Parachain] 🙌 Starting consensus session on top of parent 0xc589df3f605069c9a92eada3ac833609a0bdb45a909f70f5a5c7790705fe4522 (#62)    
+2025-09-01 09:36:28 [Parachain] 🎁 Prepared block for proposing at 63 (2 ms) hash: 0xc5893aca3d641a41b296e43a92f6ac0d9ba6c7a737d97bd2f3b653df6ba65300; parent_hash: 0xc589…4522; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:28 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xc5893aca3d641a41b296e43a92f6ac0d9ba6c7a737d97bd2f3b653df6ba65300, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:28 [Parachain] 🏆 Imported #63 (0xc589…4522 → 0xc589…5300)    
+2025-09-01 09:36:31 [Parachain] 🙌 Starting consensus session on top of parent 0xc5893aca3d641a41b296e43a92f6ac0d9ba6c7a737d97bd2f3b653df6ba65300 (#63)    
+2025-09-01 09:36:31 [Parachain] 🎁 Prepared block for proposing at 64 (1 ms) hash: 0xacadbda439cb68e56a60dab8d157894030d580a1456dd612f7c502866d84bc95; parent_hash: 0xc589…5300; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:31 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xacadbda439cb68e56a60dab8d157894030d580a1456dd612f7c502866d84bc95, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:31 [Parachain] 🏆 Imported #64 (0xc589…5300 → 0xacad…bc95)    
+2025-09-01 09:36:33 [Parachain] 💤 Idle (0 peers), best: #64 (0xacad…bc95), finalized #64 (0xacad…bc95), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:34 [Parachain] 🙌 Starting consensus session on top of parent 0xacadbda439cb68e56a60dab8d157894030d580a1456dd612f7c502866d84bc95 (#64)    
+2025-09-01 09:36:34 [Parachain] 🎁 Prepared block for proposing at 65 (1 ms) hash: 0x1fa6e84ad91db09286c228b56573ecc49f06db239fcd48b11506a37b92c02df0; parent_hash: 0xacad…bc95; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:34 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x1fa6e84ad91db09286c228b56573ecc49f06db239fcd48b11506a37b92c02df0, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:34 [Parachain] 🏆 Imported #65 (0xacad…bc95 → 0x1fa6…2df0)    
+2025-09-01 09:36:37 [Parachain] 🙌 Starting consensus session on top of parent 0x1fa6e84ad91db09286c228b56573ecc49f06db239fcd48b11506a37b92c02df0 (#65)    
+2025-09-01 09:36:37 [Parachain] 🎁 Prepared block for proposing at 66 (1 ms) hash: 0x785615ac3cb7583ecdbeed3fab63aa1a2c69598b4702f15a54e05170757b4fc6; parent_hash: 0x1fa6…2df0; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:37 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x785615ac3cb7583ecdbeed3fab63aa1a2c69598b4702f15a54e05170757b4fc6, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:37 [Parachain] 🏆 Imported #66 (0x1fa6…2df0 → 0x7856…4fc6)    
+2025-09-01 09:36:38 [Parachain] 💤 Idle (0 peers), best: #66 (0x7856…4fc6), finalized #66 (0x7856…4fc6), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:40 [Parachain] 🙌 Starting consensus session on top of parent 0x785615ac3cb7583ecdbeed3fab63aa1a2c69598b4702f15a54e05170757b4fc6 (#66)    
+2025-09-01 09:36:40 [Parachain] 🎁 Prepared block for proposing at 67 (1 ms) hash: 0x00d75c238a2cbcd45f344b5bd6ba3e4c39c1981dd2f454d42e0d464b449b2512; parent_hash: 0x7856…4fc6; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:40 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x00d75c238a2cbcd45f344b5bd6ba3e4c39c1981dd2f454d42e0d464b449b2512, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:40 [Parachain] 🏆 Imported #67 (0x7856…4fc6 → 0x00d7…2512)    
+2025-09-01 09:36:43 [Parachain] 💤 Idle (0 peers), best: #67 (0x00d7…2512), finalized #67 (0x00d7…2512), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:43 [Parachain] 🙌 Starting consensus session on top of parent 0x00d75c238a2cbcd45f344b5bd6ba3e4c39c1981dd2f454d42e0d464b449b2512 (#67)    
+2025-09-01 09:36:43 [Parachain] 🎁 Prepared block for proposing at 68 (2 ms) hash: 0x673d1f1d6a1546369691ae83e76a906de949a6f0a4ed37343c06da11f391b957; parent_hash: 0x00d7…2512; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:43 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x673d1f1d6a1546369691ae83e76a906de949a6f0a4ed37343c06da11f391b957, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:43 [Parachain] 🏆 Imported #68 (0x00d7…2512 → 0x673d…b957)    
+2025-09-01 09:36:46 [Parachain] 🙌 Starting consensus session on top of parent 0x673d1f1d6a1546369691ae83e76a906de949a6f0a4ed37343c06da11f391b957 (#68)    
+2025-09-01 09:36:46 [Parachain] 🎁 Prepared block for proposing at 69 (2 ms) hash: 0x792b277577d6a044e0048308e84ce046588eaa932e7efbe3dad37394b1864438; parent_hash: 0x673d…b957; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:46 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x792b277577d6a044e0048308e84ce046588eaa932e7efbe3dad37394b1864438, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:46 [Parachain] 🏆 Imported #69 (0x673d…b957 → 0x792b…4438)    
+2025-09-01 09:36:48 [Parachain] 💤 Idle (0 peers), best: #69 (0x792b…4438), finalized #69 (0x792b…4438), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:49 [Parachain] 🙌 Starting consensus session on top of parent 0x792b277577d6a044e0048308e84ce046588eaa932e7efbe3dad37394b1864438 (#69)    
+2025-09-01 09:36:49 [Parachain] 🎁 Prepared block for proposing at 70 (2 ms) hash: 0x8e1c376980db6a967fee7fa9edf32be9dc520975f0048d0c5ef50afd425d58ce; parent_hash: 0x792b…4438; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:49 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x8e1c376980db6a967fee7fa9edf32be9dc520975f0048d0c5ef50afd425d58ce, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:49 [Parachain] 🏆 Imported #70 (0x792b…4438 → 0x8e1c…58ce)    
+2025-09-01 09:36:52 [Parachain] 🙌 Starting consensus session on top of parent 0x8e1c376980db6a967fee7fa9edf32be9dc520975f0048d0c5ef50afd425d58ce (#70)    
+2025-09-01 09:36:52 [Parachain] 🎁 Prepared block for proposing at 71 (1 ms) hash: 0x79cc7d3e9143c521a5d62599a4cb2dcecb665e53e81dae01898401122c8dc391; parent_hash: 0x8e1c…58ce; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:52 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x79cc7d3e9143c521a5d62599a4cb2dcecb665e53e81dae01898401122c8dc391, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:52 [Parachain] 🏆 Imported #71 (0x8e1c…58ce → 0x79cc…c391)    
+2025-09-01 09:36:53 [Parachain] 💤 Idle (0 peers), best: #71 (0x79cc…c391), finalized #71 (0x79cc…c391), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:55 [Parachain] 🙌 Starting consensus session on top of parent 0x79cc7d3e9143c521a5d62599a4cb2dcecb665e53e81dae01898401122c8dc391 (#71)    
+2025-09-01 09:36:55 [Parachain] 🎁 Prepared block for proposing at 72 (1 ms) hash: 0x4aaddf83a49d72f9b0dfe031327a532a1df3725c9480d6bb07269301b681fb09; parent_hash: 0x79cc…c391; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:55 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x4aaddf83a49d72f9b0dfe031327a532a1df3725c9480d6bb07269301b681fb09, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:55 [Parachain] 🏆 Imported #72 (0x79cc…c391 → 0x4aad…fb09)    
+2025-09-01 09:36:58 [Parachain] 💤 Idle (0 peers), best: #72 (0x4aad…fb09), finalized #72 (0x4aad…fb09), ⬇ 0 ⬆ 0    
+2025-09-01 09:36:58 [Parachain] 🙌 Starting consensus session on top of parent 0x4aaddf83a49d72f9b0dfe031327a532a1df3725c9480d6bb07269301b681fb09 (#72)    
+2025-09-01 09:36:58 [Parachain] 🎁 Prepared block for proposing at 73 (2 ms) hash: 0x9f74787610fd1b9449c998faa2b0e3c0660626f45b11b046b522aac9e785e35e; parent_hash: 0x4aad…fb09; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:36:58 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x9f74787610fd1b9449c998faa2b0e3c0660626f45b11b046b522aac9e785e35e, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:36:58 [Parachain] 🏆 Imported #73 (0x4aad…fb09 → 0x9f74…e35e)    
+2025-09-01 09:37:01 [Parachain] 🙌 Starting consensus session on top of parent 0x9f74787610fd1b9449c998faa2b0e3c0660626f45b11b046b522aac9e785e35e (#73)    
+2025-09-01 09:37:01 [Parachain] 🎁 Prepared block for proposing at 74 (1 ms) hash: 0xdb8d880e787f41f50fd4e85510c4075536f1c71422555dd9a90075ac497d1f95; parent_hash: 0x9f74…e35e; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:01 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xdb8d880e787f41f50fd4e85510c4075536f1c71422555dd9a90075ac497d1f95, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:01 [Parachain] 🏆 Imported #74 (0x9f74…e35e → 0xdb8d…1f95)    
+2025-09-01 09:37:03 [Parachain] 💤 Idle (0 peers), best: #74 (0xdb8d…1f95), finalized #74 (0xdb8d…1f95), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:04 [Parachain] 🙌 Starting consensus session on top of parent 0xdb8d880e787f41f50fd4e85510c4075536f1c71422555dd9a90075ac497d1f95 (#74)    
+2025-09-01 09:37:04 [Parachain] 🎁 Prepared block for proposing at 75 (2 ms) hash: 0x96883c0c69a2b96aaea9757ca90d743e633dede2fcbf5b37b45934af3ba773a2; parent_hash: 0xdb8d…1f95; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:04 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x96883c0c69a2b96aaea9757ca90d743e633dede2fcbf5b37b45934af3ba773a2, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:04 [Parachain] 🏆 Imported #75 (0xdb8d…1f95 → 0x9688…73a2)    
+2025-09-01 09:37:07 [Parachain] 🙌 Starting consensus session on top of parent 0x96883c0c69a2b96aaea9757ca90d743e633dede2fcbf5b37b45934af3ba773a2 (#75)    
+2025-09-01 09:37:07 [Parachain] 🎁 Prepared block for proposing at 76 (1 ms) hash: 0x2226492a4c994a677a4cb15a83cc86a0d800fe997b29cdc63ee5e84c1e7c7022; parent_hash: 0x9688…73a2; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:07 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x2226492a4c994a677a4cb15a83cc86a0d800fe997b29cdc63ee5e84c1e7c7022, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:07 [Parachain] 🏆 Imported #76 (0x9688…73a2 → 0x2226…7022)    
+2025-09-01 09:37:08 [Parachain] 💤 Idle (0 peers), best: #76 (0x2226…7022), finalized #76 (0x2226…7022), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:10 [Parachain] 🙌 Starting consensus session on top of parent 0x2226492a4c994a677a4cb15a83cc86a0d800fe997b29cdc63ee5e84c1e7c7022 (#76)    
+2025-09-01 09:37:10 [Parachain] 🎁 Prepared block for proposing at 77 (1 ms) hash: 0xced5c3ac2c911840216f7a505ae48c74d21f35306825bb26a5492cd1b07f1d20; parent_hash: 0x2226…7022; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:10 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xced5c3ac2c911840216f7a505ae48c74d21f35306825bb26a5492cd1b07f1d20, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:10 [Parachain] 🏆 Imported #77 (0x2226…7022 → 0xced5…1d20)    
+2025-09-01 09:37:13 [Parachain] 💤 Idle (0 peers), best: #77 (0xced5…1d20), finalized #77 (0xced5…1d20), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:13 [Parachain] 🙌 Starting consensus session on top of parent 0xced5c3ac2c911840216f7a505ae48c74d21f35306825bb26a5492cd1b07f1d20 (#77)    
+2025-09-01 09:37:13 [Parachain] 🎁 Prepared block for proposing at 78 (1 ms) hash: 0x3b672683eab8371d5b6823d9d0c0161cc17722284ca4d3bd68f2e420e2f0160a; parent_hash: 0xced5…1d20; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:13 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x3b672683eab8371d5b6823d9d0c0161cc17722284ca4d3bd68f2e420e2f0160a, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:13 [Parachain] 🏆 Imported #78 (0xced5…1d20 → 0x3b67…160a)    
+2025-09-01 09:37:16 [Parachain] 🙌 Starting consensus session on top of parent 0x3b672683eab8371d5b6823d9d0c0161cc17722284ca4d3bd68f2e420e2f0160a (#78)    
+2025-09-01 09:37:16 [Parachain] 🎁 Prepared block for proposing at 79 (1 ms) hash: 0x56cac93dec4e36ff70d92b00b0b6fd60c7a7ab03726444bb427bacc82e52a636; parent_hash: 0x3b67…160a; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:16 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x56cac93dec4e36ff70d92b00b0b6fd60c7a7ab03726444bb427bacc82e52a636, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:16 [Parachain] 🏆 Imported #79 (0x3b67…160a → 0x56ca…a636)    
+2025-09-01 09:37:18 [Parachain] 💤 Idle (0 peers), best: #79 (0x56ca…a636), finalized #79 (0x56ca…a636), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:19 [Parachain] 🙌 Starting consensus session on top of parent 0x56cac93dec4e36ff70d92b00b0b6fd60c7a7ab03726444bb427bacc82e52a636 (#79)    
+2025-09-01 09:37:19 [Parachain] 🎁 Prepared block for proposing at 80 (1 ms) hash: 0x67205c5f24364fbf28fbbecdaf4cef21def4fc91840d06c591ccc56660f9c591; parent_hash: 0x56ca…a636; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:19 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x67205c5f24364fbf28fbbecdaf4cef21def4fc91840d06c591ccc56660f9c591, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:19 [Parachain] 🏆 Imported #80 (0x56ca…a636 → 0x6720…c591)    
+2025-09-01 09:37:22 [Parachain] 🙌 Starting consensus session on top of parent 0x67205c5f24364fbf28fbbecdaf4cef21def4fc91840d06c591ccc56660f9c591 (#80)    
+2025-09-01 09:37:22 [Parachain] 🎁 Prepared block for proposing at 81 (1 ms) hash: 0x03000abf1eb3b88958214a897231f90c0317fdea99c9fa420b1fffb468aa2365; parent_hash: 0x6720…c591; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:22 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x03000abf1eb3b88958214a897231f90c0317fdea99c9fa420b1fffb468aa2365, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:22 [Parachain] 🏆 Imported #81 (0x6720…c591 → 0x0300…2365)    
+2025-09-01 09:37:23 [Parachain] 💤 Idle (0 peers), best: #81 (0x0300…2365), finalized #81 (0x0300…2365), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:25 [Parachain] 🙌 Starting consensus session on top of parent 0x03000abf1eb3b88958214a897231f90c0317fdea99c9fa420b1fffb468aa2365 (#81)    
+2025-09-01 09:37:25 [Parachain] 🎁 Prepared block for proposing at 82 (1 ms) hash: 0x2046c4610e262a2f7dde48b2f82164bf0b18af7271ead0f165d4059265097784; parent_hash: 0x0300…2365; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:25 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x2046c4610e262a2f7dde48b2f82164bf0b18af7271ead0f165d4059265097784, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:25 [Parachain] 🏆 Imported #82 (0x0300…2365 → 0x2046…7784)    
+2025-09-01 09:37:28 [Parachain] 💤 Idle (0 peers), best: #82 (0x2046…7784), finalized #82 (0x2046…7784), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:28 [Parachain] 🙌 Starting consensus session on top of parent 0x2046c4610e262a2f7dde48b2f82164bf0b18af7271ead0f165d4059265097784 (#82)    
+2025-09-01 09:37:28 [Parachain] 🎁 Prepared block for proposing at 83 (1 ms) hash: 0xeafca47266bbc26513b1ba650e342f6cd66bad45d3a0fadab74b043eb011ef13; parent_hash: 0x2046…7784; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:28 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xeafca47266bbc26513b1ba650e342f6cd66bad45d3a0fadab74b043eb011ef13, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:28 [Parachain] 🏆 Imported #83 (0x2046…7784 → 0xeafc…ef13)    
+2025-09-01 09:37:31 [Parachain] 🙌 Starting consensus session on top of parent 0xeafca47266bbc26513b1ba650e342f6cd66bad45d3a0fadab74b043eb011ef13 (#83)    
+2025-09-01 09:37:31 [Parachain] 🎁 Prepared block for proposing at 84 (2 ms) hash: 0xba018f4a657f135c7e1c30113497b6911559ec58e5dfbe7e75856f880aa8ba69; parent_hash: 0xeafc…ef13; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:31 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xba018f4a657f135c7e1c30113497b6911559ec58e5dfbe7e75856f880aa8ba69, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:31 [Parachain] 🏆 Imported #84 (0xeafc…ef13 → 0xba01…ba69)    
+2025-09-01 09:37:33 [Parachain] 💤 Idle (0 peers), best: #84 (0xba01…ba69), finalized #84 (0xba01…ba69), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:34 [Parachain] 🙌 Starting consensus session on top of parent 0xba018f4a657f135c7e1c30113497b6911559ec58e5dfbe7e75856f880aa8ba69 (#84)    
+2025-09-01 09:37:34 [Parachain] 🎁 Prepared block for proposing at 85 (1 ms) hash: 0x566a10760c25ae81190ead255eddae68180e1b20a31b31d8fbce88b3fd166c4e; parent_hash: 0xba01…ba69; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:34 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x566a10760c25ae81190ead255eddae68180e1b20a31b31d8fbce88b3fd166c4e, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:34 [Parachain] 🏆 Imported #85 (0xba01…ba69 → 0x566a…6c4e)    
+2025-09-01 09:37:37 [Parachain] 🙌 Starting consensus session on top of parent 0x566a10760c25ae81190ead255eddae68180e1b20a31b31d8fbce88b3fd166c4e (#85)    
+2025-09-01 09:37:37 [Parachain] 🎁 Prepared block for proposing at 86 (2 ms) hash: 0x85ab66839020be8ebf1b2d2aa5cc0529369002721539ac75467888e6ad72db95; parent_hash: 0x566a…6c4e; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:37 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x85ab66839020be8ebf1b2d2aa5cc0529369002721539ac75467888e6ad72db95, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:37 [Parachain] 🏆 Imported #86 (0x566a…6c4e → 0x85ab…db95)    
+2025-09-01 09:37:38 [Parachain] 💤 Idle (0 peers), best: #86 (0x85ab…db95), finalized #86 (0x85ab…db95), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:40 [Parachain] 🙌 Starting consensus session on top of parent 0x85ab66839020be8ebf1b2d2aa5cc0529369002721539ac75467888e6ad72db95 (#86)    
+2025-09-01 09:37:40 [Parachain] 🎁 Prepared block for proposing at 87 (1 ms) hash: 0x6dd60c5d54db705731a169c990a6a3181f7c2e1d85a46076eac71fbd349235ec; parent_hash: 0x85ab…db95; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:40 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x6dd60c5d54db705731a169c990a6a3181f7c2e1d85a46076eac71fbd349235ec, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:40 [Parachain] 🏆 Imported #87 (0x85ab…db95 → 0x6dd6…35ec)    
+2025-09-01 09:37:43 [Parachain] 💤 Idle (0 peers), best: #87 (0x6dd6…35ec), finalized #87 (0x6dd6…35ec), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:43 [Parachain] 🙌 Starting consensus session on top of parent 0x6dd60c5d54db705731a169c990a6a3181f7c2e1d85a46076eac71fbd349235ec (#87)    
+2025-09-01 09:37:43 [Parachain] 🎁 Prepared block for proposing at 88 (1 ms) hash: 0x8474935696f549c5b1e73c94cc9e982f39c63d20d3f6e03e4ccd228bc5fb10d5; parent_hash: 0x6dd6…35ec; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:43 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x8474935696f549c5b1e73c94cc9e982f39c63d20d3f6e03e4ccd228bc5fb10d5, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:43 [Parachain] 🏆 Imported #88 (0x6dd6…35ec → 0x8474…10d5)    
+2025-09-01 09:37:46 [Parachain] 🙌 Starting consensus session on top of parent 0x8474935696f549c5b1e73c94cc9e982f39c63d20d3f6e03e4ccd228bc5fb10d5 (#88)    
+2025-09-01 09:37:46 [Parachain] 🎁 Prepared block for proposing at 89 (1 ms) hash: 0x185a121038bef4ba1e22ecdcf8997814e68b422c01800e963122887f9094e98a; parent_hash: 0x8474…10d5; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:46 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x185a121038bef4ba1e22ecdcf8997814e68b422c01800e963122887f9094e98a, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:46 [Parachain] 🏆 Imported #89 (0x8474…10d5 → 0x185a…e98a)    
+2025-09-01 09:37:48 [Parachain] 💤 Idle (0 peers), best: #89 (0x185a…e98a), finalized #89 (0x185a…e98a), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:49 [Parachain] 🙌 Starting consensus session on top of parent 0x185a121038bef4ba1e22ecdcf8997814e68b422c01800e963122887f9094e98a (#89)    
+2025-09-01 09:37:49 [Parachain] 🎁 Prepared block for proposing at 90 (1 ms) hash: 0xc1d4365ed890fc8557b12d19adeaf025fd42440ac173645e5dd33d745a78d48b; parent_hash: 0x185a…e98a; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:49 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xc1d4365ed890fc8557b12d19adeaf025fd42440ac173645e5dd33d745a78d48b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:49 [Parachain] 🏆 Imported #90 (0x185a…e98a → 0xc1d4…d48b)    
+2025-09-01 09:37:52 [Parachain] 🙌 Starting consensus session on top of parent 0xc1d4365ed890fc8557b12d19adeaf025fd42440ac173645e5dd33d745a78d48b (#90)    
+2025-09-01 09:37:52 [Parachain] 🎁 Prepared block for proposing at 91 (1 ms) hash: 0xad4a6d7647a676fadd84b00041a9b2d06833c34bc39f507fde754dd5aab823d5; parent_hash: 0xc1d4…d48b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:52 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xad4a6d7647a676fadd84b00041a9b2d06833c34bc39f507fde754dd5aab823d5, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:52 [Parachain] 🏆 Imported #91 (0xc1d4…d48b → 0xad4a…23d5)    
+2025-09-01 09:37:53 [Parachain] 💤 Idle (0 peers), best: #91 (0xad4a…23d5), finalized #91 (0xad4a…23d5), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:55 [Parachain] 🙌 Starting consensus session on top of parent 0xad4a6d7647a676fadd84b00041a9b2d06833c34bc39f507fde754dd5aab823d5 (#91)    
+2025-09-01 09:37:55 [Parachain] 🎁 Prepared block for proposing at 92 (1 ms) hash: 0x91612e788da801ba5afad61245c194e46cd24045273e6ea9fc66fb4bbb35f41b; parent_hash: 0xad4a…23d5; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:55 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x91612e788da801ba5afad61245c194e46cd24045273e6ea9fc66fb4bbb35f41b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:55 [Parachain] 🏆 Imported #92 (0xad4a…23d5 → 0x9161…f41b)    
+2025-09-01 09:37:58 [Parachain] 💤 Idle (0 peers), best: #92 (0x9161…f41b), finalized #92 (0x9161…f41b), ⬇ 0 ⬆ 0    
+2025-09-01 09:37:58 [Parachain] 🙌 Starting consensus session on top of parent 0x91612e788da801ba5afad61245c194e46cd24045273e6ea9fc66fb4bbb35f41b (#92)    
+2025-09-01 09:37:58 [Parachain] 🎁 Prepared block for proposing at 93 (1 ms) hash: 0x99481ac7c2e56976e89dbcdf0bcdb9064e47da04eb8733ad1270fae48a05ac94; parent_hash: 0x9161…f41b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:37:58 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x99481ac7c2e56976e89dbcdf0bcdb9064e47da04eb8733ad1270fae48a05ac94, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:37:58 [Parachain] 🏆 Imported #93 (0x9161…f41b → 0x9948…ac94)    
+2025-09-01 09:38:01 [Parachain] 🙌 Starting consensus session on top of parent 0x99481ac7c2e56976e89dbcdf0bcdb9064e47da04eb8733ad1270fae48a05ac94 (#93)    
+2025-09-01 09:38:01 [Parachain] 🎁 Prepared block for proposing at 94 (2 ms) hash: 0xbd763557a47e8f5e4e7d6b3e4875efe2e73f24117476049dcb3387b6d5ed92da; parent_hash: 0x9948…ac94; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:01 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xbd763557a47e8f5e4e7d6b3e4875efe2e73f24117476049dcb3387b6d5ed92da, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:01 [Parachain] 🏆 Imported #94 (0x9948…ac94 → 0xbd76…92da)    
+2025-09-01 09:38:03 [Parachain] 💤 Idle (0 peers), best: #94 (0xbd76…92da), finalized #94 (0xbd76…92da), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:04 [Parachain] 🙌 Starting consensus session on top of parent 0xbd763557a47e8f5e4e7d6b3e4875efe2e73f24117476049dcb3387b6d5ed92da (#94)    
+2025-09-01 09:38:04 [Parachain] 🎁 Prepared block for proposing at 95 (1 ms) hash: 0x9876052936b9fa7019a93a32a1e943c5f09472025ee88b2282d92894a523e657; parent_hash: 0xbd76…92da; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:04 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x9876052936b9fa7019a93a32a1e943c5f09472025ee88b2282d92894a523e657, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:04 [Parachain] 🏆 Imported #95 (0xbd76…92da → 0x9876…e657)    
+2025-09-01 09:38:07 [Parachain] 🙌 Starting consensus session on top of parent 0x9876052936b9fa7019a93a32a1e943c5f09472025ee88b2282d92894a523e657 (#95)    
+2025-09-01 09:38:07 [Parachain] 🎁 Prepared block for proposing at 96 (1 ms) hash: 0x987191fa2f74a5e418f8acaf8267600b340bb93adad18a240419c129bd5d4814; parent_hash: 0x9876…e657; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:07 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x987191fa2f74a5e418f8acaf8267600b340bb93adad18a240419c129bd5d4814, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:07 [Parachain] 🏆 Imported #96 (0x9876…e657 → 0x9871…4814)    
+2025-09-01 09:38:08 [Parachain] 💤 Idle (0 peers), best: #96 (0x9871…4814), finalized #96 (0x9871…4814), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:10 [Parachain] 🙌 Starting consensus session on top of parent 0x987191fa2f74a5e418f8acaf8267600b340bb93adad18a240419c129bd5d4814 (#96)    
+2025-09-01 09:38:10 [Parachain] 🎁 Prepared block for proposing at 97 (1 ms) hash: 0x034e14772b509c0995f5c2ad22822471e16962351516b78fccc9b9cfed61ee4a; parent_hash: 0x9871…4814; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:10 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x034e14772b509c0995f5c2ad22822471e16962351516b78fccc9b9cfed61ee4a, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:10 [Parachain] 🏆 Imported #97 (0x9871…4814 → 0x034e…ee4a)    
+2025-09-01 09:38:13 [Parachain] 💤 Idle (0 peers), best: #97 (0x034e…ee4a), finalized #97 (0x034e…ee4a), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:13 [Parachain] 🙌 Starting consensus session on top of parent 0x034e14772b509c0995f5c2ad22822471e16962351516b78fccc9b9cfed61ee4a (#97)    
+2025-09-01 09:38:13 [Parachain] 🎁 Prepared block for proposing at 98 (1 ms) hash: 0xe504565407985ab318b1c0f490dc5c2322a1d8e1ed5d26e01dcc9de772bf81f2; parent_hash: 0x034e…ee4a; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:13 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xe504565407985ab318b1c0f490dc5c2322a1d8e1ed5d26e01dcc9de772bf81f2, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:13 [Parachain] 🏆 Imported #98 (0x034e…ee4a → 0xe504…81f2)    
+2025-09-01 09:38:16 [Parachain] 🙌 Starting consensus session on top of parent 0xe504565407985ab318b1c0f490dc5c2322a1d8e1ed5d26e01dcc9de772bf81f2 (#98)    
+2025-09-01 09:38:16 [Parachain] 🎁 Prepared block for proposing at 99 (2 ms) hash: 0x50fca856be8cccb4c6f4b65db5d43b6006444a5c31b7032102e2fa7656bd59e2; parent_hash: 0xe504…81f2; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:16 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x50fca856be8cccb4c6f4b65db5d43b6006444a5c31b7032102e2fa7656bd59e2, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:16 [Parachain] 🏆 Imported #99 (0xe504…81f2 → 0x50fc…59e2)    
+2025-09-01 09:38:18 [Parachain] 💤 Idle (0 peers), best: #99 (0x50fc…59e2), finalized #99 (0x50fc…59e2), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:19 [Parachain] 🙌 Starting consensus session on top of parent 0x50fca856be8cccb4c6f4b65db5d43b6006444a5c31b7032102e2fa7656bd59e2 (#99)    
+2025-09-01 09:38:19 [Parachain] 🎁 Prepared block for proposing at 100 (1 ms) hash: 0x3eace2cd7e5e3d4db0ef44520b16eb7b54e5c1f87bad4426093ce878a34f275f; parent_hash: 0x50fc…59e2; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:19 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x3eace2cd7e5e3d4db0ef44520b16eb7b54e5c1f87bad4426093ce878a34f275f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:19 [Parachain] 🏆 Imported #100 (0x50fc…59e2 → 0x3eac…275f)    
+2025-09-01 09:38:22 [Parachain] 🙌 Starting consensus session on top of parent 0x3eace2cd7e5e3d4db0ef44520b16eb7b54e5c1f87bad4426093ce878a34f275f (#100)    
+2025-09-01 09:38:22 [Parachain] 🎁 Prepared block for proposing at 101 (1 ms) hash: 0x4205fdec83d6491d54aa4189bd82f5947e90f4c5bb6e24f399c889d37e50812a; parent_hash: 0x3eac…275f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:22 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x4205fdec83d6491d54aa4189bd82f5947e90f4c5bb6e24f399c889d37e50812a, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:22 [Parachain] 🏆 Imported #101 (0x3eac…275f → 0x4205…812a)    
+2025-09-01 09:38:23 [Parachain] 💤 Idle (0 peers), best: #101 (0x4205…812a), finalized #101 (0x4205…812a), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:25 [Parachain] 🙌 Starting consensus session on top of parent 0x4205fdec83d6491d54aa4189bd82f5947e90f4c5bb6e24f399c889d37e50812a (#101)    
+2025-09-01 09:38:25 [Parachain] 🎁 Prepared block for proposing at 102 (1 ms) hash: 0xfc0109bcc74e64b40e60c6d5d253f5c10b5e36b3141682fbcfcf92333705a2c7; parent_hash: 0x4205…812a; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:25 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xfc0109bcc74e64b40e60c6d5d253f5c10b5e36b3141682fbcfcf92333705a2c7, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:25 [Parachain] 🏆 Imported #102 (0x4205…812a → 0xfc01…a2c7)    
+2025-09-01 09:38:28 [Parachain] 💤 Idle (0 peers), best: #102 (0xfc01…a2c7), finalized #102 (0xfc01…a2c7), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:28 [Parachain] 🙌 Starting consensus session on top of parent 0xfc0109bcc74e64b40e60c6d5d253f5c10b5e36b3141682fbcfcf92333705a2c7 (#102)    
+2025-09-01 09:38:28 [Parachain] 🎁 Prepared block for proposing at 103 (2 ms) hash: 0x239c487252400189727188d9b6712d843cf1957e13614629b8e9cdc3c9c8a936; parent_hash: 0xfc01…a2c7; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:28 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x239c487252400189727188d9b6712d843cf1957e13614629b8e9cdc3c9c8a936, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:28 [Parachain] 🏆 Imported #103 (0xfc01…a2c7 → 0x239c…a936)    
+2025-09-01 09:38:31 [Parachain] 🙌 Starting consensus session on top of parent 0x239c487252400189727188d9b6712d843cf1957e13614629b8e9cdc3c9c8a936 (#103)    
+2025-09-01 09:38:31 [Parachain] 🎁 Prepared block for proposing at 104 (1 ms) hash: 0x5da9b15daa6fc36bf16886b2e79cb1627388fe1efb87c68915143532ac9a8357; parent_hash: 0x239c…a936; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:31 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x5da9b15daa6fc36bf16886b2e79cb1627388fe1efb87c68915143532ac9a8357, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:31 [Parachain] 🏆 Imported #104 (0x239c…a936 → 0x5da9…8357)    
+2025-09-01 09:38:33 [Parachain] 💤 Idle (0 peers), best: #104 (0x5da9…8357), finalized #104 (0x5da9…8357), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:34 [Parachain] 🙌 Starting consensus session on top of parent 0x5da9b15daa6fc36bf16886b2e79cb1627388fe1efb87c68915143532ac9a8357 (#104)    
+2025-09-01 09:38:34 [Parachain] 🎁 Prepared block for proposing at 105 (1 ms) hash: 0x24be6b7a46204a9559baba0a84ed7b03397e03e0b9b13b458b8610b2f5fd819a; parent_hash: 0x5da9…8357; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:34 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x24be6b7a46204a9559baba0a84ed7b03397e03e0b9b13b458b8610b2f5fd819a, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:34 [Parachain] 🏆 Imported #105 (0x5da9…8357 → 0x24be…819a)    
+2025-09-01 09:38:37 [Parachain] 🙌 Starting consensus session on top of parent 0x24be6b7a46204a9559baba0a84ed7b03397e03e0b9b13b458b8610b2f5fd819a (#105)    
+2025-09-01 09:38:37 [Parachain] 🎁 Prepared block for proposing at 106 (1 ms) hash: 0xeb05fb4b467173105c9db840a099e99cd146f9301ef6dac1290ce7d172a3f69b; parent_hash: 0x24be…819a; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:37 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xeb05fb4b467173105c9db840a099e99cd146f9301ef6dac1290ce7d172a3f69b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:37 [Parachain] 🏆 Imported #106 (0x24be…819a → 0xeb05…f69b)    
+2025-09-01 09:38:38 [Parachain] 💤 Idle (0 peers), best: #106 (0xeb05…f69b), finalized #106 (0xeb05…f69b), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:40 [Parachain] 🙌 Starting consensus session on top of parent 0xeb05fb4b467173105c9db840a099e99cd146f9301ef6dac1290ce7d172a3f69b (#106)    
+2025-09-01 09:38:40 [Parachain] 🎁 Prepared block for proposing at 107 (1 ms) hash: 0x0d8d8ea2b4549174ea92e2866d7ea607dc46c0cedb109e1178ae607f62346ad3; parent_hash: 0xeb05…f69b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:40 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x0d8d8ea2b4549174ea92e2866d7ea607dc46c0cedb109e1178ae607f62346ad3, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:40 [Parachain] 🏆 Imported #107 (0xeb05…f69b → 0x0d8d…6ad3)    
+2025-09-01 09:38:43 [Parachain] 💤 Idle (0 peers), best: #107 (0x0d8d…6ad3), finalized #107 (0x0d8d…6ad3), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:43 [Parachain] 🙌 Starting consensus session on top of parent 0x0d8d8ea2b4549174ea92e2866d7ea607dc46c0cedb109e1178ae607f62346ad3 (#107)    
+2025-09-01 09:38:43 [Parachain] 🎁 Prepared block for proposing at 108 (1 ms) hash: 0x5d4e67671c483e8749d43a9ae23540aaba0c061c22508998fc683b7c411c860a; parent_hash: 0x0d8d…6ad3; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:43 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x5d4e67671c483e8749d43a9ae23540aaba0c061c22508998fc683b7c411c860a, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:43 [Parachain] 🏆 Imported #108 (0x0d8d…6ad3 → 0x5d4e…860a)    
+2025-09-01 09:38:46 [Parachain] 🙌 Starting consensus session on top of parent 0x5d4e67671c483e8749d43a9ae23540aaba0c061c22508998fc683b7c411c860a (#108)    
+2025-09-01 09:38:46 [Parachain] 🎁 Prepared block for proposing at 109 (1 ms) hash: 0x8b66399288efdb61369ce16183cb0cb09fae235736b293b92e28c9510a33d92a; parent_hash: 0x5d4e…860a; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:46 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x8b66399288efdb61369ce16183cb0cb09fae235736b293b92e28c9510a33d92a, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:46 [Parachain] 🏆 Imported #109 (0x5d4e…860a → 0x8b66…d92a)    
+2025-09-01 09:38:48 [Parachain] 💤 Idle (0 peers), best: #109 (0x8b66…d92a), finalized #109 (0x8b66…d92a), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:49 [Parachain] 🙌 Starting consensus session on top of parent 0x8b66399288efdb61369ce16183cb0cb09fae235736b293b92e28c9510a33d92a (#109)    
+2025-09-01 09:38:49 [Parachain] 🎁 Prepared block for proposing at 110 (2 ms) hash: 0x4f966534139feae2b90108c0801df2d54c8025cb1e6114d087c89fc75cdbcc57; parent_hash: 0x8b66…d92a; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:49 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x4f966534139feae2b90108c0801df2d54c8025cb1e6114d087c89fc75cdbcc57, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:49 [Parachain] 🏆 Imported #110 (0x8b66…d92a → 0x4f96…cc57)    
+2025-09-01 09:38:52 [Parachain] 🙌 Starting consensus session on top of parent 0x4f966534139feae2b90108c0801df2d54c8025cb1e6114d087c89fc75cdbcc57 (#110)    
+2025-09-01 09:38:52 [Parachain] 🎁 Prepared block for proposing at 111 (1 ms) hash: 0xd19f45152c0ecdbff8449e0c4c5a7971af17b4bc1b82575f5dd2fd989e572b5d; parent_hash: 0x4f96…cc57; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:52 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xd19f45152c0ecdbff8449e0c4c5a7971af17b4bc1b82575f5dd2fd989e572b5d, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:52 [Parachain] 🏆 Imported #111 (0x4f96…cc57 → 0xd19f…2b5d)    
+2025-09-01 09:38:53 [Parachain] 💤 Idle (0 peers), best: #111 (0xd19f…2b5d), finalized #111 (0xd19f…2b5d), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:55 [Parachain] 🙌 Starting consensus session on top of parent 0xd19f45152c0ecdbff8449e0c4c5a7971af17b4bc1b82575f5dd2fd989e572b5d (#111)    
+2025-09-01 09:38:55 [Parachain] 🎁 Prepared block for proposing at 112 (1 ms) hash: 0xe3a4e03a4dc3581b781b0cc7e1bcff17fa26b3e7452d4fd6b6b2b1e3f59d1395; parent_hash: 0xd19f…2b5d; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:55 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xe3a4e03a4dc3581b781b0cc7e1bcff17fa26b3e7452d4fd6b6b2b1e3f59d1395, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:55 [Parachain] 🏆 Imported #112 (0xd19f…2b5d → 0xe3a4…1395)    
+2025-09-01 09:38:58 [Parachain] 💤 Idle (0 peers), best: #112 (0xe3a4…1395), finalized #112 (0xe3a4…1395), ⬇ 0 ⬆ 0    
+2025-09-01 09:38:58 [Parachain] 🙌 Starting consensus session on top of parent 0xe3a4e03a4dc3581b781b0cc7e1bcff17fa26b3e7452d4fd6b6b2b1e3f59d1395 (#112)    
+2025-09-01 09:38:58 [Parachain] 🎁 Prepared block for proposing at 113 (1 ms) hash: 0xac638f2a2190571095d0b364694108f6fc427385d3cb995d77497f943e6c5d8f; parent_hash: 0xe3a4…1395; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:38:58 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xac638f2a2190571095d0b364694108f6fc427385d3cb995d77497f943e6c5d8f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:38:58 [Parachain] 🏆 Imported #113 (0xe3a4…1395 → 0xac63…5d8f)    
+2025-09-01 09:39:01 [Parachain] 🙌 Starting consensus session on top of parent 0xac638f2a2190571095d0b364694108f6fc427385d3cb995d77497f943e6c5d8f (#113)    
+2025-09-01 09:39:01 [Parachain] 🎁 Prepared block for proposing at 114 (1 ms) hash: 0xc7df4ac2a8fa8d9a8f34dc93518f26901854484851e5cabc459c6bbb634f338b; parent_hash: 0xac63…5d8f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:01 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xc7df4ac2a8fa8d9a8f34dc93518f26901854484851e5cabc459c6bbb634f338b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:01 [Parachain] 🏆 Imported #114 (0xac63…5d8f → 0xc7df…338b)    
+2025-09-01 09:39:03 [Parachain] 💤 Idle (0 peers), best: #114 (0xc7df…338b), finalized #114 (0xc7df…338b), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:04 [Parachain] 🙌 Starting consensus session on top of parent 0xc7df4ac2a8fa8d9a8f34dc93518f26901854484851e5cabc459c6bbb634f338b (#114)    
+2025-09-01 09:39:04 [Parachain] 🎁 Prepared block for proposing at 115 (1 ms) hash: 0xabb28097ccb08395720b28ee3561e843dbf2c9adf31b2ce390eff08f20642d22; parent_hash: 0xc7df…338b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:04 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xabb28097ccb08395720b28ee3561e843dbf2c9adf31b2ce390eff08f20642d22, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:04 [Parachain] 🏆 Imported #115 (0xc7df…338b → 0xabb2…2d22)    
+2025-09-01 09:39:07 [Parachain] 🙌 Starting consensus session on top of parent 0xabb28097ccb08395720b28ee3561e843dbf2c9adf31b2ce390eff08f20642d22 (#115)    
+2025-09-01 09:39:07 [Parachain] 🎁 Prepared block for proposing at 116 (2 ms) hash: 0x74f6604afb49f2df64b368ef58c9cfc7b5600d8c31007607842683964860732c; parent_hash: 0xabb2…2d22; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:07 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x74f6604afb49f2df64b368ef58c9cfc7b5600d8c31007607842683964860732c, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:07 [Parachain] 🏆 Imported #116 (0xabb2…2d22 → 0x74f6…732c)    
+2025-09-01 09:39:08 [Parachain] 💤 Idle (0 peers), best: #116 (0x74f6…732c), finalized #116 (0x74f6…732c), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:10 [Parachain] 🙌 Starting consensus session on top of parent 0x74f6604afb49f2df64b368ef58c9cfc7b5600d8c31007607842683964860732c (#116)    
+2025-09-01 09:39:10 [Parachain] 🎁 Prepared block for proposing at 117 (1 ms) hash: 0x888039eaff468bfaa59fef81d9a40171912a96364329981148ff6d3cd684249e; parent_hash: 0x74f6…732c; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:10 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x888039eaff468bfaa59fef81d9a40171912a96364329981148ff6d3cd684249e, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:10 [Parachain] 🏆 Imported #117 (0x74f6…732c → 0x8880…249e)    
+2025-09-01 09:39:13 [Parachain] 💤 Idle (0 peers), best: #117 (0x8880…249e), finalized #117 (0x8880…249e), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:13 [Parachain] 🙌 Starting consensus session on top of parent 0x888039eaff468bfaa59fef81d9a40171912a96364329981148ff6d3cd684249e (#117)    
+2025-09-01 09:39:13 [Parachain] 🎁 Prepared block for proposing at 118 (1 ms) hash: 0x13e7bbf825bd47e673996cd50e196ed65bd5862a9bb770597baf40192833a156; parent_hash: 0x8880…249e; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:13 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x13e7bbf825bd47e673996cd50e196ed65bd5862a9bb770597baf40192833a156, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:13 [Parachain] 🏆 Imported #118 (0x8880…249e → 0x13e7…a156)    
+2025-09-01 09:39:16 [Parachain] 🙌 Starting consensus session on top of parent 0x13e7bbf825bd47e673996cd50e196ed65bd5862a9bb770597baf40192833a156 (#118)    
+2025-09-01 09:39:16 [Parachain] 🎁 Prepared block for proposing at 119 (1 ms) hash: 0x107c57884d3686dedcb58affc322c6dfee78fb07cef4997b186fdde873ff1618; parent_hash: 0x13e7…a156; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:16 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x107c57884d3686dedcb58affc322c6dfee78fb07cef4997b186fdde873ff1618, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:16 [Parachain] 🏆 Imported #119 (0x13e7…a156 → 0x107c…1618)    
+2025-09-01 09:39:18 [Parachain] 💤 Idle (0 peers), best: #119 (0x107c…1618), finalized #119 (0x107c…1618), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:19 [Parachain] 🙌 Starting consensus session on top of parent 0x107c57884d3686dedcb58affc322c6dfee78fb07cef4997b186fdde873ff1618 (#119)    
+2025-09-01 09:39:19 [Parachain] 🎁 Prepared block for proposing at 120 (1 ms) hash: 0x8137fdd2160af826919cfe33caba6c3bc842f8e050caac6e086ce8e08b1a8bc3; parent_hash: 0x107c…1618; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:19 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x8137fdd2160af826919cfe33caba6c3bc842f8e050caac6e086ce8e08b1a8bc3, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:19 [Parachain] 🏆 Imported #120 (0x107c…1618 → 0x8137…8bc3)    
+2025-09-01 09:39:22 [Parachain] 🙌 Starting consensus session on top of parent 0x8137fdd2160af826919cfe33caba6c3bc842f8e050caac6e086ce8e08b1a8bc3 (#120)    
+2025-09-01 09:39:22 [Parachain] 🎁 Prepared block for proposing at 121 (1 ms) hash: 0x280e103979b65f6eea84a762c2fc22553d2e5e686f54be1c8c77901c1713c90c; parent_hash: 0x8137…8bc3; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:22 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x280e103979b65f6eea84a762c2fc22553d2e5e686f54be1c8c77901c1713c90c, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:22 [Parachain] 🏆 Imported #121 (0x8137…8bc3 → 0x280e…c90c)    
+2025-09-01 09:39:23 [Parachain] 💤 Idle (0 peers), best: #121 (0x280e…c90c), finalized #121 (0x280e…c90c), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:25 [Parachain] 🙌 Starting consensus session on top of parent 0x280e103979b65f6eea84a762c2fc22553d2e5e686f54be1c8c77901c1713c90c (#121)    
+2025-09-01 09:39:25 [Parachain] 🎁 Prepared block for proposing at 122 (2 ms) hash: 0xea9013883642cb8085306feaa87a79ebbe5b9f519489add0f9945b3b8d14e266; parent_hash: 0x280e…c90c; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:25 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xea9013883642cb8085306feaa87a79ebbe5b9f519489add0f9945b3b8d14e266, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:25 [Parachain] 🏆 Imported #122 (0x280e…c90c → 0xea90…e266)    
+2025-09-01 09:39:28 [Parachain] 💤 Idle (0 peers), best: #122 (0xea90…e266), finalized #122 (0xea90…e266), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:28 [Parachain] 🙌 Starting consensus session on top of parent 0xea9013883642cb8085306feaa87a79ebbe5b9f519489add0f9945b3b8d14e266 (#122)    
+2025-09-01 09:39:28 [Parachain] 🎁 Prepared block for proposing at 123 (1 ms) hash: 0x0072173103fd793de0b5c991ac26d4b524221ddfbf5ff8d536f7d9c41bdbe51c; parent_hash: 0xea90…e266; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:28 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x0072173103fd793de0b5c991ac26d4b524221ddfbf5ff8d536f7d9c41bdbe51c, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:28 [Parachain] 🏆 Imported #123 (0xea90…e266 → 0x0072…e51c)    
+2025-09-01 09:39:31 [Parachain] 🙌 Starting consensus session on top of parent 0x0072173103fd793de0b5c991ac26d4b524221ddfbf5ff8d536f7d9c41bdbe51c (#123)    
+2025-09-01 09:39:31 [Parachain] 🎁 Prepared block for proposing at 124 (1 ms) hash: 0x9f7ea6f27d9cd26230160ad8ee2948745e622179ed15b2a98cf3d2f14f023991; parent_hash: 0x0072…e51c; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:31 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x9f7ea6f27d9cd26230160ad8ee2948745e622179ed15b2a98cf3d2f14f023991, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:31 [Parachain] 🏆 Imported #124 (0x0072…e51c → 0x9f7e…3991)    
+2025-09-01 09:39:33 [Parachain] 💤 Idle (0 peers), best: #124 (0x9f7e…3991), finalized #124 (0x9f7e…3991), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:34 [Parachain] 🙌 Starting consensus session on top of parent 0x9f7ea6f27d9cd26230160ad8ee2948745e622179ed15b2a98cf3d2f14f023991 (#124)    
+2025-09-01 09:39:34 [Parachain] 🎁 Prepared block for proposing at 125 (2 ms) hash: 0x9d219cbb10ddab7842e842944dca6141a77bd9cf3620c4acb68c6cd8a5fc7d8e; parent_hash: 0x9f7e…3991; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:34 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x9d219cbb10ddab7842e842944dca6141a77bd9cf3620c4acb68c6cd8a5fc7d8e, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:34 [Parachain] 🏆 Imported #125 (0x9f7e…3991 → 0x9d21…7d8e)    
+2025-09-01 09:39:37 [Parachain] 🙌 Starting consensus session on top of parent 0x9d219cbb10ddab7842e842944dca6141a77bd9cf3620c4acb68c6cd8a5fc7d8e (#125)    
+2025-09-01 09:39:37 [Parachain] 🎁 Prepared block for proposing at 126 (1 ms) hash: 0x29af3c707ae4e6fbec42ed95c437995576f4b1ae9057c16da0ca5eb97970de27; parent_hash: 0x9d21…7d8e; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:37 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x29af3c707ae4e6fbec42ed95c437995576f4b1ae9057c16da0ca5eb97970de27, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:37 [Parachain] 🏆 Imported #126 (0x9d21…7d8e → 0x29af…de27)    
+2025-09-01 09:39:38 [Parachain] 💤 Idle (0 peers), best: #126 (0x29af…de27), finalized #126 (0x29af…de27), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:40 [Parachain] 🙌 Starting consensus session on top of parent 0x29af3c707ae4e6fbec42ed95c437995576f4b1ae9057c16da0ca5eb97970de27 (#126)    
+2025-09-01 09:39:40 [Parachain] 🎁 Prepared block for proposing at 127 (2 ms) hash: 0xd06e4ff433c4a04ed5eb618bcbea4ed78471d23274dc04965b4b950cd3e715a4; parent_hash: 0x29af…de27; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:40 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xd06e4ff433c4a04ed5eb618bcbea4ed78471d23274dc04965b4b950cd3e715a4, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:40 [Parachain] 🏆 Imported #127 (0x29af…de27 → 0xd06e…15a4)    
+2025-09-01 09:39:43 [Parachain] 💤 Idle (0 peers), best: #127 (0xd06e…15a4), finalized #127 (0xd06e…15a4), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:43 [Parachain] 🙌 Starting consensus session on top of parent 0xd06e4ff433c4a04ed5eb618bcbea4ed78471d23274dc04965b4b950cd3e715a4 (#127)    
+2025-09-01 09:39:43 [Parachain] 🎁 Prepared block for proposing at 128 (1 ms) hash: 0xfe1140e7f941809c69589d2f0749cda58aeaa90fb72ceecee19834ef525d9536; parent_hash: 0xd06e…15a4; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:43 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xfe1140e7f941809c69589d2f0749cda58aeaa90fb72ceecee19834ef525d9536, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:43 [Parachain] 🏆 Imported #128 (0xd06e…15a4 → 0xfe11…9536)    
+2025-09-01 09:39:46 [Parachain] 🙌 Starting consensus session on top of parent 0xfe1140e7f941809c69589d2f0749cda58aeaa90fb72ceecee19834ef525d9536 (#128)    
+2025-09-01 09:39:46 [Parachain] 🎁 Prepared block for proposing at 129 (1 ms) hash: 0x98c15fef3910d6d2bc33d1648b617c422d9bbfad4fc62e39cb6c9e200489a014; parent_hash: 0xfe11…9536; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:46 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x98c15fef3910d6d2bc33d1648b617c422d9bbfad4fc62e39cb6c9e200489a014, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:46 [Parachain] 🏆 Imported #129 (0xfe11…9536 → 0x98c1…a014)    
+2025-09-01 09:39:48 [Parachain] 💤 Idle (0 peers), best: #129 (0x98c1…a014), finalized #129 (0x98c1…a014), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:49 [Parachain] 🙌 Starting consensus session on top of parent 0x98c15fef3910d6d2bc33d1648b617c422d9bbfad4fc62e39cb6c9e200489a014 (#129)    
+2025-09-01 09:39:49 [Parachain] 🎁 Prepared block for proposing at 130 (2 ms) hash: 0x6c188131fa3ac1931c3dfd599ac0f626ebe5655bd8372e2ad3ad055c9b8179f4; parent_hash: 0x98c1…a014; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:49 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x6c188131fa3ac1931c3dfd599ac0f626ebe5655bd8372e2ad3ad055c9b8179f4, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:49 [Parachain] 🏆 Imported #130 (0x98c1…a014 → 0x6c18…79f4)    
+2025-09-01 09:39:52 [Parachain] 🙌 Starting consensus session on top of parent 0x6c188131fa3ac1931c3dfd599ac0f626ebe5655bd8372e2ad3ad055c9b8179f4 (#130)    
+2025-09-01 09:39:52 [Parachain] 🎁 Prepared block for proposing at 131 (2 ms) hash: 0x9582414a3361811c344b2abe6dfa9058f66d6382ba0bd60063a7a6bc7fa69e73; parent_hash: 0x6c18…79f4; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:52 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x9582414a3361811c344b2abe6dfa9058f66d6382ba0bd60063a7a6bc7fa69e73, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:52 [Parachain] 🏆 Imported #131 (0x6c18…79f4 → 0x9582…9e73)    
+2025-09-01 09:39:53 [Parachain] 💤 Idle (0 peers), best: #131 (0x9582…9e73), finalized #131 (0x9582…9e73), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:55 [Parachain] 🙌 Starting consensus session on top of parent 0x9582414a3361811c344b2abe6dfa9058f66d6382ba0bd60063a7a6bc7fa69e73 (#131)    
+2025-09-01 09:39:55 [Parachain] 🎁 Prepared block for proposing at 132 (1 ms) hash: 0xce9e65c70879bf778e99015f64b9e5669dcd971b991e46636a4ece988b65cdfd; parent_hash: 0x9582…9e73; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:55 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xce9e65c70879bf778e99015f64b9e5669dcd971b991e46636a4ece988b65cdfd, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:55 [Parachain] 🏆 Imported #132 (0x9582…9e73 → 0xce9e…cdfd)    
+2025-09-01 09:39:58 [Parachain] 💤 Idle (0 peers), best: #132 (0xce9e…cdfd), finalized #132 (0xce9e…cdfd), ⬇ 0 ⬆ 0    
+2025-09-01 09:39:58 [Parachain] 🙌 Starting consensus session on top of parent 0xce9e65c70879bf778e99015f64b9e5669dcd971b991e46636a4ece988b65cdfd (#132)    
+2025-09-01 09:39:58 [Parachain] 🎁 Prepared block for proposing at 133 (2 ms) hash: 0x4d7ec7a849e100aa5f6ec78fc76ca4f4e80d2dd7e55fd6cb30021b23eedfe739; parent_hash: 0xce9e…cdfd; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:39:58 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x4d7ec7a849e100aa5f6ec78fc76ca4f4e80d2dd7e55fd6cb30021b23eedfe739, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:39:58 [Parachain] 🏆 Imported #133 (0xce9e…cdfd → 0x4d7e…e739)    
+2025-09-01 09:40:01 [Parachain] 🙌 Starting consensus session on top of parent 0x4d7ec7a849e100aa5f6ec78fc76ca4f4e80d2dd7e55fd6cb30021b23eedfe739 (#133)    
+2025-09-01 09:40:01 [Parachain] 🎁 Prepared block for proposing at 134 (1 ms) hash: 0x0b3a672f1bcb6c5bc599f0faa7db146561eb0af9061ef236fb62b87b7a0e090d; parent_hash: 0x4d7e…e739; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:01 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x0b3a672f1bcb6c5bc599f0faa7db146561eb0af9061ef236fb62b87b7a0e090d, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:01 [Parachain] 🏆 Imported #134 (0x4d7e…e739 → 0x0b3a…090d)    
+2025-09-01 09:40:03 [Parachain] 💤 Idle (0 peers), best: #134 (0x0b3a…090d), finalized #134 (0x0b3a…090d), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:04 [Parachain] 🙌 Starting consensus session on top of parent 0x0b3a672f1bcb6c5bc599f0faa7db146561eb0af9061ef236fb62b87b7a0e090d (#134)    
+2025-09-01 09:40:04 [Parachain] 🎁 Prepared block for proposing at 135 (1 ms) hash: 0xc589af91016e2319032fd391c6e26dd4198a7013ac5dde26a2a14976e06f786b; parent_hash: 0x0b3a…090d; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:04 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xc589af91016e2319032fd391c6e26dd4198a7013ac5dde26a2a14976e06f786b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:04 [Parachain] 🏆 Imported #135 (0x0b3a…090d → 0xc589…786b)    
+2025-09-01 09:40:07 [Parachain] 🙌 Starting consensus session on top of parent 0xc589af91016e2319032fd391c6e26dd4198a7013ac5dde26a2a14976e06f786b (#135)    
+2025-09-01 09:40:07 [Parachain] 🎁 Prepared block for proposing at 136 (1 ms) hash: 0xb7a36c5c511d0b18cf2ebc4e1a3706551edb4140380578fe747328ad42831191; parent_hash: 0xc589…786b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:07 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xb7a36c5c511d0b18cf2ebc4e1a3706551edb4140380578fe747328ad42831191, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:07 [Parachain] 🏆 Imported #136 (0xc589…786b → 0xb7a3…1191)    
+2025-09-01 09:40:08 [Parachain] 💤 Idle (0 peers), best: #136 (0xb7a3…1191), finalized #136 (0xb7a3…1191), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:10 [Parachain] 🙌 Starting consensus session on top of parent 0xb7a36c5c511d0b18cf2ebc4e1a3706551edb4140380578fe747328ad42831191 (#136)    
+2025-09-01 09:40:10 [Parachain] 🎁 Prepared block for proposing at 137 (1 ms) hash: 0xd09fa55cc43679663d526a12d07db05a2ce2e99db8802d4623553493a0fbce0f; parent_hash: 0xb7a3…1191; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:10 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xd09fa55cc43679663d526a12d07db05a2ce2e99db8802d4623553493a0fbce0f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:10 [Parachain] 🏆 Imported #137 (0xb7a3…1191 → 0xd09f…ce0f)    
+2025-09-01 09:40:13 [Parachain] 💤 Idle (0 peers), best: #137 (0xd09f…ce0f), finalized #137 (0xd09f…ce0f), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:13 [Parachain] 🙌 Starting consensus session on top of parent 0xd09fa55cc43679663d526a12d07db05a2ce2e99db8802d4623553493a0fbce0f (#137)    
+2025-09-01 09:40:13 [Parachain] 🎁 Prepared block for proposing at 138 (1 ms) hash: 0xabe0c2df2d9c4af7d2b67601d421829695e637da5478d185703af2dd7104ec9b; parent_hash: 0xd09f…ce0f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:13 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xabe0c2df2d9c4af7d2b67601d421829695e637da5478d185703af2dd7104ec9b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:13 [Parachain] 🏆 Imported #138 (0xd09f…ce0f → 0xabe0…ec9b)    
+2025-09-01 09:40:16 [Parachain] 🙌 Starting consensus session on top of parent 0xabe0c2df2d9c4af7d2b67601d421829695e637da5478d185703af2dd7104ec9b (#138)    
+2025-09-01 09:40:16 [Parachain] 🎁 Prepared block for proposing at 139 (2 ms) hash: 0xfdbb0714f9b7f147a9bac54dd14dfd4e3f5eaeb9f074c9eb6d2f4dfed8d7fa41; parent_hash: 0xabe0…ec9b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:16 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xfdbb0714f9b7f147a9bac54dd14dfd4e3f5eaeb9f074c9eb6d2f4dfed8d7fa41, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:16 [Parachain] 🏆 Imported #139 (0xabe0…ec9b → 0xfdbb…fa41)    
+2025-09-01 09:40:18 [Parachain] 💤 Idle (0 peers), best: #139 (0xfdbb…fa41), finalized #139 (0xfdbb…fa41), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:19 [Parachain] 🙌 Starting consensus session on top of parent 0xfdbb0714f9b7f147a9bac54dd14dfd4e3f5eaeb9f074c9eb6d2f4dfed8d7fa41 (#139)    
+2025-09-01 09:40:19 [Parachain] 🎁 Prepared block for proposing at 140 (1 ms) hash: 0xc6fa0ba8445625333341e39d08d185d9cdf26e5eebf18563dfa61885ece185da; parent_hash: 0xfdbb…fa41; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:19 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xc6fa0ba8445625333341e39d08d185d9cdf26e5eebf18563dfa61885ece185da, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:19 [Parachain] 🏆 Imported #140 (0xfdbb…fa41 → 0xc6fa…85da)    
+2025-09-01 09:40:22 [Parachain] 🙌 Starting consensus session on top of parent 0xc6fa0ba8445625333341e39d08d185d9cdf26e5eebf18563dfa61885ece185da (#140)    
+2025-09-01 09:40:22 [Parachain] 🎁 Prepared block for proposing at 141 (1 ms) hash: 0x670a30460d4dea30f022959758f4ddd276eb169ee4041ca0d380fbf06df4793a; parent_hash: 0xc6fa…85da; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:22 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x670a30460d4dea30f022959758f4ddd276eb169ee4041ca0d380fbf06df4793a, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:22 [Parachain] 🏆 Imported #141 (0xc6fa…85da → 0x670a…793a)    
+2025-09-01 09:40:23 [Parachain] 💤 Idle (0 peers), best: #141 (0x670a…793a), finalized #141 (0x670a…793a), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:25 [Parachain] 🙌 Starting consensus session on top of parent 0x670a30460d4dea30f022959758f4ddd276eb169ee4041ca0d380fbf06df4793a (#141)    
+2025-09-01 09:40:25 [Parachain] 🎁 Prepared block for proposing at 142 (1 ms) hash: 0x5e86c1302f4791d7159e67f9df28bc1d426e99acdf8e30b741adee715799aafe; parent_hash: 0x670a…793a; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:25 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x5e86c1302f4791d7159e67f9df28bc1d426e99acdf8e30b741adee715799aafe, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:25 [Parachain] 🏆 Imported #142 (0x670a…793a → 0x5e86…aafe)    
+2025-09-01 09:40:28 [Parachain] 💤 Idle (0 peers), best: #142 (0x5e86…aafe), finalized #142 (0x5e86…aafe), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:28 [Parachain] 🙌 Starting consensus session on top of parent 0x5e86c1302f4791d7159e67f9df28bc1d426e99acdf8e30b741adee715799aafe (#142)    
+2025-09-01 09:40:28 [Parachain] 🎁 Prepared block for proposing at 143 (1 ms) hash: 0x31247a6e43762d987edb8529cda2f610a035f382fc70a62b24efe13b58845514; parent_hash: 0x5e86…aafe; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:28 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x31247a6e43762d987edb8529cda2f610a035f382fc70a62b24efe13b58845514, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:28 [Parachain] 🏆 Imported #143 (0x5e86…aafe → 0x3124…5514)    
+2025-09-01 09:40:31 [Parachain] 🙌 Starting consensus session on top of parent 0x31247a6e43762d987edb8529cda2f610a035f382fc70a62b24efe13b58845514 (#143)    
+2025-09-01 09:40:31 [Parachain] 🎁 Prepared block for proposing at 144 (1 ms) hash: 0x522b8a0e97663ea8b87dc3ed0eb8f1e524d6d07d3fb6b8338910ce6fb4375a88; parent_hash: 0x3124…5514; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:31 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x522b8a0e97663ea8b87dc3ed0eb8f1e524d6d07d3fb6b8338910ce6fb4375a88, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:31 [Parachain] 🏆 Imported #144 (0x3124…5514 → 0x522b…5a88)    
+2025-09-01 09:40:33 [Parachain] 💤 Idle (0 peers), best: #144 (0x522b…5a88), finalized #144 (0x522b…5a88), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:34 [Parachain] 🙌 Starting consensus session on top of parent 0x522b8a0e97663ea8b87dc3ed0eb8f1e524d6d07d3fb6b8338910ce6fb4375a88 (#144)    
+2025-09-01 09:40:34 [Parachain] 🎁 Prepared block for proposing at 145 (1 ms) hash: 0x337ea085db2ac3ad27772342fc088a758f0f05fe0432fd38f3d40041611bcf01; parent_hash: 0x522b…5a88; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:34 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x337ea085db2ac3ad27772342fc088a758f0f05fe0432fd38f3d40041611bcf01, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:34 [Parachain] 🏆 Imported #145 (0x522b…5a88 → 0x337e…cf01)    
+2025-09-01 09:40:37 [Parachain] 🙌 Starting consensus session on top of parent 0x337ea085db2ac3ad27772342fc088a758f0f05fe0432fd38f3d40041611bcf01 (#145)    
+2025-09-01 09:40:37 [Parachain] 🎁 Prepared block for proposing at 146 (1 ms) hash: 0xa6e8c872f6ecdcf1d2268747ed7ac3403a6ed8c9726d601cf93750c6de1d652d; parent_hash: 0x337e…cf01; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:37 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xa6e8c872f6ecdcf1d2268747ed7ac3403a6ed8c9726d601cf93750c6de1d652d, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:37 [Parachain] 🏆 Imported #146 (0x337e…cf01 → 0xa6e8…652d)    
+2025-09-01 09:40:38 [Parachain] 💤 Idle (0 peers), best: #146 (0xa6e8…652d), finalized #146 (0xa6e8…652d), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:40 [Parachain] 🙌 Starting consensus session on top of parent 0xa6e8c872f6ecdcf1d2268747ed7ac3403a6ed8c9726d601cf93750c6de1d652d (#146)    
+2025-09-01 09:40:40 [Parachain] 🎁 Prepared block for proposing at 147 (3 ms) hash: 0x323c0ff51e08a08cbadb38360835f927f9015a46aea772b62255f11a9554418d; parent_hash: 0xa6e8…652d; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:40 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x323c0ff51e08a08cbadb38360835f927f9015a46aea772b62255f11a9554418d, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:40 [Parachain] 🏆 Imported #147 (0xa6e8…652d → 0x323c…418d)    
+2025-09-01 09:40:43 [Parachain] 💤 Idle (0 peers), best: #147 (0x323c…418d), finalized #147 (0x323c…418d), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:43 [Parachain] 🙌 Starting consensus session on top of parent 0x323c0ff51e08a08cbadb38360835f927f9015a46aea772b62255f11a9554418d (#147)    
+2025-09-01 09:40:43 [Parachain] 🎁 Prepared block for proposing at 148 (1 ms) hash: 0x28083cc32b0262bd080317f95e12076cd9519c64540654b04c9588478e542ffc; parent_hash: 0x323c…418d; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:43 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x28083cc32b0262bd080317f95e12076cd9519c64540654b04c9588478e542ffc, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:43 [Parachain] 🏆 Imported #148 (0x323c…418d → 0x2808…2ffc)    
+2025-09-01 09:40:46 [Parachain] 🙌 Starting consensus session on top of parent 0x28083cc32b0262bd080317f95e12076cd9519c64540654b04c9588478e542ffc (#148)    
+2025-09-01 09:40:46 [Parachain] 🎁 Prepared block for proposing at 149 (1 ms) hash: 0xd272b0c5b66c44c7d10d1331a32da1ed8330af100d5ca04b363b6fb5b314762f; parent_hash: 0x2808…2ffc; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:46 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xd272b0c5b66c44c7d10d1331a32da1ed8330af100d5ca04b363b6fb5b314762f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:46 [Parachain] 🏆 Imported #149 (0x2808…2ffc → 0xd272…762f)    
+2025-09-01 09:40:48 [Parachain] 💤 Idle (0 peers), best: #149 (0xd272…762f), finalized #149 (0xd272…762f), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:49 [Parachain] 🙌 Starting consensus session on top of parent 0xd272b0c5b66c44c7d10d1331a32da1ed8330af100d5ca04b363b6fb5b314762f (#149)    
+2025-09-01 09:40:49 [Parachain] 🎁 Prepared block for proposing at 150 (1 ms) hash: 0x16560a0ac9d7304ec34934a43c90f1f47d3a6f0cabfaa138a294e62b45311dad; parent_hash: 0xd272…762f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:49 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x16560a0ac9d7304ec34934a43c90f1f47d3a6f0cabfaa138a294e62b45311dad, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:49 [Parachain] 🏆 Imported #150 (0xd272…762f → 0x1656…1dad)    
+2025-09-01 09:40:52 [Parachain] 🙌 Starting consensus session on top of parent 0x16560a0ac9d7304ec34934a43c90f1f47d3a6f0cabfaa138a294e62b45311dad (#150)    
+2025-09-01 09:40:52 [Parachain] 🎁 Prepared block for proposing at 151 (1 ms) hash: 0x3aef8cc1b84e32a177b41144ac9209da5b59f98de4c22f7c8175d8d7d78fef8b; parent_hash: 0x1656…1dad; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:52 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x3aef8cc1b84e32a177b41144ac9209da5b59f98de4c22f7c8175d8d7d78fef8b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:52 [Parachain] 🏆 Imported #151 (0x1656…1dad → 0x3aef…ef8b)    
+2025-09-01 09:40:53 [Parachain] 💤 Idle (0 peers), best: #151 (0x3aef…ef8b), finalized #151 (0x3aef…ef8b), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:55 [Parachain] 🙌 Starting consensus session on top of parent 0x3aef8cc1b84e32a177b41144ac9209da5b59f98de4c22f7c8175d8d7d78fef8b (#151)    
+2025-09-01 09:40:55 [Parachain] 🎁 Prepared block for proposing at 152 (1 ms) hash: 0x8912960765625319d717850a81b893f651bb2717200886545101105bd13f12bd; parent_hash: 0x3aef…ef8b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:55 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x8912960765625319d717850a81b893f651bb2717200886545101105bd13f12bd, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:55 [Parachain] 🏆 Imported #152 (0x3aef…ef8b → 0x8912…12bd)    
+2025-09-01 09:40:58 [Parachain] 💤 Idle (0 peers), best: #152 (0x8912…12bd), finalized #152 (0x8912…12bd), ⬇ 0 ⬆ 0    
+2025-09-01 09:40:58 [Parachain] 🙌 Starting consensus session on top of parent 0x8912960765625319d717850a81b893f651bb2717200886545101105bd13f12bd (#152)    
+2025-09-01 09:40:58 [Parachain] 🎁 Prepared block for proposing at 153 (1 ms) hash: 0xaa13fdc351e6981b14a456a4f770b45a8f8532af295b5cf06b1d4dc591e9dd14; parent_hash: 0x8912…12bd; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:40:58 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xaa13fdc351e6981b14a456a4f770b45a8f8532af295b5cf06b1d4dc591e9dd14, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:40:58 [Parachain] 🏆 Imported #153 (0x8912…12bd → 0xaa13…dd14)    
+2025-09-01 09:41:01 [Parachain] 🙌 Starting consensus session on top of parent 0xaa13fdc351e6981b14a456a4f770b45a8f8532af295b5cf06b1d4dc591e9dd14 (#153)    
+2025-09-01 09:41:01 [Parachain] 🎁 Prepared block for proposing at 154 (1 ms) hash: 0xb2fd0c0653ed501405e95b5578d2a37bbd23d6e6699079a8f5206db4dd407c7b; parent_hash: 0xaa13…dd14; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:01 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xb2fd0c0653ed501405e95b5578d2a37bbd23d6e6699079a8f5206db4dd407c7b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:01 [Parachain] 🏆 Imported #154 (0xaa13…dd14 → 0xb2fd…7c7b)    
+2025-09-01 09:41:03 [Parachain] 💤 Idle (0 peers), best: #154 (0xb2fd…7c7b), finalized #154 (0xb2fd…7c7b), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:04 [Parachain] 🙌 Starting consensus session on top of parent 0xb2fd0c0653ed501405e95b5578d2a37bbd23d6e6699079a8f5206db4dd407c7b (#154)    
+2025-09-01 09:41:04 [Parachain] 🎁 Prepared block for proposing at 155 (1 ms) hash: 0xadf05172d298382787b6293972c8ca8bb27917775dc16c54d31f8eb72d24ee67; parent_hash: 0xb2fd…7c7b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:04 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xadf05172d298382787b6293972c8ca8bb27917775dc16c54d31f8eb72d24ee67, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:04 [Parachain] 🏆 Imported #155 (0xb2fd…7c7b → 0xadf0…ee67)    
+2025-09-01 09:41:07 [Parachain] 🙌 Starting consensus session on top of parent 0xadf05172d298382787b6293972c8ca8bb27917775dc16c54d31f8eb72d24ee67 (#155)    
+2025-09-01 09:41:07 [Parachain] 🎁 Prepared block for proposing at 156 (1 ms) hash: 0x01471e8d9c7063a3a4468e6fdec1bc84e412f70aec7ed26a9d65e58501eda53c; parent_hash: 0xadf0…ee67; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:07 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x01471e8d9c7063a3a4468e6fdec1bc84e412f70aec7ed26a9d65e58501eda53c, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:07 [Parachain] 🏆 Imported #156 (0xadf0…ee67 → 0x0147…a53c)    
+2025-09-01 09:41:08 [Parachain] 💤 Idle (0 peers), best: #156 (0x0147…a53c), finalized #156 (0x0147…a53c), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:10 [Parachain] 🙌 Starting consensus session on top of parent 0x01471e8d9c7063a3a4468e6fdec1bc84e412f70aec7ed26a9d65e58501eda53c (#156)    
+2025-09-01 09:41:10 [Parachain] 🎁 Prepared block for proposing at 157 (1 ms) hash: 0xb648dde2c10f5a17d1c946f21be82067b4af6e71c358ec50e87ea706d14806a0; parent_hash: 0x0147…a53c; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:10 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xb648dde2c10f5a17d1c946f21be82067b4af6e71c358ec50e87ea706d14806a0, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:10 [Parachain] 🏆 Imported #157 (0x0147…a53c → 0xb648…06a0)    
+2025-09-01 09:41:13 [Parachain] 💤 Idle (0 peers), best: #157 (0xb648…06a0), finalized #157 (0xb648…06a0), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:13 [Parachain] 🙌 Starting consensus session on top of parent 0xb648dde2c10f5a17d1c946f21be82067b4af6e71c358ec50e87ea706d14806a0 (#157)    
+2025-09-01 09:41:13 [Parachain] 🎁 Prepared block for proposing at 158 (1 ms) hash: 0xd6ab0d45c430a99ceef27a6840f79159bd5c256004c7f1f5c629633d49513791; parent_hash: 0xb648…06a0; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:13 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xd6ab0d45c430a99ceef27a6840f79159bd5c256004c7f1f5c629633d49513791, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:13 [Parachain] 🏆 Imported #158 (0xb648…06a0 → 0xd6ab…3791)    
+2025-09-01 09:41:16 [Parachain] 🙌 Starting consensus session on top of parent 0xd6ab0d45c430a99ceef27a6840f79159bd5c256004c7f1f5c629633d49513791 (#158)    
+2025-09-01 09:41:16 [Parachain] 🎁 Prepared block for proposing at 159 (1 ms) hash: 0xe76fc6051215caff1c3bdafdafbe77bb8a8677ec3c66910a56b31a084f3ee464; parent_hash: 0xd6ab…3791; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:16 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xe76fc6051215caff1c3bdafdafbe77bb8a8677ec3c66910a56b31a084f3ee464, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:16 [Parachain] 🏆 Imported #159 (0xd6ab…3791 → 0xe76f…e464)    
+2025-09-01 09:41:18 [Parachain] 💤 Idle (0 peers), best: #159 (0xe76f…e464), finalized #159 (0xe76f…e464), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:19 [Parachain] 🙌 Starting consensus session on top of parent 0xe76fc6051215caff1c3bdafdafbe77bb8a8677ec3c66910a56b31a084f3ee464 (#159)    
+2025-09-01 09:41:19 [Parachain] 🎁 Prepared block for proposing at 160 (1 ms) hash: 0x7c48e474f0292e1f35763027aa2ea05feaed1a80cc7e1e04f5f75b092c0a667d; parent_hash: 0xe76f…e464; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:19 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x7c48e474f0292e1f35763027aa2ea05feaed1a80cc7e1e04f5f75b092c0a667d, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:19 [Parachain] 🏆 Imported #160 (0xe76f…e464 → 0x7c48…667d)    
+2025-09-01 09:41:22 [Parachain] 🙌 Starting consensus session on top of parent 0x7c48e474f0292e1f35763027aa2ea05feaed1a80cc7e1e04f5f75b092c0a667d (#160)    
+2025-09-01 09:41:22 [Parachain] 🎁 Prepared block for proposing at 161 (1 ms) hash: 0x2c6e810174d05874830c0bbcbcc43d99c26687403af951e29cfeb16f102f2c64; parent_hash: 0x7c48…667d; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:22 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x2c6e810174d05874830c0bbcbcc43d99c26687403af951e29cfeb16f102f2c64, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:22 [Parachain] 🏆 Imported #161 (0x7c48…667d → 0x2c6e…2c64)    
+2025-09-01 09:41:23 [Parachain] 💤 Idle (0 peers), best: #161 (0x2c6e…2c64), finalized #161 (0x2c6e…2c64), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:25 [Parachain] 🙌 Starting consensus session on top of parent 0x2c6e810174d05874830c0bbcbcc43d99c26687403af951e29cfeb16f102f2c64 (#161)    
+2025-09-01 09:41:25 [Parachain] 🎁 Prepared block for proposing at 162 (2 ms) hash: 0x416b3d9a78f67990f31f6315e06500a821b127c7b49db0fc1e37450d4552fedf; parent_hash: 0x2c6e…2c64; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:25 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x416b3d9a78f67990f31f6315e06500a821b127c7b49db0fc1e37450d4552fedf, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:25 [Parachain] 🏆 Imported #162 (0x2c6e…2c64 → 0x416b…fedf)    
+2025-09-01 09:41:28 [Parachain] 💤 Idle (0 peers), best: #162 (0x416b…fedf), finalized #162 (0x416b…fedf), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:28 [Parachain] 🙌 Starting consensus session on top of parent 0x416b3d9a78f67990f31f6315e06500a821b127c7b49db0fc1e37450d4552fedf (#162)    
+2025-09-01 09:41:28 [Parachain] 🎁 Prepared block for proposing at 163 (1 ms) hash: 0x68faccc4c1f050471b30d61445da3912be5f58d2b14496005c11e328393b18f0; parent_hash: 0x416b…fedf; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:28 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x68faccc4c1f050471b30d61445da3912be5f58d2b14496005c11e328393b18f0, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:28 [Parachain] 🏆 Imported #163 (0x416b…fedf → 0x68fa…18f0)    
+2025-09-01 09:41:31 [Parachain] 🙌 Starting consensus session on top of parent 0x68faccc4c1f050471b30d61445da3912be5f58d2b14496005c11e328393b18f0 (#163)    
+2025-09-01 09:41:31 [Parachain] 🎁 Prepared block for proposing at 164 (1 ms) hash: 0x28f6c9c4df001b6ce3fe309bba00896a0fb857b400075160cf7625ef6bd120a4; parent_hash: 0x68fa…18f0; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:31 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x28f6c9c4df001b6ce3fe309bba00896a0fb857b400075160cf7625ef6bd120a4, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:31 [Parachain] 🏆 Imported #164 (0x68fa…18f0 → 0x28f6…20a4)    
+2025-09-01 09:41:33 [Parachain] 💤 Idle (0 peers), best: #164 (0x28f6…20a4), finalized #164 (0x28f6…20a4), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:34 [Parachain] 🙌 Starting consensus session on top of parent 0x28f6c9c4df001b6ce3fe309bba00896a0fb857b400075160cf7625ef6bd120a4 (#164)    
+2025-09-01 09:41:34 [Parachain] 🎁 Prepared block for proposing at 165 (1 ms) hash: 0x1f79db7d20907f252f71a884381995c0063b4237a624ad402d54ce6c239ef193; parent_hash: 0x28f6…20a4; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:34 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x1f79db7d20907f252f71a884381995c0063b4237a624ad402d54ce6c239ef193, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:34 [Parachain] 🏆 Imported #165 (0x28f6…20a4 → 0x1f79…f193)    
+2025-09-01 09:41:37 [Parachain] 🙌 Starting consensus session on top of parent 0x1f79db7d20907f252f71a884381995c0063b4237a624ad402d54ce6c239ef193 (#165)    
+2025-09-01 09:41:37 [Parachain] 🎁 Prepared block for proposing at 166 (1 ms) hash: 0x457d20794f79c98d999ceccaf6e6c78c1e6fa1f61737cb68d01c60d41a3d04be; parent_hash: 0x1f79…f193; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:37 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x457d20794f79c98d999ceccaf6e6c78c1e6fa1f61737cb68d01c60d41a3d04be, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:37 [Parachain] 🏆 Imported #166 (0x1f79…f193 → 0x457d…04be)    
+2025-09-01 09:41:38 [Parachain] 💤 Idle (0 peers), best: #166 (0x457d…04be), finalized #166 (0x457d…04be), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:40 [Parachain] 🙌 Starting consensus session on top of parent 0x457d20794f79c98d999ceccaf6e6c78c1e6fa1f61737cb68d01c60d41a3d04be (#166)    
+2025-09-01 09:41:40 [Parachain] 🎁 Prepared block for proposing at 167 (1 ms) hash: 0x5e2095bf89c18c662ea6977aa9762a43475dc62c6261c4a3dede7fda9f866287; parent_hash: 0x457d…04be; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:40 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x5e2095bf89c18c662ea6977aa9762a43475dc62c6261c4a3dede7fda9f866287, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:40 [Parachain] 🏆 Imported #167 (0x457d…04be → 0x5e20…6287)    
+2025-09-01 09:41:43 [Parachain] 💤 Idle (0 peers), best: #167 (0x5e20…6287), finalized #167 (0x5e20…6287), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:43 [Parachain] 🙌 Starting consensus session on top of parent 0x5e2095bf89c18c662ea6977aa9762a43475dc62c6261c4a3dede7fda9f866287 (#167)    
+2025-09-01 09:41:43 [Parachain] 🎁 Prepared block for proposing at 168 (1 ms) hash: 0x4ceb4aff755e9e100fbaa28a465e582762cf4dcac50d7a8bb6788b26dfce9048; parent_hash: 0x5e20…6287; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:43 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x4ceb4aff755e9e100fbaa28a465e582762cf4dcac50d7a8bb6788b26dfce9048, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:43 [Parachain] 🏆 Imported #168 (0x5e20…6287 → 0x4ceb…9048)    
+2025-09-01 09:41:46 [Parachain] 🙌 Starting consensus session on top of parent 0x4ceb4aff755e9e100fbaa28a465e582762cf4dcac50d7a8bb6788b26dfce9048 (#168)    
+2025-09-01 09:41:46 [Parachain] 🎁 Prepared block for proposing at 169 (1 ms) hash: 0xf23f301d99791aae591d5a4f5964357ff43e8bac9e13a49a14fb639061c00ddf; parent_hash: 0x4ceb…9048; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:46 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xf23f301d99791aae591d5a4f5964357ff43e8bac9e13a49a14fb639061c00ddf, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:46 [Parachain] 🏆 Imported #169 (0x4ceb…9048 → 0xf23f…0ddf)    
+2025-09-01 09:41:48 [Parachain] 💤 Idle (0 peers), best: #169 (0xf23f…0ddf), finalized #169 (0xf23f…0ddf), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:49 [Parachain] 🙌 Starting consensus session on top of parent 0xf23f301d99791aae591d5a4f5964357ff43e8bac9e13a49a14fb639061c00ddf (#169)    
+2025-09-01 09:41:49 [Parachain] 🎁 Prepared block for proposing at 170 (1 ms) hash: 0x0d9a6d17608fb188563beb2cab53f69a6e197bad78229ff01763310b987b0c70; parent_hash: 0xf23f…0ddf; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:49 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x0d9a6d17608fb188563beb2cab53f69a6e197bad78229ff01763310b987b0c70, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:49 [Parachain] 🏆 Imported #170 (0xf23f…0ddf → 0x0d9a…0c70)    
+2025-09-01 09:41:52 [Parachain] 🙌 Starting consensus session on top of parent 0x0d9a6d17608fb188563beb2cab53f69a6e197bad78229ff01763310b987b0c70 (#170)    
+2025-09-01 09:41:52 [Parachain] 🎁 Prepared block for proposing at 171 (1 ms) hash: 0x6a637f0dfab009278582dbabba62bf915d69a3c3cb7c32dea49463e175ddcee2; parent_hash: 0x0d9a…0c70; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:52 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x6a637f0dfab009278582dbabba62bf915d69a3c3cb7c32dea49463e175ddcee2, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:52 [Parachain] 🏆 Imported #171 (0x0d9a…0c70 → 0x6a63…cee2)    
+2025-09-01 09:41:53 [Parachain] 💤 Idle (0 peers), best: #171 (0x6a63…cee2), finalized #171 (0x6a63…cee2), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:55 [Parachain] 🙌 Starting consensus session on top of parent 0x6a637f0dfab009278582dbabba62bf915d69a3c3cb7c32dea49463e175ddcee2 (#171)    
+2025-09-01 09:41:55 [Parachain] 🎁 Prepared block for proposing at 172 (1 ms) hash: 0x47fe5ff53638119654c51a0d3d913d01002927eff5610df97cdac8879778589f; parent_hash: 0x6a63…cee2; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:55 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x47fe5ff53638119654c51a0d3d913d01002927eff5610df97cdac8879778589f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:55 [Parachain] 🏆 Imported #172 (0x6a63…cee2 → 0x47fe…589f)    
+2025-09-01 09:41:58 [Parachain] 💤 Idle (0 peers), best: #172 (0x47fe…589f), finalized #172 (0x47fe…589f), ⬇ 0 ⬆ 0    
+2025-09-01 09:41:58 [Parachain] 🙌 Starting consensus session on top of parent 0x47fe5ff53638119654c51a0d3d913d01002927eff5610df97cdac8879778589f (#172)    
+2025-09-01 09:41:58 [Parachain] 🎁 Prepared block for proposing at 173 (1 ms) hash: 0xe79528a0de66734ac003d6ff902e21c19cd51cc011a56ad6f4c36b4bb2771190; parent_hash: 0x47fe…589f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:41:58 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xe79528a0de66734ac003d6ff902e21c19cd51cc011a56ad6f4c36b4bb2771190, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:41:58 [Parachain] 🏆 Imported #173 (0x47fe…589f → 0xe795…1190)    
+2025-09-01 09:42:01 [Parachain] 🙌 Starting consensus session on top of parent 0xe79528a0de66734ac003d6ff902e21c19cd51cc011a56ad6f4c36b4bb2771190 (#173)    
+2025-09-01 09:42:01 [Parachain] 🎁 Prepared block for proposing at 174 (1 ms) hash: 0x670b20bf98c87f6abd8703d02c5998faaa1e23b8b0790cc5424b45a617eb907f; parent_hash: 0xe795…1190; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:01 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x670b20bf98c87f6abd8703d02c5998faaa1e23b8b0790cc5424b45a617eb907f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:01 [Parachain] 🏆 Imported #174 (0xe795…1190 → 0x670b…907f)    
+2025-09-01 09:42:03 [Parachain] 💤 Idle (0 peers), best: #174 (0x670b…907f), finalized #174 (0x670b…907f), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:04 [Parachain] 🙌 Starting consensus session on top of parent 0x670b20bf98c87f6abd8703d02c5998faaa1e23b8b0790cc5424b45a617eb907f (#174)    
+2025-09-01 09:42:04 [Parachain] 🎁 Prepared block for proposing at 175 (1 ms) hash: 0x6196320b3aae3ee898a938b6deb0f9177226c91d5478899352ec9087a8484f6d; parent_hash: 0x670b…907f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:04 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x6196320b3aae3ee898a938b6deb0f9177226c91d5478899352ec9087a8484f6d, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:04 [Parachain] 🏆 Imported #175 (0x670b…907f → 0x6196…4f6d)    
+2025-09-01 09:42:07 [Parachain] 🙌 Starting consensus session on top of parent 0x6196320b3aae3ee898a938b6deb0f9177226c91d5478899352ec9087a8484f6d (#175)    
+2025-09-01 09:42:07 [Parachain] 🎁 Prepared block for proposing at 176 (1 ms) hash: 0x3200121ba2580934390c310cb653c2520d46477047ea27896d1f7b94877a2e3f; parent_hash: 0x6196…4f6d; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:07 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x3200121ba2580934390c310cb653c2520d46477047ea27896d1f7b94877a2e3f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:07 [Parachain] 🏆 Imported #176 (0x6196…4f6d → 0x3200…2e3f)    
+2025-09-01 09:42:08 [Parachain] 💤 Idle (0 peers), best: #176 (0x3200…2e3f), finalized #176 (0x3200…2e3f), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:10 [Parachain] 🙌 Starting consensus session on top of parent 0x3200121ba2580934390c310cb653c2520d46477047ea27896d1f7b94877a2e3f (#176)    
+2025-09-01 09:42:10 [Parachain] 🎁 Prepared block for proposing at 177 (1 ms) hash: 0x009d441427d1c02a5aa0a8feb27edd3feeefa32afb4314ad1d28b59372511cff; parent_hash: 0x3200…2e3f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:10 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x009d441427d1c02a5aa0a8feb27edd3feeefa32afb4314ad1d28b59372511cff, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:10 [Parachain] 🏆 Imported #177 (0x3200…2e3f → 0x009d…1cff)    
+2025-09-01 09:42:13 [Parachain] 💤 Idle (0 peers), best: #177 (0x009d…1cff), finalized #177 (0x009d…1cff), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:13 [Parachain] 🙌 Starting consensus session on top of parent 0x009d441427d1c02a5aa0a8feb27edd3feeefa32afb4314ad1d28b59372511cff (#177)    
+2025-09-01 09:42:13 [Parachain] 🎁 Prepared block for proposing at 178 (1 ms) hash: 0x39697a3203283d19ffe04297c682e4bfc7bb56a701884df9d74b05a64b710df3; parent_hash: 0x009d…1cff; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:13 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x39697a3203283d19ffe04297c682e4bfc7bb56a701884df9d74b05a64b710df3, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:13 [Parachain] 🏆 Imported #178 (0x009d…1cff → 0x3969…0df3)    
+2025-09-01 09:42:16 [Parachain] 🙌 Starting consensus session on top of parent 0x39697a3203283d19ffe04297c682e4bfc7bb56a701884df9d74b05a64b710df3 (#178)    
+2025-09-01 09:42:16 [Parachain] 🎁 Prepared block for proposing at 179 (2 ms) hash: 0x67ec932a5d50e030a349f850b2092050f04a38438393e1ceb6ddb382434cd8de; parent_hash: 0x3969…0df3; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:16 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x67ec932a5d50e030a349f850b2092050f04a38438393e1ceb6ddb382434cd8de, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:16 [Parachain] 🏆 Imported #179 (0x3969…0df3 → 0x67ec…d8de)    
+2025-09-01 09:42:18 [Parachain] 💤 Idle (0 peers), best: #179 (0x67ec…d8de), finalized #179 (0x67ec…d8de), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:19 [Parachain] 🙌 Starting consensus session on top of parent 0x67ec932a5d50e030a349f850b2092050f04a38438393e1ceb6ddb382434cd8de (#179)    
+2025-09-01 09:42:19 [Parachain] 🎁 Prepared block for proposing at 180 (2 ms) hash: 0xc1e0f06088df881db6118babe43648405774f9b87ac01e278dc56ec387ddf3d5; parent_hash: 0x67ec…d8de; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:19 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xc1e0f06088df881db6118babe43648405774f9b87ac01e278dc56ec387ddf3d5, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:19 [Parachain] 🏆 Imported #180 (0x67ec…d8de → 0xc1e0…f3d5)    
+2025-09-01 09:42:22 [Parachain] 🙌 Starting consensus session on top of parent 0xc1e0f06088df881db6118babe43648405774f9b87ac01e278dc56ec387ddf3d5 (#180)    
+2025-09-01 09:42:22 [Parachain] 🎁 Prepared block for proposing at 181 (2 ms) hash: 0xb0d9ba3acc464478d0478cfdacf73d378bf2c6865fc19bc4f2b211f202843d03; parent_hash: 0xc1e0…f3d5; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:22 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xb0d9ba3acc464478d0478cfdacf73d378bf2c6865fc19bc4f2b211f202843d03, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:22 [Parachain] 🏆 Imported #181 (0xc1e0…f3d5 → 0xb0d9…3d03)    
+2025-09-01 09:42:23 [Parachain] 💤 Idle (0 peers), best: #181 (0xb0d9…3d03), finalized #181 (0xb0d9…3d03), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:25 [Parachain] 🙌 Starting consensus session on top of parent 0xb0d9ba3acc464478d0478cfdacf73d378bf2c6865fc19bc4f2b211f202843d03 (#181)    
+2025-09-01 09:42:25 [Parachain] 🎁 Prepared block for proposing at 182 (1 ms) hash: 0xd7e2b48c066b4e63d1fb228f2c4b701819c9cda89f2b3c9d8dd2ba2553ffa998; parent_hash: 0xb0d9…3d03; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:25 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xd7e2b48c066b4e63d1fb228f2c4b701819c9cda89f2b3c9d8dd2ba2553ffa998, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:25 [Parachain] 🏆 Imported #182 (0xb0d9…3d03 → 0xd7e2…a998)    
+2025-09-01 09:42:28 [Parachain] 💤 Idle (0 peers), best: #182 (0xd7e2…a998), finalized #182 (0xd7e2…a998), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:28 [Parachain] 🙌 Starting consensus session on top of parent 0xd7e2b48c066b4e63d1fb228f2c4b701819c9cda89f2b3c9d8dd2ba2553ffa998 (#182)    
+2025-09-01 09:42:28 [Parachain] 🎁 Prepared block for proposing at 183 (1 ms) hash: 0xe30bd6ad66b27ee8b535927d4ee2c3391c0db0b955300d9ab8300c7c9e697b75; parent_hash: 0xd7e2…a998; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:28 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xe30bd6ad66b27ee8b535927d4ee2c3391c0db0b955300d9ab8300c7c9e697b75, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:28 [Parachain] 🏆 Imported #183 (0xd7e2…a998 → 0xe30b…7b75)    
+2025-09-01 09:42:31 [Parachain] 🙌 Starting consensus session on top of parent 0xe30bd6ad66b27ee8b535927d4ee2c3391c0db0b955300d9ab8300c7c9e697b75 (#183)    
+2025-09-01 09:42:31 [Parachain] 🎁 Prepared block for proposing at 184 (2 ms) hash: 0x49021f461767bdbe5506ab6f9ef10bacd3522806ec082bc718c7c8d8493639a4; parent_hash: 0xe30b…7b75; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:31 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x49021f461767bdbe5506ab6f9ef10bacd3522806ec082bc718c7c8d8493639a4, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:31 [Parachain] 🏆 Imported #184 (0xe30b…7b75 → 0x4902…39a4)    
+2025-09-01 09:42:33 [Parachain] 💤 Idle (0 peers), best: #184 (0x4902…39a4), finalized #184 (0x4902…39a4), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:34 [Parachain] 🙌 Starting consensus session on top of parent 0x49021f461767bdbe5506ab6f9ef10bacd3522806ec082bc718c7c8d8493639a4 (#184)    
+2025-09-01 09:42:34 [Parachain] 🎁 Prepared block for proposing at 185 (1 ms) hash: 0xf3c130c8a7bf7e181c37fecf4dfb4e8571f8de6497ed35e15fed805cf4dce208; parent_hash: 0x4902…39a4; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:34 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xf3c130c8a7bf7e181c37fecf4dfb4e8571f8de6497ed35e15fed805cf4dce208, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:34 [Parachain] 🏆 Imported #185 (0x4902…39a4 → 0xf3c1…e208)    
+2025-09-01 09:42:37 [Parachain] 🙌 Starting consensus session on top of parent 0xf3c130c8a7bf7e181c37fecf4dfb4e8571f8de6497ed35e15fed805cf4dce208 (#185)    
+2025-09-01 09:42:37 [Parachain] 🎁 Prepared block for proposing at 186 (1 ms) hash: 0xb1896fd02a22dac6d42f5d81d934e6322a2e52807f6112fadcee68e8ec01360f; parent_hash: 0xf3c1…e208; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:37 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xb1896fd02a22dac6d42f5d81d934e6322a2e52807f6112fadcee68e8ec01360f, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:37 [Parachain] 🏆 Imported #186 (0xf3c1…e208 → 0xb189…360f)    
+2025-09-01 09:42:38 [Parachain] 💤 Idle (0 peers), best: #186 (0xb189…360f), finalized #186 (0xb189…360f), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:40 [Parachain] 🙌 Starting consensus session on top of parent 0xb1896fd02a22dac6d42f5d81d934e6322a2e52807f6112fadcee68e8ec01360f (#186)    
+2025-09-01 09:42:40 [Parachain] 🎁 Prepared block for proposing at 187 (2 ms) hash: 0xedcf586630ed68443c41715f399efc38f450cc354cc7a37702c28241d06a4c51; parent_hash: 0xb189…360f; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:40 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xedcf586630ed68443c41715f399efc38f450cc354cc7a37702c28241d06a4c51, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:40 [Parachain] 🏆 Imported #187 (0xb189…360f → 0xedcf…4c51)    
+2025-09-01 09:42:43 [Parachain] 💤 Idle (0 peers), best: #187 (0xedcf…4c51), finalized #187 (0xedcf…4c51), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:43 [Parachain] 🙌 Starting consensus session on top of parent 0xedcf586630ed68443c41715f399efc38f450cc354cc7a37702c28241d06a4c51 (#187)    
+2025-09-01 09:42:43 [Parachain] 🎁 Prepared block for proposing at 188 (1 ms) hash: 0x91b7a7a6ed114ac24049f684a9d616aab6e1bd828edef268a6f58633d19239cd; parent_hash: 0xedcf…4c51; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:43 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x91b7a7a6ed114ac24049f684a9d616aab6e1bd828edef268a6f58633d19239cd, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:43 [Parachain] 🏆 Imported #188 (0xedcf…4c51 → 0x91b7…39cd)    
+2025-09-01 09:42:46 [Parachain] 🙌 Starting consensus session on top of parent 0x91b7a7a6ed114ac24049f684a9d616aab6e1bd828edef268a6f58633d19239cd (#188)    
+2025-09-01 09:42:46 [Parachain] 🎁 Prepared block for proposing at 189 (1 ms) hash: 0xff3412a2c63c4854d1ddf0a3b751cdeb3c24314b2190257a1563747011f7c8b7; parent_hash: 0x91b7…39cd; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:46 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xff3412a2c63c4854d1ddf0a3b751cdeb3c24314b2190257a1563747011f7c8b7, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:46 [Parachain] 🏆 Imported #189 (0x91b7…39cd → 0xff34…c8b7)    
+2025-09-01 09:42:48 [Parachain] 💤 Idle (0 peers), best: #189 (0xff34…c8b7), finalized #189 (0xff34…c8b7), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:49 [Parachain] 🙌 Starting consensus session on top of parent 0xff3412a2c63c4854d1ddf0a3b751cdeb3c24314b2190257a1563747011f7c8b7 (#189)    
+2025-09-01 09:42:49 [Parachain] 🎁 Prepared block for proposing at 190 (1 ms) hash: 0xdb7f25fa0c78a443d7dfdc5c04450108d9e212cd98fac8cb426f3a9cbc39a801; parent_hash: 0xff34…c8b7; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:49 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xdb7f25fa0c78a443d7dfdc5c04450108d9e212cd98fac8cb426f3a9cbc39a801, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:49 [Parachain] 🏆 Imported #190 (0xff34…c8b7 → 0xdb7f…a801)    
+2025-09-01 09:42:52 [Parachain] 🙌 Starting consensus session on top of parent 0xdb7f25fa0c78a443d7dfdc5c04450108d9e212cd98fac8cb426f3a9cbc39a801 (#190)    
+2025-09-01 09:42:52 [Parachain] 🎁 Prepared block for proposing at 191 (1 ms) hash: 0x289266cf5cd2afd2b99f19a73ee0abdad81af57f12c51cd368c2b5e18b2119c1; parent_hash: 0xdb7f…a801; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:52 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x289266cf5cd2afd2b99f19a73ee0abdad81af57f12c51cd368c2b5e18b2119c1, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:52 [Parachain] 🏆 Imported #191 (0xdb7f…a801 → 0x2892…19c1)    
+2025-09-01 09:42:53 [Parachain] 💤 Idle (0 peers), best: #191 (0x2892…19c1), finalized #191 (0x2892…19c1), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:55 [Parachain] 🙌 Starting consensus session on top of parent 0x289266cf5cd2afd2b99f19a73ee0abdad81af57f12c51cd368c2b5e18b2119c1 (#191)    
+2025-09-01 09:42:55 [Parachain] 🎁 Prepared block for proposing at 192 (1 ms) hash: 0x95204f2aca1c353bb37f25773ea86caf22b0607330dd3698c865b39c7beea065; parent_hash: 0x2892…19c1; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:55 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x95204f2aca1c353bb37f25773ea86caf22b0607330dd3698c865b39c7beea065, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:55 [Parachain] 🏆 Imported #192 (0x2892…19c1 → 0x9520…a065)    
+2025-09-01 09:42:58 [Parachain] 💤 Idle (0 peers), best: #192 (0x9520…a065), finalized #192 (0x9520…a065), ⬇ 0 ⬆ 0    
+2025-09-01 09:42:58 [Parachain] 🙌 Starting consensus session on top of parent 0x95204f2aca1c353bb37f25773ea86caf22b0607330dd3698c865b39c7beea065 (#192)    
+2025-09-01 09:42:58 [Parachain] 🎁 Prepared block for proposing at 193 (1 ms) hash: 0x26cf56f0e107e7be7f9b0baf20e2d018e1b26ceaf339dc119fca726b4c03263d; parent_hash: 0x9520…a065; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:42:58 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x26cf56f0e107e7be7f9b0baf20e2d018e1b26ceaf339dc119fca726b4c03263d, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:42:58 [Parachain] 🏆 Imported #193 (0x9520…a065 → 0x26cf…263d)    
+2025-09-01 09:43:01 [Parachain] 🙌 Starting consensus session on top of parent 0x26cf56f0e107e7be7f9b0baf20e2d018e1b26ceaf339dc119fca726b4c03263d (#193)    
+2025-09-01 09:43:01 [Parachain] 🎁 Prepared block for proposing at 194 (1 ms) hash: 0x242a10828df58a13395e67a3065612b2da68ef954568e170eeb580de1216b5f9; parent_hash: 0x26cf…263d; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:01 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x242a10828df58a13395e67a3065612b2da68ef954568e170eeb580de1216b5f9, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:01 [Parachain] 🏆 Imported #194 (0x26cf…263d → 0x242a…b5f9)    
+2025-09-01 09:43:03 [Parachain] 💤 Idle (0 peers), best: #194 (0x242a…b5f9), finalized #194 (0x242a…b5f9), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:04 [Parachain] 🙌 Starting consensus session on top of parent 0x242a10828df58a13395e67a3065612b2da68ef954568e170eeb580de1216b5f9 (#194)    
+2025-09-01 09:43:04 [Parachain] 🎁 Prepared block for proposing at 195 (1 ms) hash: 0x6ed9a320e28e7e08b35da731bc5584eb29bc5af6bdd947442569dd087db586a4; parent_hash: 0x242a…b5f9; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:04 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x6ed9a320e28e7e08b35da731bc5584eb29bc5af6bdd947442569dd087db586a4, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:04 [Parachain] 🏆 Imported #195 (0x242a…b5f9 → 0x6ed9…86a4)    
+2025-09-01 09:43:07 [Parachain] 🙌 Starting consensus session on top of parent 0x6ed9a320e28e7e08b35da731bc5584eb29bc5af6bdd947442569dd087db586a4 (#195)    
+2025-09-01 09:43:07 [Parachain] 🎁 Prepared block for proposing at 196 (1 ms) hash: 0xb55d81ff01b92f081bcdf9e3066406c58eb3ea80f28828d1618c0958732ac776; parent_hash: 0x6ed9…86a4; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:07 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xb55d81ff01b92f081bcdf9e3066406c58eb3ea80f28828d1618c0958732ac776, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:07 [Parachain] 🏆 Imported #196 (0x6ed9…86a4 → 0xb55d…c776)    
+2025-09-01 09:43:08 [Parachain] 💤 Idle (0 peers), best: #196 (0xb55d…c776), finalized #196 (0xb55d…c776), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:10 [Parachain] 🙌 Starting consensus session on top of parent 0xb55d81ff01b92f081bcdf9e3066406c58eb3ea80f28828d1618c0958732ac776 (#196)    
+2025-09-01 09:43:10 [Parachain] 🎁 Prepared block for proposing at 197 (1 ms) hash: 0x037e8c66f84b83f42839159669f4e3ffaf45aa4f536f7acee4d07870767230fc; parent_hash: 0xb55d…c776; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:10 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x037e8c66f84b83f42839159669f4e3ffaf45aa4f536f7acee4d07870767230fc, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:10 [Parachain] 🏆 Imported #197 (0xb55d…c776 → 0x037e…30fc)    
+2025-09-01 09:43:13 [Parachain] 💤 Idle (0 peers), best: #197 (0x037e…30fc), finalized #197 (0x037e…30fc), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:13 [Parachain] 🙌 Starting consensus session on top of parent 0x037e8c66f84b83f42839159669f4e3ffaf45aa4f536f7acee4d07870767230fc (#197)    
+2025-09-01 09:43:13 [Parachain] 🎁 Prepared block for proposing at 198 (3 ms) hash: 0xa381e426c87160feca61ff4c9014d8ac673b5845e083c599162812e9305867c0; parent_hash: 0x037e…30fc; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:13 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xa381e426c87160feca61ff4c9014d8ac673b5845e083c599162812e9305867c0, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:13 [Parachain] 🏆 Imported #198 (0x037e…30fc → 0xa381…67c0)    
+2025-09-01 09:43:16 [Parachain] 🙌 Starting consensus session on top of parent 0xa381e426c87160feca61ff4c9014d8ac673b5845e083c599162812e9305867c0 (#198)    
+2025-09-01 09:43:16 [Parachain] 🎁 Prepared block for proposing at 199 (1 ms) hash: 0x8b32f9fd273c031b5344cc3ea6608a069bbbfaaaa3ab5a76b9fac1f559706b0b; parent_hash: 0xa381…67c0; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:16 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x8b32f9fd273c031b5344cc3ea6608a069bbbfaaaa3ab5a76b9fac1f559706b0b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:16 [Parachain] 🏆 Imported #199 (0xa381…67c0 → 0x8b32…6b0b)    
+2025-09-01 09:43:18 [Parachain] 💤 Idle (0 peers), best: #199 (0x8b32…6b0b), finalized #199 (0x8b32…6b0b), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:19 [Parachain] 🙌 Starting consensus session on top of parent 0x8b32f9fd273c031b5344cc3ea6608a069bbbfaaaa3ab5a76b9fac1f559706b0b (#199)    
+2025-09-01 09:43:19 [Parachain] 🎁 Prepared block for proposing at 200 (1 ms) hash: 0x7e84c82d5ee992c27d1eef7ecf1ba45d80fe9824c1b192df56c375d71a6fd109; parent_hash: 0x8b32…6b0b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:19 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x7e84c82d5ee992c27d1eef7ecf1ba45d80fe9824c1b192df56c375d71a6fd109, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:19 [Parachain] 🏆 Imported #200 (0x8b32…6b0b → 0x7e84…d109)    
+2025-09-01 09:43:22 [Parachain] 🙌 Starting consensus session on top of parent 0x7e84c82d5ee992c27d1eef7ecf1ba45d80fe9824c1b192df56c375d71a6fd109 (#200)    
+2025-09-01 09:43:22 [Parachain] 🎁 Prepared block for proposing at 201 (1 ms) hash: 0xf718f997d71b9db1e9e608a5407301d208271508178b83ec6e4e143a85f3f21b; parent_hash: 0x7e84…d109; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:22 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xf718f997d71b9db1e9e608a5407301d208271508178b83ec6e4e143a85f3f21b, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:22 [Parachain] 🏆 Imported #201 (0x7e84…d109 → 0xf718…f21b)    
+2025-09-01 09:43:23 [Parachain] 💤 Idle (0 peers), best: #201 (0xf718…f21b), finalized #201 (0xf718…f21b), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:25 [Parachain] 🙌 Starting consensus session on top of parent 0xf718f997d71b9db1e9e608a5407301d208271508178b83ec6e4e143a85f3f21b (#201)    
+2025-09-01 09:43:25 [Parachain] 🎁 Prepared block for proposing at 202 (1 ms) hash: 0x9f0532bccc3acb82ac400c296a8b6f443b8b24371b7f7b4280053db16e298162; parent_hash: 0xf718…f21b; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:25 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x9f0532bccc3acb82ac400c296a8b6f443b8b24371b7f7b4280053db16e298162, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:25 [Parachain] 🏆 Imported #202 (0xf718…f21b → 0x9f05…8162)    
+2025-09-01 09:43:28 [Parachain] 💤 Idle (0 peers), best: #202 (0x9f05…8162), finalized #202 (0x9f05…8162), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:28 [Parachain] 🙌 Starting consensus session on top of parent 0x9f0532bccc3acb82ac400c296a8b6f443b8b24371b7f7b4280053db16e298162 (#202)    
+2025-09-01 09:43:28 [Parachain] 🎁 Prepared block for proposing at 203 (1 ms) hash: 0x6091d7470cd36154d8b7b2f664bf15f637b4bd5636446ae9a545186a4567a794; parent_hash: 0x9f05…8162; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:28 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x6091d7470cd36154d8b7b2f664bf15f637b4bd5636446ae9a545186a4567a794, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:28 [Parachain] 🏆 Imported #203 (0x9f05…8162 → 0x6091…a794)    
+2025-09-01 09:43:31 [Parachain] 🙌 Starting consensus session on top of parent 0x6091d7470cd36154d8b7b2f664bf15f637b4bd5636446ae9a545186a4567a794 (#203)    
+2025-09-01 09:43:31 [Parachain] 🎁 Prepared block for proposing at 204 (1 ms) hash: 0xdc1a6ca4f8e9754ffbb72979a5f45b040cb070717c73b091d4400235c940aa36; parent_hash: 0x6091…a794; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:31 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xdc1a6ca4f8e9754ffbb72979a5f45b040cb070717c73b091d4400235c940aa36, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:31 [Parachain] 🏆 Imported #204 (0x6091…a794 → 0xdc1a…aa36)    
+2025-09-01 09:43:33 [Parachain] 💤 Idle (0 peers), best: #204 (0xdc1a…aa36), finalized #204 (0xdc1a…aa36), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:34 [Parachain] 🙌 Starting consensus session on top of parent 0xdc1a6ca4f8e9754ffbb72979a5f45b040cb070717c73b091d4400235c940aa36 (#204)    
+2025-09-01 09:43:34 [Parachain] 🎁 Prepared block for proposing at 205 (1 ms) hash: 0x2041f5c4054af2358a444f9f789c9943aa35a10c328107ff4690d1b528f00ec2; parent_hash: 0xdc1a…aa36; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:34 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x2041f5c4054af2358a444f9f789c9943aa35a10c328107ff4690d1b528f00ec2, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:34 [Parachain] 🏆 Imported #205 (0xdc1a…aa36 → 0x2041…0ec2)    
+2025-09-01 09:43:37 [Parachain] 🙌 Starting consensus session on top of parent 0x2041f5c4054af2358a444f9f789c9943aa35a10c328107ff4690d1b528f00ec2 (#205)    
+2025-09-01 09:43:37 [Parachain] 🎁 Prepared block for proposing at 206 (1 ms) hash: 0x3fcb32ec855a51a168456738d088cc1ecc8d9058145d8eaf72bbd1e20d5f7efb; parent_hash: 0x2041…0ec2; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:37 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x3fcb32ec855a51a168456738d088cc1ecc8d9058145d8eaf72bbd1e20d5f7efb, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:37 [Parachain] 🏆 Imported #206 (0x2041…0ec2 → 0x3fcb…7efb)    
+2025-09-01 09:43:38 [Parachain] 💤 Idle (0 peers), best: #206 (0x3fcb…7efb), finalized #206 (0x3fcb…7efb), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:40 [Parachain] 🙌 Starting consensus session on top of parent 0x3fcb32ec855a51a168456738d088cc1ecc8d9058145d8eaf72bbd1e20d5f7efb (#206)    
+2025-09-01 09:43:40 [Parachain] 🎁 Prepared block for proposing at 207 (1 ms) hash: 0x494813c4c6c9ad447303ff1f24a98307c63e9109c739fd7b5c892c1ef95bace3; parent_hash: 0x3fcb…7efb; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:40 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x494813c4c6c9ad447303ff1f24a98307c63e9109c739fd7b5c892c1ef95bace3, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:40 [Parachain] 🏆 Imported #207 (0x3fcb…7efb → 0x4948…ace3)    
+2025-09-01 09:43:43 [Parachain] 💤 Idle (0 peers), best: #207 (0x4948…ace3), finalized #207 (0x4948…ace3), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:43 [Parachain] 🙌 Starting consensus session on top of parent 0x494813c4c6c9ad447303ff1f24a98307c63e9109c739fd7b5c892c1ef95bace3 (#207)    
+2025-09-01 09:43:43 [Parachain] 🎁 Prepared block for proposing at 208 (1 ms) hash: 0x80348f496fc985ded8eddcebd1de6778a31db842662ed00ac2ba8ec291cbcc69; parent_hash: 0x4948…ace3; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:43 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x80348f496fc985ded8eddcebd1de6778a31db842662ed00ac2ba8ec291cbcc69, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:43 [Parachain] 🏆 Imported #208 (0x4948…ace3 → 0x8034…cc69)    
+2025-09-01 09:43:46 [Parachain] 🙌 Starting consensus session on top of parent 0x80348f496fc985ded8eddcebd1de6778a31db842662ed00ac2ba8ec291cbcc69 (#208)    
+2025-09-01 09:43:46 [Parachain] 🎁 Prepared block for proposing at 209 (1 ms) hash: 0xa2304e0cf31ab4d90a7b692e0a9d20676444e7952bbd8aa4417713fed487bed5; parent_hash: 0x8034…cc69; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:46 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xa2304e0cf31ab4d90a7b692e0a9d20676444e7952bbd8aa4417713fed487bed5, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:46 [Parachain] 🏆 Imported #209 (0x8034…cc69 → 0xa230…bed5)    
+2025-09-01 09:43:48 [Parachain] 💤 Idle (0 peers), best: #209 (0xa230…bed5), finalized #209 (0xa230…bed5), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:49 [Parachain] 🙌 Starting consensus session on top of parent 0xa2304e0cf31ab4d90a7b692e0a9d20676444e7952bbd8aa4417713fed487bed5 (#209)    
+2025-09-01 09:43:49 [Parachain] 🎁 Prepared block for proposing at 210 (1 ms) hash: 0x8b31b771062912316accac00927251ecef2b98ce7ee5e2ba84d0889a53ab2895; parent_hash: 0xa230…bed5; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:49 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x8b31b771062912316accac00927251ecef2b98ce7ee5e2ba84d0889a53ab2895, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:49 [Parachain] 🏆 Imported #210 (0xa230…bed5 → 0x8b31…2895)    
+2025-09-01 09:43:52 [Parachain] 🙌 Starting consensus session on top of parent 0x8b31b771062912316accac00927251ecef2b98ce7ee5e2ba84d0889a53ab2895 (#210)    
+2025-09-01 09:43:52 [Parachain] 🎁 Prepared block for proposing at 211 (1 ms) hash: 0x90f3c42474c58fce889c200275f2b2b2d79671bf16ff5c46862a4610e66c7f54; parent_hash: 0x8b31…2895; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:52 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x90f3c42474c58fce889c200275f2b2b2d79671bf16ff5c46862a4610e66c7f54, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:52 [Parachain] 🏆 Imported #211 (0x8b31…2895 → 0x90f3…7f54)    
+2025-09-01 09:43:53 [Parachain] 💤 Idle (0 peers), best: #211 (0x90f3…7f54), finalized #211 (0x90f3…7f54), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:55 [Parachain] 🙌 Starting consensus session on top of parent 0x90f3c42474c58fce889c200275f2b2b2d79671bf16ff5c46862a4610e66c7f54 (#211)    
+2025-09-01 09:43:55 [Parachain] 🎁 Prepared block for proposing at 212 (1 ms) hash: 0xc4d24c5a962003a61040e2743dbe44a93165152f8c20bb52e0f55b78ed5339e4; parent_hash: 0x90f3…7f54; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:55 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xc4d24c5a962003a61040e2743dbe44a93165152f8c20bb52e0f55b78ed5339e4, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:55 [Parachain] 🏆 Imported #212 (0x90f3…7f54 → 0xc4d2…39e4)    
+2025-09-01 09:43:58 [Parachain] 💤 Idle (0 peers), best: #212 (0xc4d2…39e4), finalized #212 (0xc4d2…39e4), ⬇ 0 ⬆ 0    
+2025-09-01 09:43:58 [Parachain] 🙌 Starting consensus session on top of parent 0xc4d24c5a962003a61040e2743dbe44a93165152f8c20bb52e0f55b78ed5339e4 (#212)    
+2025-09-01 09:43:58 [Parachain] 🎁 Prepared block for proposing at 213 (2 ms) hash: 0x31ac6518958c3ba46657b01d61c04be0fa1afde5c6f1ff51479c8eacd91b4f0c; parent_hash: 0xc4d2…39e4; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:43:58 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x31ac6518958c3ba46657b01d61c04be0fa1afde5c6f1ff51479c8eacd91b4f0c, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:43:58 [Parachain] 🏆 Imported #213 (0xc4d2…39e4 → 0x31ac…4f0c)    
+2025-09-01 09:44:01 [Parachain] 🙌 Starting consensus session on top of parent 0x31ac6518958c3ba46657b01d61c04be0fa1afde5c6f1ff51479c8eacd91b4f0c (#213)    
+2025-09-01 09:44:01 [Parachain] 🎁 Prepared block for proposing at 214 (1 ms) hash: 0x3ca3e35df9e290533e31b4975730317f4fa094321a7aae85b6e1bf4e4b1e2f5e; parent_hash: 0x31ac…4f0c; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:44:01 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x3ca3e35df9e290533e31b4975730317f4fa094321a7aae85b6e1bf4e4b1e2f5e, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:44:01 [Parachain] 🏆 Imported #214 (0x31ac…4f0c → 0x3ca3…2f5e)    
+2025-09-01 09:44:03 [Parachain] 💤 Idle (0 peers), best: #214 (0x3ca3…2f5e), finalized #214 (0x3ca3…2f5e), ⬇ 0 ⬆ 0    
+2025-09-01 09:44:04 [Parachain] 🙌 Starting consensus session on top of parent 0x3ca3e35df9e290533e31b4975730317f4fa094321a7aae85b6e1bf4e4b1e2f5e (#214)    
+2025-09-01 09:44:04 [Parachain] 🎁 Prepared block for proposing at 215 (1 ms) hash: 0x706d916c4b3cbfbf72f1d36e94976fbc25d72494c203c8a51ea049952676f047; parent_hash: 0x3ca3…2f5e; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:44:04 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x706d916c4b3cbfbf72f1d36e94976fbc25d72494c203c8a51ea049952676f047, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:44:04 [Parachain] 🏆 Imported #215 (0x3ca3…2f5e → 0x706d…f047)    
+2025-09-01 09:44:07 [Parachain] 🙌 Starting consensus session on top of parent 0x706d916c4b3cbfbf72f1d36e94976fbc25d72494c203c8a51ea049952676f047 (#215)    
+2025-09-01 09:44:07 [Parachain] 🎁 Prepared block for proposing at 216 (1 ms) hash: 0xa4ba2fdd0de5bd85b5deec19268b6033634961b80f52ebe06e345dafcf1f2a64; parent_hash: 0x706d…f047; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:44:07 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0xa4ba2fdd0de5bd85b5deec19268b6033634961b80f52ebe06e345dafcf1f2a64, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:44:07 [Parachain] 🏆 Imported #216 (0x706d…f047 → 0xa4ba…2a64)    
+2025-09-01 09:44:08 [Parachain] 💤 Idle (0 peers), best: #216 (0xa4ba…2a64), finalized #216 (0xa4ba…2a64), ⬇ 0 ⬆ 0    
+2025-09-01 09:44:10 [Parachain] 🙌 Starting consensus session on top of parent 0xa4ba2fdd0de5bd85b5deec19268b6033634961b80f52ebe06e345dafcf1f2a64 (#216)    
+2025-09-01 09:44:10 [Parachain] 🎁 Prepared block for proposing at 217 (1 ms) hash: 0x907002e8f1cba319f1ce8ed60dd8e33d90dd8785f61458b20c350a26a689e382; parent_hash: 0xa4ba…2a64; end: NoMoreTransactions; extrinsics_count: 2    
+2025-09-01 09:44:10 [Parachain] Consensus with no RPC sender success: CreatedBlock { hash: 0x907002e8f1cba319f1ce8ed60dd8e33d90dd8785f61458b20c350a26a689e382, aux: ImportedAux { header_only: false, clear_justification_requests: false, needs_justification: false, bad_justification: false, is_new_best: true }, proof_size: 0 }    
+2025-09-01 09:44:10 [Parachain] 🏆 Imported #217 (0xa4ba…2a64 → 0x9070…e382)    

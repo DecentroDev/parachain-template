@@ -24,6 +24,7 @@
 // For more information, please refer to <http://unlicense.org>
 
 mod xcm_config;
+// mod pallet_configs; // Temporarily disabled
 
 use polkadot_sdk::{staging_parachain_info as parachain_info, staging_xcm as xcm, *};
 #[cfg(not(feature = "runtime-benchmarks"))]
@@ -321,3 +322,6 @@ impl pallet_parachain_template::Config for Runtime {
 	type RuntimeEvent = RuntimeEvent;
 	type WeightInfo = pallet_parachain_template::weights::SubstrateWeight<Runtime>;
 }
+
+// Include custom pallet configurations
+// use pallet_configs::*; // Temporarily disabled

@@ -1,0 +1,20 @@
+[package]
+name = "pallet-insurances-rpc"
+version = "4.0.0-dev"
+authors = ["4irelabs developers <info@4irelabs.com>"]
+edition = "2021"
+license = "Unlicense"
+description = "RPC module for insurances."
+
+[dependencies]
+codec = { package = "parity-scale-codec", version = "3.0.0" }
+jsonrpsee = { version = "0.16.2", features = ["server", "macros"] }
+
+#frame-system = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.42" }
+sp-api = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.42" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.42" }
+#sp-core = { default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.42" }
+sp-blockchain = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.42" }
+
+pallet-insurances = { path = "../../insurances"}
+pallet-insurances-rpc-runtime-api = { path = "runtime-api"}

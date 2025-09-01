@@ -313,6 +313,16 @@ mod runtime {
 	// Template
 	#[runtime::pallet_index(50)]
 	pub type TemplatePallet = pallet_parachain_template;
+
+	// Custom pallets (temporarily disabled for migration)
+	// #[runtime::pallet_index(60)]
+	// pub type Dao = pallet_dao;
+	// #[runtime::pallet_index(61)]
+	// pub type Insurances = pallet_insurances;
+	// #[runtime::pallet_index(62)]
+	// pub type Marketplace = pallet_marketplace;
+	// #[runtime::pallet_index(63)]
+	// pub type PayoutProcessor = pallet_payout_processor;
 }
 
 #[docify::export(register_validate_block)]
