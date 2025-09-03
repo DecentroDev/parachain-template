@@ -1,20 +1,19 @@
-FROM docker.io/paritytech/ci-unified:latest as builder
+# Use Ubuntu as base image
+FROM ubuntu:22.04
 
-WORKDIR /polkadot
-COPY . /polkadot
+# Install runtime dependencies
+RUN apt-get update && apt-get install -y \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
 
-# Install Omni Node
-RUN cargo install --locked polkadot-omni-node@0.7.0
-
-FROM docker.io/paritytech/polkadot:latest
-
-# Copy the Omni Node binary
-COPY --from=builder /usr/local/cargo/bin/polkadot-omni-node /usr/local/bin/
+# Check if omni node binary exists on host, copy it
+COPY polkadot-omni-node /usr/local/bin/polkadot-omni-node
+RUN chmod +x /usr/local/bin/polkadot-omni-node
 
 # Copy the chain spec
 COPY chain_spec.json /chain_spec.json
 
-USER root
+# Create user and directories
 RUN useradd -m -u 1001 -U -s /bin/sh -d /polkadot polkadot && \
 	mkdir -p /data /polkadot/.local/share && \
 	chown -R polkadot:polkadot /data && \
@@ -27,4 +26,4 @@ VOLUME ["/data"]
 
 # Default command to run Omni Node
 ENTRYPOINT ["/usr/local/bin/polkadot-omni-node"]
-CMD ["--chain", "/chain_spec.json", "--collator", "--name", "omni-collator", "--rpc-port", "9944", "--port", "30333"]
+CMD ["--chain", "/chain_spec.json", "--dev", "--name", "prmx-omni-collator", "--rpc-port", "9944", "--port", "30333", "--rpc-cors", "all", "--unsafe-rpc-external", "--unsafe-force-node-key-generation", "--base-path", "/data", "--log", "info"]

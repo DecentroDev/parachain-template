@@ -9,7 +9,7 @@ edition = "2021"
 default-members = ["pallets/template", "runtime"]
 members = [
     "node",
-        # "offchain-utils",
+    # "offchain-utils",
     # "pallets/dao",
     # "pallets/insurances", 
     # "pallets/marketplace",
@@ -22,7 +22,7 @@ resolver = "2"
 [workspace.dependencies]
 parachain-template-runtime = { path = "./runtime", default-features = false }
 pallet-parachain-template = { path = "./pallets/template", default-features = false }
-# Custom pallets (temporarily disabled for migration)
+# Custom pallets (temporarily disabled due to compatibility issues)
 # pallet-dao = { path = "./pallets/dao", default-features = false }
 # pallet-insurances = { path = "./pallets/insurances", default-features = false }
 # pallet-marketplace = { path = "./pallets/marketplace", default-features = false }
