@@ -6,28 +6,6 @@
 //! HOSTNAME: `artemlaptop`, CPU: `AMD Ryzen 7 5700U with Radeon Graphics`
 //! EXECUTION: Some(Wasm), WASM-EXECUTION: Compiled, CHAIN: Some("dev"), DB CACHE: 1024
 
-// Executed Command:
-// target/release/parachain-template-node
-// benchmark
-// pallet
-// --chain
-// dev
-// --execution
-// wasm
-// --wasm-execution
-// compiled
-// --pallet
-// pallet_payout_processor
-// --extrinsic
-// *
-// --steps
-// 25
-// --repeat
-// 100
-// --json-file=/home/user/4ire/decentro-blockchain/pallets/payout_processor/src/benchmark_raw.json
-// --output
-// /home/user/4ire/decentro-blockchain/pallets/payout_processor/src/weights_new.rs
-
 #![cfg_attr(rustfmt, rustfmt_skip)]
 #![allow(unused_parens)]
 #![allow(unused_imports)]
@@ -39,232 +17,72 @@ use core::marker::PhantomData;
 
 /// Weight functions for `pallet_payout_processor`.
 pub trait WeightInfo {
-	fn feed_event(x: u64) -> Weight;
-	fn claim_premium_payout() -> Weight;
-	fn do_execute_insurance_payout() -> Weight;
-	fn add_oracle_member() -> Weight;
+	fn set_insurance_count() -> Weight;
 	fn set_event_threshold() -> Weight;
 	fn set_location_coordinates() -> Weight;
 	fn set_location_name() -> Weight;
+	fn on_initialize() -> Weight;
 }
 
 /// Weight functions for `pallet_payout_processor`.
 pub struct PayoutProcessorWeight<T>(PhantomData<T>);
 
 impl<T: frame_system::Config> WeightInfo for PayoutProcessorWeight<T> {
-	/// Storage: Oracle HasDispatched (r:1 w:1)
-	/// Proof: Oracle HasDispatched (max_values: Some(1), max_size: Some(3202), added: 3697, mode: MaxEncodedLen)
-	/// Storage: Timestamp Now (r:1 w:0)
-	/// Proof: Timestamp Now (max_values: Some(1), max_size: Some(8), added: 503, mode: MaxEncodedLen)
-	/// Storage: Oracle RawValues (r:3 w:1)
-	/// Proof: Oracle RawValues (max_values: None, max_size: Some(67), added: 2542, mode: MaxEncodedLen)
-	/// Storage: Oracle Values (r:1 w:0)
-	/// Proof: Oracle Values (max_values: None, max_size: Some(27), added: 2502, mode: MaxEncodedLen)
-	/// Storage: Insurance Metadata (r:1 w:0)
-	/// Proof: Insurance Metadata (max_values: None, max_size: Some(171), added: 2646, mode: MaxEncodedLen)
 	/// Storage: PayoutProcessor InsuranceCount (r:0 w:1)
 	/// Proof: PayoutProcessor InsuranceCount (max_values: Some(1), max_size: Some(8), added: 503, mode: MaxEncodedLen)
-	/// The range of component `x` is `[0, 100]`.
-	fn feed_event(x: u64, ) -> Weight {
+	fn set_insurance_count() -> Weight {
 		// Proof Size summary in bytes:
-		//  Measured:  `167`
-		//  Estimated: `8616`
-		// Minimum execution time: 78_979_000 picoseconds.
-		Weight::from_parts(93_943_599, 0)
-			.saturating_add(Weight::from_parts(0, 8616))
-			// Standard Error: 5_743
-			.saturating_add(Weight::from_parts(340_430, 0).saturating_mul(x))
-			.saturating_add(T::DbWeight::get().reads(7))
-			.saturating_add(T::DbWeight::get().writes(3))
+		//  Measured:  `0`
+		//  Estimated: `503`
+		// Minimum execution time: 10_000_000 picoseconds.
+		Weight::from_parts(10_000_000, 0)
+			.saturating_add(Weight::from_parts(0, 503))
+			.saturating_add(T::DbWeight::get().writes(1))
 	}
-	/// Storage: Insurance SmtIdToInsurance (r:1 w:1)
-	/// Proof: Insurance SmtIdToInsurance (max_values: None, max_size: Some(28), added: 2503, mode: MaxEncodedLen)
-	/// Storage: Insurance Metadata (r:1 w:1)
-	/// Proof: Insurance Metadata (max_values: None, max_size: Some(171), added: 2646, mode: MaxEncodedLen)
-	/// Storage: Assets Account (r:3 w:3)
-	/// Proof: Assets Account (max_values: None, max_size: Some(102), added: 2577, mode: MaxEncodedLen)
-	/// Storage: Dao PalletAccountId (r:1 w:0)
-	/// Proof Skipped: Dao PalletAccountId (max_values: Some(1), max_size: None, mode: Measured)
-	/// Storage: Assets Asset (r:2 w:2)
-	/// Proof: Assets Asset (max_values: None, max_size: Some(210), added: 2685, mode: MaxEncodedLen)
-	fn claim_premium_payout() -> Weight {
+
+	/// Storage: PayoutProcessor EventThresholds (r:0 w:1)
+	/// Proof: PayoutProcessor EventThresholds (max_values: None, max_size: Some(12), added: 2487, mode: MaxEncodedLen)
+	fn set_event_threshold() -> Weight {
 		// Proof Size summary in bytes:
-		//  Measured:  `1216`
-		//  Estimated: `8721`
-		// Minimum execution time: 211_600_000 picoseconds.
-		Weight::from_parts(237_669_000, 0)
-			.saturating_add(Weight::from_parts(0, 8721))
-			.saturating_add(T::DbWeight::get().reads(8))
-			.saturating_add(T::DbWeight::get().writes(7))
+		//  Measured:  `0`
+		//  Estimated: `2487`
+		// Minimum execution time: 15_000_000 picoseconds.
+		Weight::from_parts(15_000_000, 0)
+			.saturating_add(Weight::from_parts(0, 2487))
+			.saturating_add(T::DbWeight::get().writes(1))
 	}
-	fn add_oracle_member() -> Weight {
+
+	/// Storage: PayoutProcessor LocationCoordinates (r:0 w:1)
+	/// Proof: PayoutProcessor LocationCoordinates (max_values: None, max_size: Some(12), added: 2487, mode: MaxEncodedLen)
+	fn set_location_coordinates() -> Weight {
+		// Proof Size summary in bytes:
+		//  Measured:  `0`
+		//  Estimated: `2487`
+		// Minimum execution time: 15_000_000 picoseconds.
+		Weight::from_parts(15_000_000, 0)
+			.saturating_add(Weight::from_parts(0, 2487))
+			.saturating_add(T::DbWeight::get().writes(1))
+	}
+
+	/// Storage: PayoutProcessor LocationNames (r:0 w:1)
+	/// Proof: PayoutProcessor LocationNames (max_values: None, max_size: Some(76), added: 2551, mode: MaxEncodedLen)
+	fn set_location_name() -> Weight {
+		// Proof Size summary in bytes:
+		//  Measured:  `0`
+		//  Estimated: `2551`
+		// Minimum execution time: 20_000_000 picoseconds.
+		Weight::from_parts(20_000_000, 0)
+			.saturating_add(Weight::from_parts(0, 2551))
+			.saturating_add(T::DbWeight::get().writes(1))
+	}
+
+	fn on_initialize() -> Weight {
 		// Proof Size summary in bytes:
 		//  Measured:  `0`
 		//  Estimated: `0`
-		// Minimum execution time: 18_204_000 picoseconds.
-		Weight::from_parts(21_210_000, 0)
+		// Minimum execution time: 1_000_000 picoseconds.
+		Weight::from_parts(1_000_000, 0)
 			.saturating_add(Weight::from_parts(0, 0))
-	}
-	/// Storage: Insurance Metadata (r:2 w:1)
-	/// Proof: Insurance Metadata (max_values: None, max_size: Some(171), added: 2646, mode: MaxEncodedLen)
-	/// Storage: Dao PalletAccountId (r:1 w:0)
-	/// Proof Skipped: Dao PalletAccountId (max_values: Some(1), max_size: None, mode: Measured)
-	/// Storage: Uniques Class (r:1 w:1)
-	/// Proof: Uniques Class (max_values: None, max_size: Some(178), added: 2653, mode: MaxEncodedLen)
-	/// Storage: Uniques Asset (r:2 w:1)
-	/// Proof: Uniques Asset (max_values: None, max_size: Some(122), added: 2597, mode: MaxEncodedLen)
-	/// Storage: Uniques Account (r:2 w:1)
-	/// Proof: Uniques Account (max_values: None, max_size: Some(88), added: 2563, mode: MaxEncodedLen)
-	/// Storage: Assets Asset (r:1 w:1)
-	/// Proof: Assets Asset (max_values: None, max_size: Some(210), added: 2685, mode: MaxEncodedLen)
-	/// Storage: Assets Account (r:2 w:2)
-	/// Proof: Assets Account (max_values: None, max_size: Some(102), added: 2577, mode: MaxEncodedLen)
-	/// Storage: Marketplace OrderBook (r:1 w:0)
-	/// Proof: Marketplace OrderBook (max_values: None, max_size: Some(93), added: 2568, mode: MaxEncodedLen)
-	/// Storage: PayoutProcessor InsuranceCount (r:0 w:1)
-	/// Proof: PayoutProcessor InsuranceCount (max_values: Some(1), max_size: Some(8), added: 503, mode: MaxEncodedLen)
-	/// Storage: Uniques ClassAccount (r:0 w:1)
-	/// Proof: Uniques ClassAccount (max_values: None, max_size: Some(68), added: 2543, mode: MaxEncodedLen)
-	/// Storage: Uniques ClassMetadataOf (r:0 w:1)
-	/// Proof: Uniques ClassMetadataOf (max_values: None, max_size: Some(88), added: 2563, mode: MaxEncodedLen)
-	/// Storage: Uniques ItemPriceOf (r:0 w:1)
-	/// Proof: Uniques ItemPriceOf (max_values: None, max_size: Some(89), added: 2564, mode: MaxEncodedLen)
-	/// Storage: Uniques CollectionMaxSupply (r:0 w:1)
-	/// Proof: Uniques CollectionMaxSupply (max_values: None, max_size: Some(24), added: 2499, mode: MaxEncodedLen)
-	fn do_execute_insurance_payout() -> Weight {
-		// Proof Size summary in bytes:
-		//  Measured:  `1514`
-		//  Estimated: `6282`
-		// Minimum execution time: 287_603_000 picoseconds.
-		Weight::from_parts(308_774_000, 0)
-			.saturating_add(Weight::from_parts(0, 6282))
-			.saturating_add(T::DbWeight::get().reads(12))
-			.saturating_add(T::DbWeight::get().writes(12))
-	}
-	fn set_event_threshold() -> Weight {
-		Weight::from_parts(10_000_000, 0)
-			.saturating_add(T::DbWeight::get().reads(1))
-			.saturating_add(T::DbWeight::get().writes(1))
-	}
-	
-	fn set_location_coordinates() -> Weight {
-		Weight::from_parts(10_000_000, 0)
-			.saturating_add(T::DbWeight::get().reads(1))
-			.saturating_add(T::DbWeight::get().writes(1))
-	}
-	
-	fn set_location_name() -> Weight {
-		Weight::from_parts(10_000_000, 0)
-			.saturating_add(T::DbWeight::get().reads(1))
-			.saturating_add(T::DbWeight::get().writes(1))
 	}
 }
 
-impl WeightInfo for () {
-	/// Storage: Oracle HasDispatched (r:1 w:1)
-	/// Proof: Oracle HasDispatched (max_values: Some(1), max_size: Some(3202), added: 3697, mode: MaxEncodedLen)
-	/// Storage: Timestamp Now (r:1 w:0)
-	/// Proof: Timestamp Now (max_values: Some(1), max_size: Some(8), added: 503, mode: MaxEncodedLen)
-	/// Storage: Oracle RawValues (r:3 w:1)
-	/// Proof: Oracle RawValues (max_values: None, max_size: Some(67), added: 2542, mode: MaxEncodedLen)
-	/// Storage: Oracle Values (r:1 w:0)
-	/// Proof: Oracle Values (max_values: None, max_size: Some(27), added: 2502, mode: MaxEncodedLen)
-	/// Storage: Insurance Metadata (r:1 w:0)
-	/// Proof: Insurance Metadata (max_values: None, max_size: Some(171), added: 2646, mode: MaxEncodedLen)
-	/// Storage: PayoutProcessor InsuranceCount (r:0 w:1)
-	/// Proof: PayoutProcessor InsuranceCount (max_values: Some(1), max_size: Some(8), added: 503, mode: MaxEncodedLen)
-	/// The range of component `x` is `[0, 100]`.
-	fn feed_event(x: u64, ) -> Weight {
-		// Proof Size summary in bytes:
-		//  Measured:  `167`
-		//  Estimated: `8616`
-		// Minimum execution time: 78_979_000 picoseconds.
-		Weight::from_parts(93_943_599, 0)
-			.saturating_add(Weight::from_parts(0, 8616))
-			// Standard Error: 5_743
-			.saturating_add(Weight::from_parts(340_430, 0).saturating_mul(x))
-			.saturating_add(RocksDbWeight::get().reads(7))
-			.saturating_add(RocksDbWeight::get().writes(3))
-	}
-	/// Storage: Insurance SmtIdToInsurance (r:1 w:1)
-	/// Proof: Insurance SmtIdToInsurance (max_values: None, max_size: Some(28), added: 2503, mode: MaxEncodedLen)
-	/// Storage: Insurance Metadata (r:1 w:1)
-	/// Proof: Insurance Metadata (max_values: None, max_size: Some(171), added: 2646, mode: MaxEncodedLen)
-	/// Storage: Assets Account (r:3 w:3)
-	/// Proof: Assets Account (max_values: None, max_size: Some(102), added: 2577, mode: MaxEncodedLen)
-	/// Storage: Dao PalletAccountId (r:1 w:0)
-	/// Proof Skipped: Dao PalletAccountId (max_values: Some(1), max_size: None, mode: Measured)
-	/// Storage: Assets Asset (r:2 w:2)
-	/// Proof: Assets Asset (max_values: None, max_size: Some(210), added: 2685, mode: MaxEncodedLen)
-	fn claim_premium_payout() -> Weight {
-		// Proof Size summary in bytes:
-		//  Measured:  `1216`
-		//  Estimated: `8721`
-		// Minimum execution time: 211_600_000 picoseconds.
-		Weight::from_parts(237_669_000, 0)
-			.saturating_add(Weight::from_parts(0, 8721))
-			.saturating_add(RocksDbWeight::get().reads(8))
-			.saturating_add(RocksDbWeight::get().writes(7))
-	}
-	fn add_oracle_member() -> Weight {
-		// Proof Size summary in bytes:
-		//  Measured:  `0`
-		//  Estimated: `0`
-		// Minimum execution time: 18_204_000 picoseconds.
-		Weight::from_parts(21_210_000, 0)
-			.saturating_add(Weight::from_parts(0, 0))
-	}
-	/// Storage: Insurance Metadata (r:2 w:1)
-	/// Proof: Insurance Metadata (max_values: None, max_size: Some(171), added: 2646, mode: MaxEncodedLen)
-	/// Storage: Dao PalletAccountId (r:1 w:0)
-	/// Proof Skipped: Dao PalletAccountId (max_values: Some(1), max_size: None, mode: Measured)
-	/// Storage: Uniques Class (r:1 w:1)
-	/// Proof: Uniques Class (max_values: None, max_size: Some(178), added: 2653, mode: MaxEncodedLen)
-	/// Storage: Uniques Asset (r:2 w:1)
-	/// Proof: Uniques Asset (max_values: None, max_size: Some(122), added: 2597, mode: MaxEncodedLen)
-	/// Storage: Uniques Account (r:2 w:1)
-	/// Proof: Uniques Account (max_values: None, max_size: Some(88), added: 2563, mode: MaxEncodedLen)
-	/// Storage: Assets Asset (r:1 w:1)
-	/// Proof: Assets Asset (max_values: None, max_size: Some(210), added: 2685, mode: MaxEncodedLen)
-	/// Storage: Assets Account (r:2 w:2)
-	/// Proof: Assets Account (max_values: None, max_size: Some(102), added: 2577, mode: MaxEncodedLen)
-	/// Storage: Marketplace OrderBook (r:1 w:0)
-	/// Proof: Marketplace OrderBook (max_values: None, max_size: Some(93), added: 2568, mode: MaxEncodedLen)
-	/// Storage: PayoutProcessor InsuranceCount (r:0 w:1)
-	/// Proof: PayoutProcessor InsuranceCount (max_values: Some(1), max_size: Some(8), added: 503, mode: MaxEncodedLen)
-	/// Storage: Uniques ClassAccount (r:0 w:1)
-	/// Proof: Uniques ClassAccount (max_values: None, max_size: Some(68), added: 2543, mode: MaxEncodedLen)
-	/// Storage: Uniques ClassMetadataOf (r:0 w:1)
-	/// Proof: Uniques ClassMetadataOf (max_values: None, max_size: Some(88), added: 2563, mode: MaxEncodedLen)
-	/// Storage: Uniques ItemPriceOf (r:0 w:1)
-	/// Proof: Uniques ItemPriceOf (max_values: None, max_size: Some(89), added: 2564, mode: MaxEncodedLen)
-	/// Storage: Uniques CollectionMaxSupply (r:0 w:1)
-	/// Proof: Uniques CollectionMaxSupply (max_values: None, max_size: Some(24), added: 2499, mode: MaxEncodedLen)
-	fn do_execute_insurance_payout() -> Weight {
-		// Proof Size summary in bytes:
-		//  Measured:  `1514`
-		//  Estimated: `6282`
-		// Minimum execution time: 287_603_000 picoseconds.
-		Weight::from_parts(308_774_000, 0)
-			.saturating_add(Weight::from_parts(0, 6282))
-			.saturating_add(RocksDbWeight::get().reads(12))
-			.saturating_add(RocksDbWeight::get().writes(12))
-	}
-	fn set_event_threshold() -> Weight {
-		Weight::from_parts(10_000_000, 0)
-			.saturating_add(RocksDbWeight::get().reads(1))
-			.saturating_add(RocksDbWeight::get().writes(1))
-	}
-	
-	fn set_location_coordinates() -> Weight {
-		Weight::from_parts(10_000_000, 0)
-			.saturating_add(RocksDbWeight::get().reads(1))
-			.saturating_add(RocksDbWeight::get().writes(1))
-	}
-	
-	fn set_location_name() -> Weight {
-		Weight::from_parts(10_000_000, 0)
-			.saturating_add(RocksDbWeight::get().reads(1))
-			.saturating_add(RocksDbWeight::get().writes(1))
-	}
-}

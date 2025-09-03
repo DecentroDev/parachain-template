@@ -1,1 +1,69 @@
+# Rust
+**/*.rs.bk
 target/
+**/*.rs.bk
+
+# Substrate specific
+node/src/chain_spec.rs
+node/src/service.rs
+node/src/rpc.rs
+node/src/command.rs
+node/src/cli.rs
+node/src/main.rs
+
+# Chain specs (generated, should not be committed)
+chain_spec*.json
+
+# Blockchain data and temporary files
+data/
+*.sst
+*.log
+*.tmp
+*.db
+LOCK
+*.lock
+
+# Build artifacts
+**/target/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+
+# Logs
+logs/
+*.log
+
+# Runtime artifacts
+runtime/src/lib.rs.bak
+runtime/src/lib.rs.old
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Temporary files
+tmp/
+temp/
+
+# Binary files (can be reinstalled)
+polkadot-omni-node
+
+# Rust compiler crash reports
+rustc-ice-*.txt

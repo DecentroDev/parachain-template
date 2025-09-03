@@ -9182,6 +9182,23 @@ dependencies = [
 ]
 
 [[package]]
+name = "pallet-payout-processor"
+version = "0.1.0"
+dependencies = [
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
+ "log",
+ "num-traits",
+ "parity-scale-codec",
+ "scale-info",
+ "serde",
+ "sp-core",
+ "sp-runtime",
+ "sp-std",
+]
+
+[[package]]
 name = "pallet-preimage"
 version = "40.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -10015,6 +10032,7 @@ dependencies = [
  "hex-literal",
  "log",
  "pallet-parachain-template",
+ "pallet-payout-processor",
  "parity-scale-codec",
  "polkadot-sdk 2503.0.1",
  "scale-info",

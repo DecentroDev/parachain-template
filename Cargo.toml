@@ -13,7 +13,7 @@ members = [
     # "pallets/dao",
     # "pallets/insurances", 
     # "pallets/marketplace",
-    # "pallets/payout-processor",
+    "pallets/payout-processor",
     "pallets/template",
     "runtime",
 ]
@@ -26,7 +26,7 @@ pallet-parachain-template = { path = "./pallets/template", default-features = fa
 # pallet-dao = { path = "./pallets/dao", default-features = false }
 # pallet-insurances = { path = "./pallets/insurances", default-features = false }
 # pallet-marketplace = { path = "./pallets/marketplace", default-features = false }
-# pallet-payout-processor = { path = "./pallets/payout-processor", default-features = false }
+pallet-payout-processor = { path = "./pallets/payout-processor", default-features = false }
 # offchain-utils = { path = "./offchain-utils", default-features = false }
 clap = { version = "4.5.13" }
 color-print = { version = "0.3.4" }

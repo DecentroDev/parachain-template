@@ -24,7 +24,7 @@
 // For more information, please refer to <http://unlicense.org>
 
 mod xcm_config;
-// mod pallet_configs; // Temporarily disabled
+mod pallet_configs;
 
 use polkadot_sdk::{staging_parachain_info as parachain_info, staging_xcm as xcm, *};
 #[cfg(not(feature = "runtime-benchmarks"))]

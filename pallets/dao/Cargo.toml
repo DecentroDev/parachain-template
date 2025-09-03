@@ -1,0 +1,66 @@
+[package]
+name = "pallet-dao"
+version = "0.1.0"
+license.workspace = true
+authors.workspace = true
+homepage.workspace = true
+repository.workspace = true
+edition.workspace = true
+description = "Custom DAO pallet for parachain template."
+publish = false
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[dependencies]
+codec = { workspace = true }
+scale-info = { workspace = true }
+num-traits = { version = "0.2.15", default-features = false }
+log = { workspace = true }
+lite-json = { version = "0.2.0", default-features = false }
+serde_json = { workspace = true, features = ["alloc", "arbitrary_precision"] }
+
+# Use individual crates for better compatibility
+sp-core = { version = "36.0.0", default-features = false }
+sp-runtime = { version = "41.0.0", default-features = false }
+sp-std = { version = "14.0.0", default-features = false }
+frame-support = { version = "40.0.0", default-features = false }
+frame-system = { version = "40.0.0", default-features = false }
+frame-benchmarking = { version = "40.0.0", default-features = false, optional = true }
+pallet-assets = { version = "42.0.0", default-features = false }
+pallet-collective = { version = "40.0.0", default-features = false }
+
+pallet-insurances = { workspace = true }
+offchain-utils = { workspace = true }
+
+[dev-dependencies]
+codec = { workspace = true }
+polkadot-sdk = { workspace = true, features = [
+	"pallet-assets",
+	"pallet-balances",
+	"sp-core",
+] }
+num-traits = { version = "0.2.15", default-features = false }
+
+[features]
+default = ["std"]
+std = [
+	"codec/std",
+	"scale-info/std",
+	"sp-core/std",
+	"sp-runtime/std",
+	"sp-std/std",
+	"frame-support/std",
+	"frame-system/std",
+	"pallet-assets/std",
+	"pallet-collective/std",
+	"num-traits/std",
+	"lite-json/std",
+	"pallet-insurances/std",
+	"offchain-utils/std",
+	"log/std",
+	"serde_json/std",
+]
+
+runtime-benchmarks = ["frame-benchmarking"]
+try-runtime = []
