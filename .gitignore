@@ -67,3 +67,18 @@ polkadot-omni-node
 
 # Rust compiler crash reports
 rustc-ice-*.txt
+
+# Additional cleanup patterns
+**/Cargo.lock
+!Cargo.lock
+custom_runtime_spec.json
+dev_chain_spec.json
+*_chain_spec.json
+standalone_*.json
+updated_*.json
+working_*.json
+simple_*.json
+
+# Docker experimental files
+Dockerfile.*
+docker-compose.*.yml
