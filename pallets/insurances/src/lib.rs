@@ -9,6 +9,7 @@ mod mock;
 mod tests;
 
 pub mod types;
+pub mod weights;
 
 #[frame_support::pallet]
 pub mod pallet {
@@ -16,23 +17,28 @@ pub mod pallet {
 	use crate::types::{ContractLink, InsuranceMetadata};
 	use frame_support::{
 		pallet_prelude::*,
-		traits::tokens::{
-			fungibles::{Create, Inspect, Mutate, Unbalanced},
-			nonfungibles,
-			nonfungibles::{Create as _, InspectEnumerable as _},
-			Balance,
+		traits::{
+			tokens::{
+				fungibles::{Create, Inspect, Mutate, Unbalanced},
+				nonfungibles,
+				nonfungibles::{Create as _, InspectEnumerable as _},
+				Balance,
+			},
+			BuildGenesisConfig,
 		},
 		PalletId,
 	};
+	use frame_system::pallet_prelude::*;
 
 	use sp_std::vec::Vec;
 
 	use sp_runtime::traits::AtLeast32BitUnsigned;
+	use crate::weights::WeightInfo;
 
 	pub type InsuranceMetadataOf<T> = InsuranceMetadata<
 		<T as Config>::Balance,
 		<T as frame_system::Config>::AccountId,
-		<T as frame_system::Config>::BlockNumber,
+		BlockNumberFor<T>,
 		<T as Config>::AssetId,
 		ContractLink<u8, <T as Config>::StringLimit>,
 	>;
@@ -104,12 +110,12 @@ pub mod pallet {
 
 		#[pallet::constant]
 		type ZeroAddressId: Get<PalletId>;
+		type WeightInfo: WeightInfo;
 	}
 
 	#[pallet::genesis_config]
 	pub struct GenesisConfig<T: Config>(pub PhantomData<T>);
 
-	#[cfg(feature = "std")]
 	impl<T: Config> Default for GenesisConfig<T> {
 		fn default() -> Self {
 			Self(PhantomData)
@@ -117,7 +123,7 @@ pub mod pallet {
 	}
 
 	#[pallet::genesis_build]
-	impl<T: Config> GenesisBuild<T> for GenesisConfig<T> {
+	impl<T: Config> BuildGenesisConfig for GenesisConfig<T> {
 		fn build(&self) {
 			use sp_runtime::traits::AccountIdConversion;
 			ZeroAddress::<T>::put::<T::AccountId>(

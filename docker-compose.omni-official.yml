@@ -5,7 +5,7 @@ services:
     ports:
       - "9944:9944"
     volumes:
-      - "./chain_spec.json:/chain_spec.json:ro"
+      - "./working_chain_spec.json:/chain_spec.json:ro"
       - "omni_data:/data"
     command: >
       --dev
@@ -15,6 +15,7 @@ services:
       --unsafe-rpc-external
       --rpc-cors=all
       --unsafe-force-node-key-generation
+      --dev-block-time=1000
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9944/health"]

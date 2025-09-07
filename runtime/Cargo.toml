@@ -25,7 +25,7 @@ log = { workspace = true }
 pallet-parachain-template.workspace = true
 # Custom pallets (temporarily disabled due to compatibility issues)
 # pallet-dao.workspace = true
-# pallet-insurances.workspace = true
+pallet-insurances.workspace = true
 # pallet-marketplace.workspace = true
 pallet-payout-processor.workspace = true
 # offchain-utils.workspace = true
@@ -42,7 +42,7 @@ std = [
 	"log/std",
 	"pallet-parachain-template/std",
 	# "pallet-dao/std",
-	# "pallet-insurances/std",
+	"pallet-insurances/std",
 	# "pallet-marketplace/std",
 	"pallet-payout-processor/std",
 	# "offchain-utils/std",

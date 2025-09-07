@@ -39,10 +39,13 @@ use frame_support::{
 	parameter_types,
 	traits::{
 		ConstBool, ConstU32, ConstU64, ConstU8, EitherOfDiverse, TransformOrigin, VariantCountOf,
+		AsEnsureOriginWithArg,
 	},
 	weights::{ConstantMultiplier, Weight},
 	PalletId,
 };
+
+use frame_system::EnsureSigned;
 use frame_system::{
 	limits::{BlockLength, BlockWeights},
 	EnsureRoot,
@@ -317,6 +320,70 @@ impl pallet_collator_selection::Config for Runtime {
 	type WeightInfo = ();
 }
 
+// Assets pallet parameters
+parameter_types! {
+	pub const AssetDeposit: Balance = MICRO_UNIT; // 1/10 UNIT deposit to create asset
+	pub const AssetAccountDeposit: Balance = EXISTENTIAL_DEPOSIT;
+	pub const ApprovalDeposit: Balance = EXISTENTIAL_DEPOSIT;
+	pub const AssetsStringLimit: u32 = 50;
+	pub const MetadataDepositBase: Balance = EXISTENTIAL_DEPOSIT;
+	pub const MetadataDepositPerByte: Balance = EXISTENTIAL_DEPOSIT / 1000;
+}
+
+// Assets pallet configuration
+impl pallet_assets::Config for Runtime {
+	type RuntimeEvent = RuntimeEvent;
+	type Balance = Balance;
+	type AssetId = u32;
+	type AssetIdParameter = codec::Compact<u32>;
+	type Currency = Balances;
+	type CreateOrigin = AsEnsureOriginWithArg<EnsureSigned<AccountId>>;
+	type ForceOrigin = EnsureRoot<AccountId>;
+	type AssetDeposit = AssetDeposit;
+	type AssetAccountDeposit = AssetAccountDeposit;
+	type MetadataDepositBase = MetadataDepositBase;
+	type MetadataDepositPerByte = MetadataDepositPerByte;
+	type ApprovalDeposit = ApprovalDeposit;
+	type StringLimit = AssetsStringLimit;
+	type Freezer = ();
+	type Extra = ();
+	type CallbackHandle = ();
+	type WeightInfo = ();
+	type RemoveItemsLimit = ConstU32<1000>;
+	type Holder = ();
+}
+
+// Uniques pallet parameters
+parameter_types! {
+	pub const UniquesCollectionDeposit: Balance = 0;
+	pub const UniquesItemDeposit: Balance = 0;
+	pub const UniquesMetadataDepositBase: Balance = EXISTENTIAL_DEPOSIT;
+	pub const UniquesAttributeDepositBase: Balance = EXISTENTIAL_DEPOSIT / 1000;
+	pub const UniquesDepositPerByte: Balance = EXISTENTIAL_DEPOSIT / 10000;
+	pub const UniquesKeyLimit: u32 = 32;
+	pub const UniquesValueLimit: u32 = 64;
+}
+
+// Uniques pallet configuration
+impl pallet_uniques::Config for Runtime {
+	type RuntimeEvent = RuntimeEvent;
+	type CollectionId = u32;
+	type ItemId = u32;
+	type Currency = Balances;
+	type ForceOrigin = EnsureRoot<AccountId>;
+	type CreateOrigin = frame_support::traits::AsEnsureOriginWithArg<EnsureSigned<AccountId>>;
+	type Locker = ();
+	type CollectionDeposit = UniquesCollectionDeposit;
+	type ItemDeposit = UniquesItemDeposit;
+	type MetadataDepositBase = UniquesMetadataDepositBase;
+	type AttributeDepositBase = UniquesAttributeDepositBase;
+	type DepositPerByte = UniquesDepositPerByte;
+	type StringLimit = ConstU32<50>;
+	type KeyLimit = UniquesKeyLimit;
+	type ValueLimit = UniquesValueLimit;
+	type WeightInfo = ();
+}
+
 /// Configure the pallet template in pallets/template.
 impl pallet_parachain_template::Config for Runtime {
 	type RuntimeEvent = RuntimeEvent;
@@ -325,3 +392,5 @@ impl pallet_parachain_template::Config for Runtime {
 
 // Include custom pallet configurations
 // use pallet_configs::*; // Temporarily disabled
+
+// Assets and Uniques pallet configurations removed - not needed without insurances pallet

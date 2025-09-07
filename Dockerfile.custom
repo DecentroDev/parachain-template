@@ -1,0 +1,39 @@
+FROM rust:1.87-bookworm as builder
+
+WORKDIR /build
+COPY Cargo.toml Cargo.lock ./
+COPY runtime/ ./runtime/
+COPY node/ ./node/
+COPY pallets/ ./pallets/
+COPY offchain-utils/ ./offchain-utils/
+
+# Build the runtime and node
+RUN cargo build --release -p parachain-template-runtime
+RUN cargo build --release -p parachain-template-node
+
+# Create the runtime directory and final image
+FROM ubuntu:22.04
+
+# Install necessary runtime dependencies
+RUN apt-get update && apt-get install -y \
+    ca-certificates \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy the built binary and runtime
+COPY --from=builder /build/target/release/parachain-template-node /usr/local/bin/
+COPY --from=builder /build/target/release/wbuild/parachain-template-runtime/parachain_template_runtime.wasm /usr/local/share/
+
+# Create runtime and data directories
+RUN mkdir -p /data && \
+    useradd -m -u 1001 -U -s /bin/sh -d /node node && \
+    chown -R node:node /data
+
+USER node
+
+EXPOSE 9944 30333
+WORKDIR /data
+
+# Use the built node binary directly in dev mode
+ENTRYPOINT ["/usr/local/bin/parachain-template-node"]
+CMD ["--dev", "--rpc-port", "9944", "--unsafe-rpc-external", "--rpc-cors", "all", "--force-authoring", "--alice", "--tmp"]

@@ -7873,6 +7873,23 @@ dependencies = [
 ]
 
 [[package]]
+name = "offchain-utils"
+version = "0.1.0"
+dependencies = [
+ "frame-benchmarking",
+ "frame-support",
+ "log",
+ "parity-scale-codec",
+ "scale-info",
+ "serde",
+ "serde_json",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "sp-std",
+]
+
+[[package]]
 name = "oid-registry"
 version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -8846,6 +8863,25 @@ dependencies = [
  "polkadot-sdk-frame",
  "safe-mix",
  "scale-info",
+]
+
+[[package]]
+name = "pallet-insurances"
+version = "0.1.0"
+dependencies = [
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
+ "log",
+ "num-traits",
+ "offchain-utils",
+ "pallet-uniques",
+ "parity-scale-codec",
+ "scale-info",
+ "serde",
+ "sp-core",
+ "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
@@ -10031,6 +10067,7 @@ dependencies = [
  "docify",
  "hex-literal",
  "log",
+ "pallet-insurances",
  "pallet-parachain-template",
  "pallet-payout-processor",
  "parity-scale-codec",

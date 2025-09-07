@@ -111,7 +111,7 @@ pub mod pallet {
 			
 			InsuranceCount::<T>::put(count);
 			Self::deposit_event(Event::InsuranceCountUpdated { count });
-			
+
 			Ok(())
 		}
 
@@ -128,7 +128,7 @@ pub mod pallet {
 			
 			EventThresholds::<T>::insert(insurance_type, threshold);
 			Self::deposit_event(Event::EventThresholdSet { insurance_type, threshold });
-			
+
 			Ok(())
 		}
 
@@ -144,7 +144,7 @@ pub mod pallet {
 			
 			LocationCoordinates::<T>::insert(location_id, (lat, lon));
 			Self::deposit_event(Event::LocationCoordinatesSet { location_id, lat, lon });
-			
+
 			Ok(())
 		}
 
@@ -163,7 +163,7 @@ pub mod pallet {
 			
 			LocationNames::<T>::insert(location_id, bounded_name.clone());
 			Self::deposit_event(Event::LocationNameSet { location_id, name: bounded_name });
-			
+
 			Ok(())
 		}
 	}

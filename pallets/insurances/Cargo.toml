@@ -19,42 +19,43 @@ log = { workspace = true }
 serde = { workspace = true, optional = true }
 num-traits = { version = "0.2.15", default-features = false }
 
-# Use polkadot-sdk workspace dependency
-polkadot-sdk = { workspace = true, features = [
-	"frame-benchmarking",
-	"frame-support", 
-	"frame-system",
-	"pallet-assets",
-	"pallet-balances",
-	"pallet-collective",
-	"pallet-uniques",
-	"sp-core",
-	"sp-io", 
-	"sp-runtime",
-	"sp-std",
-] }
+# Use individual crates for better compatibility
+frame-support = { version = "40.0.0", default-features = false }
+frame-system = { version = "40.0.0", default-features = false }
+frame-benchmarking = { version = "40.0.0", default-features = false, optional = true }
+sp-core = { version = "36.0.0", default-features = false }
+sp-runtime = { version = "41.0.0", default-features = false }
+sp-std = { version = "14.0.0", default-features = false }
+pallet-uniques = { version = "40.0.0", default-features = false }
 
 offchain-utils = { workspace = true }
 
 [dev-dependencies]
 codec = { workspace = true }
-polkadot-sdk = { workspace = true, features = [
-	"pallet-assets",
-	"pallet-balances", 
-	"sp-core",
-] }
+frame-support = { version = "40.0.0", default-features = false }
+frame-system = { version = "40.0.0", default-features = false }
+frame-benchmarking = { version = "40.0.0", default-features = false }
+sp-core = { version = "36.0.0", default-features = false }
+sp-runtime = { version = "41.0.0", default-features = false }
+sp-std = { version = "14.0.0", default-features = false }
+pallet-uniques = { version = "40.0.0", default-features = false }
 
 [features]
 default = ["std"]
 std = [
 	"codec/std",
 	"scale-info/std",
-	"polkadot-sdk/std",
+	"frame-support/std",
+	"frame-system/std",
+	"sp-core/std",
+	"sp-runtime/std",
+	"sp-std/std",
+	"pallet-uniques/std",
 	"log/std",
 	"serde/std",
 	"num-traits/std",
 	"offchain-utils/std",
 ]
 
-runtime-benchmarks = ["polkadot-sdk/runtime-benchmarks"]
-try-runtime = ["polkadot-sdk/try-runtime"]
+runtime-benchmarks = ["frame-benchmarking"]
+try-runtime = []

@@ -1,0 +1,17 @@
+services:
+  parachain-node:
+    build:
+      context: .
+      dockerfile: Dockerfile.simple
+    container_name: prmx-simple-node
+    ports:
+      - "9944:9944"
+    volumes:
+      - simple_data:/data
+    environment:
+      - RUST_LOG=info
+    restart: unless-stopped
+
+volumes:
+  simple_data:
+

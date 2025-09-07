@@ -287,8 +287,13 @@ construct_runtime!(
 		// Template
 		TemplatePallet: pallet_parachain_template = 50,
 
+		// Asset management (temporarily disabled)
+		Assets: pallet_assets = 51,
+		Uniques: pallet_uniques = 52,
+
 		// Custom pallets
 		PayoutProcessor: pallet_payout_processor = 63,
+		Insurances: pallet_insurances = 64,
 	}
 );
 
