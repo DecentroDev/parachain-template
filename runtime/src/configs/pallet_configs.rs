@@ -1,21 +1,30 @@
 // Custom pallet configurations for the parachain template runtime
 
 use crate::*;
-use frame_support::traits::{ConstU32, ConstU128};
+use frame_support::traits::{ConstU32, ConstU128, ConstU64};
 use sp_runtime::traits::AccountIdConversion;
 use frame_support::{parameter_types, PalletId};
+use frame_system::EnsureRoot;
 
 // Zero address pallet ID for insurances
 parameter_types! {
 	pub const ZeroAddressPalletId: PalletId = PalletId(*b"pr/mxzer");
+	pub const DaoPalletId: PalletId = PalletId(*b"pr/mxdao");
 }
 
-// DAO Pallet Configuration (temporarily disabled)
-// impl pallet_dao::Config for Runtime {
-// 	type RuntimeEvent = RuntimeEvent;
-// 	type RuntimeCall = RuntimeCall;
-// 	type WeightInfo = ();
-// }
+// DAO Pallet Configuration
+impl pallet_dao::Config for Runtime {
+	type RuntimeEvent = RuntimeEvent;
+	type WeightInfo = pallet_dao::weights::DaoWeight<Runtime>;
+	type AuthorityId = crate::dao_crypto::AuthId;
+	type Call = RuntimeCall;
+	type DaoOrigin = EnsureRoot<AccountId>;
+	type LocalCurrency = Balances;
+	type PalletId = DaoPalletId;
+	type Quorum = ConstU32<3>;
+	type MaxProposalWeight = ConstU64<1_000_000>;
+	type MaxLengthBound = ConstU32<256>;
+}
 
 // Insurances Pallet Configuration (temporarily disabled due to configuration issues)
 impl pallet_insurances::Config for Runtime {

@@ -1,6 +1,8 @@
 #![cfg_attr(not(feature = "std"), no_std)]
 
 use frame_support::pallet_prelude::*;
+use codec::MaxEncodedLen;
+use codec::{Decode, Encode, DecodeWithMemTracking};
 // use serde::{Deserialize};
 
 /// A number of members.
@@ -9,7 +11,7 @@ use frame_support::pallet_prelude::*;
 /// vote exactly once, therefore also the number of votes for any given motion.
 pub type MemberCount = u32;
 
-#[derive(Clone, Encode, Decode, TypeInfo)]
+#[derive(Clone, Encode, Decode, DecodeWithMemTracking, TypeInfo, PartialEq, MaxEncodedLen)]
 pub struct VotingMetadata<BlockNumber, AccountId, Balance, Hash, ProposalIndex> {
 	pub ends_on: BlockNumber,
 	pub beneficiary: AccountId,
@@ -18,7 +20,7 @@ pub struct VotingMetadata<BlockNumber, AccountId, Balance, Hash, ProposalIndex> 
 	pub proposal_index: ProposalIndex,
 }
 
-#[derive(Clone, Debug, Encode, Decode, TypeInfo, PartialEq)]
+#[derive(Clone, Debug, Encode, Decode, DecodeWithMemTracking, TypeInfo, PartialEq, MaxEncodedLen)]
 pub struct GetPremiumParams<Balance> {
 	pub latitude: Balance,
 	pub longtitude: Balance,

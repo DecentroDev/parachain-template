@@ -13,12 +13,46 @@ pub mod configs;
 mod genesis_config_presets;
 mod weights;
 
+// DAO crypto support
+pub mod dao_crypto {
+	use polkadot_sdk::sp_core::{crypto::KeyTypeId, sr25519::Signature as Sr25519Signature};
+	use polkadot_sdk::sp_runtime::{
+		app_crypto::{app_crypto, sr25519},
+		traits::Verify,
+		MultiSignature, MultiSigner,
+	};
+	use polkadot_sdk::frame_system;
+
+	pub const KEY_TYPE: KeyTypeId = KeyTypeId(*b"dao!");
+
+	app_crypto!(sr25519, KEY_TYPE);
+
+	pub struct AuthId;
+
+	impl frame_system::offchain::AppCrypto<MultiSigner, MultiSignature> for AuthId {
+		type RuntimeAppPublic = Public;
+		type GenericSignature = polkadot_sdk::sp_core::sr25519::Signature;
+		type GenericPublic = polkadot_sdk::sp_core::sr25519::Public;
+	}
+
+	impl frame_system::offchain::AppCrypto<
+		<Sr25519Signature as Verify>::Signer,
+		Sr25519Signature,
+	> for AuthId
+	{
+		type RuntimeAppPublic = Public;
+		type GenericSignature = polkadot_sdk::sp_core::sr25519::Signature;
+		type GenericPublic = polkadot_sdk::sp_core::sr25519::Public;
+	}
+}
+
 extern crate alloc;
 use alloc::vec::Vec;
 use smallvec::smallvec;
 
 use polkadot_sdk::{staging_parachain_info as parachain_info, *};
 use frame_support::construct_runtime;
+use codec::Encode;
 
 use sp_runtime::{
 	generic, impl_opaque_keys,
@@ -291,11 +325,105 @@ construct_runtime!(
 		Assets: pallet_assets = 51,
 		Uniques: pallet_uniques = 52,
 
+		// Governance
+		Collective: pallet_collective = 65,
+
 		// Custom pallets
 		PayoutProcessor: pallet_payout_processor = 63,
 		Insurances: pallet_insurances = 64,
+		Dao: pallet_dao = 66,
 	}
 );
+
+// Implement signing types for offchain workers
+impl polkadot_sdk::frame_system::offchain::SigningTypes for Runtime {
+	type Public = <Signature as Verify>::Signer;
+	type Signature = Signature;
+}
+
+// Implement base transaction creation
+impl polkadot_sdk::frame_system::offchain::CreateTransactionBase<RuntimeCall> for Runtime {
+	type RuntimeCall = RuntimeCall;
+	type Extrinsic = UncheckedExtrinsic;
+}
+
+// Implement base transaction creation for DAO calls specifically
+impl polkadot_sdk::frame_system::offchain::CreateTransactionBase<pallet_dao::Call<Runtime>> for Runtime {
+	type RuntimeCall = RuntimeCall;
+	type Extrinsic = UncheckedExtrinsic;
+}
+
+// Implement signed transaction creation for DAO pallet specifically
+impl polkadot_sdk::frame_system::offchain::CreateSignedTransaction<RuntimeCall> for Runtime {
+	fn create_signed_transaction<C: polkadot_sdk::frame_system::offchain::AppCrypto<Self::Public, Self::Signature>>(
+		call: RuntimeCall,
+		_public: <Signature as Verify>::Signer,
+		account: AccountId,
+		nonce: Nonce,
+	) -> Option<UncheckedExtrinsic> {
+		let tip = 0;
+		let extension: TxExtension = cumulus_pallet_weight_reclaim::StorageWeightReclaim::new(
+			(
+				frame_system::CheckNonZeroSender::<Runtime>::new(),
+				frame_system::CheckSpecVersion::<Runtime>::new(),
+				frame_system::CheckTxVersion::<Runtime>::new(),
+				frame_system::CheckGenesis::<Runtime>::new(),
+				frame_system::CheckEra::<Runtime>::from(polkadot_sdk::sp_runtime::generic::Era::mortal(256, frame_system::Pallet::<Runtime>::block_number().into())),
+				frame_system::CheckNonce::<Runtime>::from(nonce),
+				frame_system::CheckWeight::<Runtime>::new(),
+				pallet_transaction_payment::ChargeTransactionPayment::<Runtime>::from(tip),
+				frame_metadata_hash_extension::CheckMetadataHash::<Runtime>::new(true),
+			)
+		);
+
+		let raw_payload = polkadot_sdk::sp_runtime::generic::SignedPayload::new(call, extension)
+			.map_err(|e| {
+				log::warn!("Unable to create signed payload: {:?}", e);
+			})
+			.ok()?;
+		let signature = raw_payload.using_encoded(|payload| C::sign(payload, _public))?;
+		let address = polkadot_sdk::sp_runtime::MultiAddress::Id(account);
+		let (call, extension, _) = raw_payload.deconstruct();
+
+		Some(UncheckedExtrinsic::new_signed(call, address, signature, extension))
+	}
+}
+
+// Implement signed transaction creation for DAO pallet specifically (to satisfy pallet bound)
+impl polkadot_sdk::frame_system::offchain::CreateSignedTransaction<pallet_dao::Call<Runtime>> for Runtime {
+	fn create_signed_transaction<C: polkadot_sdk::frame_system::offchain::AppCrypto<Self::Public, Self::Signature>>(
+		call: RuntimeCall,
+		_public: <Signature as Verify>::Signer,
+		account: AccountId,
+		nonce: Nonce,
+	) -> Option<UncheckedExtrinsic> {
+		let tip = 0;
+		let extension: TxExtension = cumulus_pallet_weight_reclaim::StorageWeightReclaim::new(
+			(
+				frame_system::CheckNonZeroSender::<Runtime>::new(),
+				frame_system::CheckSpecVersion::<Runtime>::new(),
+				frame_system::CheckTxVersion::<Runtime>::new(),
+				frame_system::CheckGenesis::<Runtime>::new(),
+				frame_system::CheckEra::<Runtime>::from(polkadot_sdk::sp_runtime::generic::Era::mortal(256, frame_system::Pallet::<Runtime>::block_number().into())),
+				frame_system::CheckNonce::<Runtime>::from(nonce),
+				frame_system::CheckWeight::<Runtime>::new(),
+				pallet_transaction_payment::ChargeTransactionPayment::<Runtime>::from(tip),
+				frame_metadata_hash_extension::CheckMetadataHash::<Runtime>::new(true),
+			)
+		);
+
+		let raw_payload = polkadot_sdk::sp_runtime::generic::SignedPayload::new(call, extension)
+			.map_err(|e| {
+				log::warn!("Unable to create signed payload: {:?}", e);
+			})
+			.ok()?;
+		let signature = raw_payload.using_encoded(|payload| C::sign(payload, _public))?;
+		let address = polkadot_sdk::sp_runtime::MultiAddress::Id(account);
+		let (call, extension, _) = raw_payload.deconstruct();
+
+		Some(UncheckedExtrinsic::new_signed(call, address, signature, extension))
+	}
+}
 
 #[docify::export(register_validate_block)]
 cumulus_pallet_parachain_system::register_validate_block! {

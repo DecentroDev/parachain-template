@@ -25,7 +25,7 @@ pub mod pallet {
 		traits::{
 			fungibles::{Inspect, Unbalanced},
 			tokens::{fungibles::Mutate, Fortitude, Precision, Preservation, WithdrawConsequence},
-			Currency, ReservableCurrency,
+			Currency, ReservableCurrency, BuildGenesisConfig,
 		},
 		PalletId,
 	};
@@ -34,7 +34,7 @@ pub mod pallet {
 	use sp_runtime::traits::AtLeast32BitUnsigned;
 	use sp_std::{cmp::Ordering, prelude::Vec};
 
-	use pallet_dao::traits::ProvideAccountId as ProvideDaoAccountId;
+	// use pallet_dao::traits::ProvideAccountId as ProvideDaoAccountId;  // Temporarily disabled
 
 	use types::{OrderInfo, OrderType};
 	use weights::WeightInfo;
@@ -47,7 +47,7 @@ pub mod pallet {
 		frame_system::Config
 		+ pallet_insurances::Config
 		+ pallet_assets::Config
-		+ pallet_dao::Config<I>
+		// + pallet_dao::Config<I>  // Temporarily disabled
 	{
 		type RuntimeEvent: From<Event<Self, I>>
 			+ IsType<<Self as frame_system::Config>::RuntimeEvent>;
@@ -90,7 +90,7 @@ pub mod pallet {
 	}
 
 	#[pallet::genesis_build]
-	impl<T: Config<I>, I: 'static> GenesisBuild<T, I> for GenesisConfig<T, I> {
+	impl<T: Config<I>, I: 'static> BuildGenesisConfig for GenesisConfig<T, I> {
 		fn build(&self) {
 			use sp_runtime::traits::AccountIdConversion;
 			PalletAccountId::<T, I>::put::<T::AccountId>(

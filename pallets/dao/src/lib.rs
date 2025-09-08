@@ -30,7 +30,7 @@ pub mod pallet {
 		traits::{
 			fungibles::{Inspect, Unbalanced},
 			tokens::{Fortitude, Precision, Preservation},
-			Currency, ReservableCurrency,
+			Currency, ReservableCurrency, BuildGenesisConfig,
 		},
 		PalletId,
 	};
@@ -39,16 +39,18 @@ pub mod pallet {
 		offchain::{AppCrypto, CreateSignedTransaction, SendSignedTransaction, Signer},
 		pallet_prelude::*,
 	};
+	use codec::MaxEncodedLen;
 	use num_traits::{CheckedDiv, CheckedSub};
 	use pallet_collective::ProposalIndex;
 	use pallet_insurances::pallet::InsuranceMetadataOf;
 	use scale_info::prelude::{format, string::String};
 	use serde_json::Value;
 	use sp_core::crypto::KeyTypeId;
-	use sp_runtime::{
-		offchain::{http, Duration},
-		traits::Hash,
-	};
+        use sp_runtime::{
+                offchain::http,
+                traits::Hash,
+        };
+        use sp_core::offchain::Duration;
 	use sp_std::prelude::*;
 
 	use offchain_utils::offchain_api_key::OffchainApiKey;
@@ -107,6 +109,8 @@ pub mod pallet {
 		+ pallet_collective::Config<I>
 		+ pallet_assets::Config
 		+ CreateSignedTransaction<Call<Self, I>>
+	where
+		<Self as frame_system::Config>::AccountId: MaxEncodedLen,
 	{
 		/// The identifier type for an offchain worker.
 		type AuthorityId: AppCrypto<Self::Public, Self::Signature>;
@@ -144,7 +148,6 @@ pub mod pallet {
 	#[pallet::genesis_config]
 	pub struct GenesisConfig<T: Config<I>, I: 'static = ()>(pub PhantomData<(T, I)>);
 
-	#[cfg(feature = "std")]
 	impl<T: Config<I>, I: 'static> Default for GenesisConfig<T, I> {
 		fn default() -> Self {
 			Self(PhantomData)
@@ -152,7 +155,7 @@ pub mod pallet {
 	}
 
 	#[pallet::genesis_build]
-	impl<T: Config<I>, I: 'static> GenesisBuild<T, I> for GenesisConfig<T, I> {
+	impl<T: Config<I>, I: 'static> BuildGenesisConfig for GenesisConfig<T, I> {
 		fn build(&self) {
 			use sp_runtime::traits::AccountIdConversion;
 			PalletAccountId::<T, I>::put::<T::AccountId>(

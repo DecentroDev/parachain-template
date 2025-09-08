@@ -47,6 +47,26 @@ pub fn development_chain_spec() -> ChainSpec {
 	.build()
 }
 
+pub fn standalone_chain_spec() -> sc_service::GenericChainSpec {
+	// Give your base currency a unit name and decimal places
+	let mut properties = sc_chain_spec::Properties::new();
+	properties.insert("tokenSymbol".into(), "UNIT".into());
+	properties.insert("tokenDecimals".into(), 12.into());
+	properties.insert("ss58Format".into(), 42.into());
+
+	sc_service::GenericChainSpec::builder(
+		runtime::WASM_BINARY.expect("WASM binary was not built, please build it!"),
+		None::<()>,
+	)
+	.with_name("Standalone Development")
+	.with_id("standalone-dev")
+	.with_chain_type(ChainType::Development)
+	.with_genesis_config_preset_name(sp_genesis_builder::DEV_RUNTIME_PRESET)
+	.with_protocol_id("template-standalone")
+	.with_properties(properties)
+	.build()
+}
+
 pub fn local_chain_spec() -> ChainSpec {
 	// Give your base currency a unit name and decimal places
 	let mut properties = sc_chain_spec::Properties::new();

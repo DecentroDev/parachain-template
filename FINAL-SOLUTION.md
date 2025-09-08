@@ -84,3 +84,4 @@ Your FRAME v5 migration is **successful**! The pallets work perfectly - the only
 
 **Your code is ready for production!** 🎉
 
+

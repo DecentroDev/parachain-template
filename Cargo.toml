@@ -10,9 +10,9 @@ default-members = ["pallets/template", "runtime"]
 members = [
     "node",
     "offchain-utils",
-    # "pallets/dao",
+    "pallets/dao",
     "pallets/insurances", 
-    # "pallets/marketplace",
+    # "pallets/marketplace",  # Temporarily disabled - will migrate after DAO
     "pallets/payout-processor",
     "pallets/template",
     "runtime",
@@ -23,9 +23,9 @@ resolver = "2"
 parachain-template-runtime = { path = "./runtime", default-features = false }
 pallet-parachain-template = { path = "./pallets/template", default-features = false }
 # Custom pallets (temporarily disabled due to compatibility issues)
-# pallet-dao = { path = "./pallets/dao", default-features = false }
+pallet-dao = { path = "./pallets/dao", default-features = false }
 pallet-insurances = { path = "./pallets/insurances", default-features = false }
-# pallet-marketplace = { path = "./pallets/marketplace", default-features = false }
+# pallet-marketplace = { path = "./pallets/marketplace", default-features = false }  # Will migrate after DAO
 pallet-payout-processor = { path = "./pallets/payout-processor", default-features = false }
 offchain-utils = { path = "./offchain-utils", default-features = false }
 clap = { version = "4.5.13" }
@@ -37,7 +37,7 @@ log = { version = "0.4.22", default-features = false }
 polkadot-sdk = { version = "2503.0.1", default-features = false }
 prometheus-endpoint = { version = "0.17.2", default-features = false, package = "substrate-prometheus-endpoint" }
 serde = { version = "1.0.214", default-features = false }
-codec = { version = "3.7.4", default-features = false, package = "parity-scale-codec" }
+codec = { version = "3.7.5", default-features = false, package = "parity-scale-codec" }
 cumulus-pallet-parachain-system = { version = "0.20.0", default-features = false }
 hex-literal = { version = "0.4.1", default-features = false }
 scale-info = { version = "2.11.6", default-features = false }

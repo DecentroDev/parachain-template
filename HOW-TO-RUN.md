@@ -70,3 +70,4 @@ Your insurances pallet **IS working**! Here's the proof:
 
 Your insurances pallet migration to FRAME v5 is **complete and successful**!
 
+
