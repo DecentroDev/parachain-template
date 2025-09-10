@@ -11,11 +11,11 @@ pkill -f parachain-template-node || true
 
 # Generate latest runtime spec
 echo "📦 Building latest runtime spec..."
-./target/release/parachain-template-node build-spec --chain dev --raw > standalone_runtime.json
+./parachain-template-node build-spec --chain dev --raw > standalone_runtime.json
 
 # Start standalone node
 echo "🔗 Starting standalone node on ws://127.0.0.1:9944..."
-polkadot-omni-node \
+./polkadot-omni-node \
   --chain standalone_runtime.json \
   --dev \
   --unsafe-rpc-external \
@@ -27,6 +27,15 @@ NODE_PID=$!
 
 echo ""
 echo "✅ Standalone node running!"
+echo ""
+
+# Wait for node to be ready and add keys for offchain workers
+echo "🔑 Adding keys for DAO offchain workers..."
+sleep 3
+curl -s -H "Content-Type: application/json" \
+     -d '{"id":1, "jsonrpc":"2.0", "method": "author_insertKey", "params":["dao", "//Alice", "0xd43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d"]}' \
+     http://localhost:9944 > /dev/null && echo "✅ Alice's key added for DAO signing" || echo "⚠️  Key insertion failed (node may not be ready yet)"
+
 echo ""
 echo "🔗 Connect Polkadot.js Apps to: ws://127.0.0.1:9944"
 echo "📋 Your custom pallets available:"
