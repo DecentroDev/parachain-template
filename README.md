@@ -2,6 +2,8 @@
 
 # Polkadot SDK's Parachain Template
 
+> **Note on removed binary:** A pre-built `polkadot-omni-node` binary was previously committed to this repo to speed up local development (avoiding a full Rust build of the omni node from source). It was removed from git history because GitHub enforces a 100MB file size limit and the binary was ~183MB, causing all pushes to be rejected. To get the omni node, either build it from source (`cargo install polkadot-omni-node`) or download a release binary from the [Polkadot SDK releases page](https://github.com/paritytech/polkadot-sdk/releases).
+
 <img height="70px" alt="Polkadot SDK Logo" src="https://github.com/paritytech/polkadot-sdk/raw/master/docs/images/Polkadot_Logo_Horizontal_Pink_White.png#gh-dark-mode-only"/>
 <img height="70px" alt="Polkadot SDK Logo" src="https://github.com/paritytech/polkadot-sdk/raw/master/docs/images/Polkadot_Logo_Horizontal_Pink_Black.png#gh-light-mode-only"/>
 
